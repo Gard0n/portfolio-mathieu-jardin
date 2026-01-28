@@ -4,7 +4,7 @@ export const siteContent = {
     role: "Business Developer / Shopify / E-commerce",
     description:
       "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
-    url: "https://portfolio-mathieu-jardin.vercel.app",
+    url: "https://gard0n.github.io/portfolio-mathieu-jardin",
     ogImage: "/og.svg",
     email: "mathieu.jardin@email.fr"
   },
