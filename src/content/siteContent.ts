@@ -1,12 +1,12 @@
 export const siteContent = {
   site: {
-    name: "Mathieu Jardin",
+    name: "Portfolio MJ V1.04",
     role: "Business Developer / Shopify / E-commerce",
     description:
       "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
     url: "https://gard0n.github.io/portfolio-mathieu-jardin",
     ogImage: "/og.svg",
-    email: "mathieu.jardin@email.fr"
+    email: "mathieu.jardin.pro@gmail.com"
   },
   nav: [
     { label: "Accueil", href: "/" },
@@ -16,13 +16,10 @@ export const siteContent = {
     { label: "Contact", href: "/contact" }
   ],
   home: {
-    heroTitle: "Mathieu Jardin",
-    heroSubtitle: "Business Developer / Shopify / E-commerce",
-    heroBullets: [
-      "Étudiant M1 Supply Chain Management",
-      "Alternant chez Animaux Vie et Santé",
-      "Passion e-commerce et optimisation opérationnelle"
-    ],
+    heroTitle: "Portfolio MJ V1.04",
+    heroSubtitle:
+      "Étudiant M1 CDC IAE Lille / Business Developer chez AVS /\nFreelance stratégie et Shopify",
+    heroBullets: ["Fan de jeux vidéo", "Fan de manga", "Fan de musique"],
     ctas: [
       { label: "Voir projets", href: "/projects" },
       { label: "Portfolio SCM", href: "/course-portfolio" },
@@ -225,8 +222,8 @@ export const siteContent = {
   },
   contact: {
     links: [
-      { label: "GitHub", href: "#" },
-      { label: "LinkedIn", href: "#" }
+      { label: "GitHub", href: "https://github.com/Gard0n" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/mathieujardin/" }
     ]
   }
 } as const;

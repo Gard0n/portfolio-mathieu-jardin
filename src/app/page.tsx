@@ -18,7 +18,9 @@ export default function HomePage() {
               <h1 className="mt-3 text-4xl font-semibold md:text-5xl">
                 {home.heroTitle}
               </h1>
-              <p className="mt-3 text-lg text-text">{home.heroSubtitle}</p>
+              <p className="mt-3 text-lg text-text whitespace-pre-line">
+                {home.heroSubtitle}
+              </p>
             </div>
             <ul className="space-y-2 text-sm">
               {home.heroBullets.map((item) => (
