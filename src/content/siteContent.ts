@@ -231,4 +231,5 @@ export const siteContent = {
   }
 } as const;
 
-export type Project = (typeof siteContent.projects.items)[number];
+type ProjectBase = (typeof siteContent.projects.items)[number];
+export type Project = Omit<ProjectBase, "tags"> & { tags: readonly string[] };
