@@ -46,7 +46,7 @@ export function Button(props: ButtonProps) {
   );
 
   if ("href" in props) {
-    const { href, target, rel } = props;
+    const { href, target, rel } = props as ButtonLinkProps;
     return (
       <Link href={href} className={classes} target={target} rel={rel}>
         {children}
