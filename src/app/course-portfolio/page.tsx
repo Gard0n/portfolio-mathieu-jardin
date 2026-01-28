@@ -16,7 +16,7 @@ export default function CoursePortfolioPage() {
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Supply Chain</p>
         <h1 className="mt-3 text-3xl font-semibold">Portfolio SCM</h1>
         <p className="mt-3 text-sm text-muted">
-          Livrables, analyses, points d'apprentissage.
+          Livrables, analyses, points d&apos;apprentissage.
         </p>
       </section>
 

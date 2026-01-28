@@ -59,7 +59,7 @@ export default function HomePage() {
 
       <Section
         title="À propos, en bref"
-        description="Repères rapides avant d'entrer dans le détail."
+        description="Repères rapides avant d&apos;entrer dans le détail."
       >
         <div className="section-grid">
           <Card
@@ -68,8 +68,8 @@ export default function HomePage() {
             className="motion-safe:animate-rise"
           >
             <p>
-              Étudiant M1 en SCM, alternant dans l'e-commerce. J'aime les projets
-              directs et les résultats lisibles.
+              Étudiant M1 en SCM, alternant dans l&apos;e-commerce. J&apos;aime les
+              projets directs et les résultats lisibles.
             </p>
           </Card>
           <Card
@@ -80,7 +80,7 @@ export default function HomePage() {
             <ul className="space-y-2 text-sm">
               <li className="flex gap-2">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Prioriser l'impact</span>
+                <span>Prioriser l&apos;impact</span>
               </li>
               <li className="flex gap-2">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
