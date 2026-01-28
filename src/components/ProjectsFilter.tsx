@@ -7,7 +7,13 @@ import { Project } from "@/content/siteContent";
 
 const ALL_TAG = "Tous";
 
-export function ProjectsFilter({ projects, tags }: { projects: Project[]; tags: string[] }) {
+export function ProjectsFilter({
+  projects,
+  tags
+}: {
+  projects: ReadonlyArray<Project>;
+  tags: ReadonlyArray<string>;
+}) {
   const [activeTag, setActiveTag] = useState<string>(ALL_TAG);
   const filterTags = [ALL_TAG, ...tags];
 

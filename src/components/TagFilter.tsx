@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 
 type TagFilterProps = {
-  tags: string[];
+  tags: ReadonlyArray<string>;
   active: string;
   onChange: (tag: string) => void;
 };
