@@ -4,11 +4,11 @@ export type TimelineItem = {
   date: string;
   title: string;
   subtitle?: string;
-  details?: string[];
+  details?: readonly string[];
 };
 
 type TimelineProps = {
-  items: TimelineItem[];
+  items: ReadonlyArray<TimelineItem>;
   className?: string;
 };
 
