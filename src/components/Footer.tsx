@@ -22,8 +22,8 @@ export function Footer() {
               key={link.label}
               href={link.href}
               className="rounded-full border border-border px-3 py-1 hover:border-accent/60"
-              target={link.href.startsWith(\"http\") ? \"_blank\" : undefined}
-              rel={link.href.startsWith(\"http\") ? \"noreferrer\" : undefined}
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noreferrer" : undefined}
             >
               {link.label}
             </a>
