@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f6f3ee;
+  --surface: #ffffff;
+  --text: #1e1a19;
+  --muted: #6b6560;
+  --accent: #d8704d;
+  --accent-2: #2b7a78;
+  --border: rgba(30, 26, 25, 0.12);
+  --ring: rgba(216, 112, 77, 0.4);
+  --success: #1f7a5b;
+  --danger: #c3473d;
+}
+
+.dark {
+  --bg: #0e1012;
+  --surface: #161a1f;
+  --text: #f0ebe6;
+  --muted: #a7a09a;
+  --accent: #f58f6c;
+  --accent-2: #5cc9c1;
+  --border: rgba(240, 235, 230, 0.12);
+  --ring: rgba(245, 143, 108, 0.35);
+  --success: #3ccf99;
+  --danger: #ff7b72;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-text font-sans antialiased;
+  background-image: radial-gradient(circle at 15% 10%, rgba(216, 112, 77, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(43, 122, 120, 0.12), transparent 45%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.9), rgba(246, 243, 238, 0.9));
+}
+
+.dark body {
+  background-image: radial-gradient(circle at 15% 10%, rgba(245, 143, 108, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(92, 201, 193, 0.12), transparent 45%),
+    linear-gradient(120deg, rgba(14, 16, 18, 0.9), rgba(18, 21, 26, 0.9));
+}
+
+main {
+  @apply mx-auto w-full max-w-6xl px-6 py-12;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-text;
+}
+
+p {
+  @apply text-sm leading-relaxed text-muted;
+}
+
+ul {
+  @apply text-sm text-text;
+}
+
+a {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--bg);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.section-grid {
+  @apply grid gap-6 md:grid-cols-2;
+}
+
+.reveal {
+  animation: rise 0.6s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+}
