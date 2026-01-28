@@ -36,13 +36,8 @@ const sizes = {
   lg: "px-5 py-3 text-base"
 };
 
-export function Button({
-  variant = "primary",
-  size = "md",
-  className,
-  children,
-  ...rest
-}: ButtonProps) {
+export function Button(props: ButtonProps) {
+  const { variant = "primary", size = "md", className, children } = props;
   const classes = cn(
     "inline-flex items-center justify-center gap-2 rounded-full font-medium transition focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60",
     variants[variant],
@@ -50,8 +45,8 @@ export function Button({
     className
   );
 
-  if ("href" in rest) {
-    const { href, target, rel } = rest;
+  if ("href" in props) {
+    const { href, target, rel } = props;
     return (
       <Link href={href} className={classes} target={target} rel={rel}>
         {children}
@@ -59,7 +54,7 @@ export function Button({
     );
   }
 
-  const { type, ...buttonProps } = rest;
+  const { type, href: _href, ...buttonProps } = props;
   return (
     <button type={type ?? "button"} className={classes} {...buttonProps}>
       {children}
