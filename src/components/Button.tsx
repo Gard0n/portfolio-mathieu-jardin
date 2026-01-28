@@ -21,10 +21,6 @@ type ButtonButtonProps = ButtonBase &
 
 type ButtonProps = ButtonLinkProps | ButtonButtonProps;
 
-function isLinkProps(props: ButtonProps): props is ButtonLinkProps {
-  return typeof (props as ButtonLinkProps).href === "string";
-}
-
 const variants = {
   primary:
     "bg-accent text-bg hover:bg-accent/90 shadow-soft focus-visible:ring-2 focus-visible:ring-ring",
@@ -45,7 +41,7 @@ export function Button({
   size = "md",
   className,
   children,
-  ...props
+  ...rest
 }: ButtonProps) {
   const classes = cn(
     "inline-flex items-center justify-center gap-2 rounded-full font-medium transition focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60",
@@ -54,8 +50,8 @@ export function Button({
     className
   );
 
-  if (isLinkProps(props)) {
-    const { href, target, rel } = props;
+  if ("href" in rest) {
+    const { href, target, rel } = rest;
     return (
       <Link href={href} className={classes} target={target} rel={rel}>
         {children}
@@ -63,9 +59,9 @@ export function Button({
     );
   }
 
-  const { type, ...rest } = props;
+  const { type, ...buttonProps } = rest;
   return (
-    <button type={type ?? "button"} className={classes} {...rest}>
+    <button type={type ?? "button"} className={classes} {...buttonProps}>
       {children}
     </button>
   );
