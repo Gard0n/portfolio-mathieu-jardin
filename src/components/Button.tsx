@@ -21,6 +21,10 @@ type ButtonButtonProps = ButtonBase &
 
 type ButtonProps = ButtonLinkProps | ButtonButtonProps;
 
+function isLinkProps(props: ButtonProps): props is ButtonLinkProps {
+  return typeof (props as ButtonLinkProps).href === "string";
+}
+
 const variants = {
   primary:
     "bg-accent text-bg hover:bg-accent/90 shadow-soft focus-visible:ring-2 focus-visible:ring-ring",
@@ -50,7 +54,7 @@ export function Button({
     className
   );
 
-  if ("href" in props) {
+  if (isLinkProps(props)) {
     const { href, target, rel } = props;
     return (
       <Link href={href} className={classes} target={target} rel={rel}>
