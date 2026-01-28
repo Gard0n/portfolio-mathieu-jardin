@@ -1,6 +1,6 @@
 export const siteContent = {
   site: {
-    name: "Portfolio MJ V1.04",
+    name: "Portfolio MJ V1.05",
     role: "Business Developer / Shopify / E-commerce",
     description:
       "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
@@ -16,7 +16,7 @@ export const siteContent = {
     { label: "Contact", href: "/contact" }
   ],
   home: {
-    heroTitle: "Portfolio MJ V1.04",
+    heroTitle: "Portfolio MJ V1.05",
     heroSubtitle:
       "Étudiant M1 CDC IAE Lille / Business Developer chez AVS /\nFreelance stratégie et Shopify",
     heroBullets: ["Fan de jeux vidéo", "Fan de manga", "Fan de musique"],
@@ -42,43 +42,87 @@ export const siteContent = {
   },
   about: {
     identity: [
-      "Profil hybride : business, digital, supply chain.",
-      "J'aime les projets concrets, les tests rapides et les feedbacks clairs.",
-      "Mon style : simple, efficace, orienté impact."
+      "Bienvenue sur mon portfolio : le but est de résumer qui je suis.",
+      "J'espère que ça vous plaira !",
+      "Ici : expériences, projets, compétences."
     ],
     timeline: [
       {
-        date: "2025 - Aujourd'hui",
-        title: "M1 Supply Chain Management",
-        subtitle: "Parcours en alternance",
+        date: "avr. 2025 - aujourd'hui",
+        title: "Business Developer",
+        subtitle: "Animaux Vie et Santé — stage puis alternance (Hybride, Wasquehal)",
         details: [
-          "Cours SCM + projets appliqués",
-          "Focus flux, coordination, décision",
-          "Livrables orientés terrain"
+          "Gestion de la newsletter Chat",
+          "Développement de la boutique Shopify",
+          "Gestion de projet, CRM, vente"
         ]
       },
       {
-        date: "2024 - Aujourd'hui",
-        title: "Alternance",
-        subtitle: "Animaux Vie et Santé",
+        date: "sept. 2024 - mai 2025",
+        title: "Développement commercial",
+        subtitle: "Gabby — Freelance (Hybride, Lille)",
+        details: ["Prise de rendez-vous", "Suivi clients", "Formation B2C"]
+      },
+      {
+        date: "mai 2024 - juil. 2024",
+        title: "Commercial B2C",
+        subtitle: "Gabby — Stage (Hybride, Lille)",
         details: [
-          "E-commerce & développement",
-          "Shopify, email, partenariats",
-          "Collaboration équipes internes"
+          "RDV d'estimations pour agences partenaires",
+          "Suivi des rendez-vous",
+          "Gestion de l'équipe B2C"
         ]
       },
       {
-        date: "Avant 2024",
-        title: "Formation initiale",
-        subtitle: "Marketing / commerce",
-        details: ["Bases business", "Culture digitale", "Projets de groupe"]
+        date: "déc. 2023 - sept. 2025",
+        title: "Équipier polyvalent",
+        subtitle: "KOEZIO France — CDI temps partiel (Lille)",
+        details: [
+          "Accueil client",
+          "Service en salle",
+          "Préparation des plats / envoi en jeu"
+        ]
+      },
+      {
+        date: "janv. 2023 - déc. 2023",
+        title: "Équipier polyvalent",
+        subtitle: "Lidl France — CDI temps partiel (Lesquin)",
+        details: ["Accueil client et encaissement", "Mise en rayon", "Optimisation des stratégies"]
+      },
+      {
+        date: "juin 2023 - août 2023",
+        title: "Rédacteur",
+        subtitle: "Feel — Stage (À distance)",
+        details: [
+          "Production de textes",
+          "Visuels associés",
+          "Collaboration avec des professionnels de santé"
+        ]
       }
     ],
-    interests: ["Jeux vidéo", "Mangas", "Rap FR"],
+    education: [
+      {
+        date: "sept. 2025 - août 2027",
+        title: "Master Commerce et Distribution Connectés",
+        subtitle: "IAE Lille",
+        details: ["Parcours M1 CDC", "Commerce & distribution connectés", "En alternance"]
+      },
+      {
+        date: "janv. 2022 - août 2025",
+        title: "Bachelor Marketing",
+        subtitle: "ISEG",
+        details: [
+          "Association Communication",
+          "Association Décor (Trésorier)",
+          "Marketing digital, négociation, études de marché"
+        ]
+      }
+    ],
+    interests: ["Manga", "Jeux vidéo", "Musique"],
     goals: {
-      short: ["Renforcer mes bases SCM", "Gagner en impact sur Shopify"],
-      mid: ["Piloter des projets e-commerce complets", "Structurer des process"],
-      long: ["Manager une équipe produit/ops", "Créer un projet entrepreneurial"]
+      short: ["À définir"],
+      mid: ["À définir"],
+      long: ["À définir"]
     },
     skills: [
       {

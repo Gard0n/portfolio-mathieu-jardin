@@ -26,11 +26,18 @@ export default function AboutPage() {
         </Card>
       </Section>
 
-      <Section title="Parcours" description="Timeline rapide.">
+      <Section title="Expérience" description="Ce que j'ai fait sur le terrain.">
         <Timeline items={about.timeline} />
       </Section>
 
-      <Section title="Centres d'intérêt" description="Ce qui me nourrit en dehors du boulot.">
+      <Section title="Formation" description="Diplômes et parcours académiques.">
+        <Timeline items={about.education} />
+      </Section>
+
+      <Section
+        title="Centres d'intérêt"
+        description="Ce qui me nourrit en dehors du boulot."
+      >
         <div className="flex flex-wrap gap-3">
           {about.interests.map((interest) => (
             <Badge key={interest}>{interest}</Badge>
