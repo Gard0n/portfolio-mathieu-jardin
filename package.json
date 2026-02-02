@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "git add . && git commit -m 'Update: mise à jour du contenu' && git push origin main"
   },
   "dependencies": {
     "next": "^15.1.0",

@@ -11,6 +11,77 @@ export default function AdminPage() {
   const [content, setContent] = useState<ContentData>(contentData);
   const [activeTab, setActiveTab] = useState<"site" | "home" | "goals" | "projects">("site");
   const [saved, setSaved] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  // Mot de passe par défaut (à changer !)
+  const ADMIN_PASSWORD = "mathieu2025";
+
+  useEffect(() => {
+    // Vérifier si déjà authentifié
+    const auth = localStorage.getItem("admin_auth");
+    if (auth === "true") {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (password === ADMIN_PASSWORD) {
+      setIsAuthenticated(true);
+      localStorage.setItem("admin_auth", "true");
+      setError("");
+    } else {
+      setError("Mot de passe incorrect");
+    }
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem("admin_auth");
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-bg flex items-center justify-center p-6">
+        <div className="w-full max-w-md">
+          <div className="rounded-3xl border border-border bg-surface/80 p-8 shadow-glow">
+            <h1 className="text-3xl font-semibold mb-2">Admin</h1>
+            <p className="text-sm text-muted mb-6">Authentification requise</p>
+
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div>
+                <label className="mb-2 block text-sm font-medium">Mot de passe</label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  placeholder="Entrez le mot de passe"
+                  autoFocus
+                />
+              </div>
+
+              {error && (
+                <p className="text-sm text-danger">{error}</p>
+              )}
+
+              <Button type="submit" className="w-full">
+                Se connecter
+              </Button>
+            </form>
+
+            <div className="mt-6 pt-6 border-t border-border">
+              <Button variant="ghost" href="/" className="w-full">
+                ← Retour au site
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const handleSave = () => {
     const jsonString = JSON.stringify(content, null, 2);
@@ -94,6 +165,9 @@ export default function AdminPage() {
             <div className="flex gap-3">
               <Button variant="ghost" href="/">
                 ← Retour au site
+              </Button>
+              <Button variant="ghost" onClick={handleLogout}>
+                🔒 Déconnexion
               </Button>
               <Button onClick={handleSave}>
                 {saved ? "✓ Copié !" : "💾 Sauvegarder"}
