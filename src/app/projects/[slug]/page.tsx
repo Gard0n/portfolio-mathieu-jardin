@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/Badge";
 import { Card } from "@/components/Card";
@@ -9,8 +10,9 @@ export function generateStaticParams() {
   return siteContent.projects.items.map((project) => ({ slug: project.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const project = siteContent.projects.items.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = siteContent.projects.items.find((item) => item.slug === slug);
   if (!project) return {};
   return {
     title: project.title,
@@ -18,8 +20,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const project = siteContent.projects.items.find((item) => item.slug === params.slug);
+export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = siteContent.projects.items.find((item) => item.slug === slug);
 
   if (!project) {
     notFound();
@@ -40,6 +43,18 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         </div>
         <p className="mt-4 text-sm text-muted">{project.summary}</p>
       </section>
+
+      {"image" in project && project.image && (
+        <section className="rounded-3xl border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={800}
+            height={450}
+            className="w-full h-auto rounded-2xl"
+          />
+        </section>
+      )}
 
       <Section title="Contexte" description="D'où on part.">
         <Card>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg-newsletter" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f3ee" />
+      <stop offset="100%" stop-color="#e8e2d8" />
+    </linearGradient>
+    <linearGradient id="accent-newsletter" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2b7a78" />
+      <stop offset="100%" stop-color="#1e5f5d" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-newsletter)" />
+
+  <!-- Decorative circles -->
+  <circle cx="120" cy="320" r="70" fill="#2b7a78" opacity="0.12" />
+  <circle cx="680" cy="120" r="90" fill="#d8704d" opacity="0.12" />
+
+  <!-- Email mockup -->
+  <rect x="150" y="80" width="500" height="290" rx="8" fill="#ffffff" opacity="0.95" />
+
+  <!-- Email header -->
+  <rect x="150" y="80" width="500" height="50" rx="8" fill="url(#accent-newsletter)" />
+  <text x="400" y="112" font-size="18" font-family="Space Grotesk, sans-serif" fill="#f6f3ee" text-anchor="middle" font-weight="600">Newsletter BU Chat</text>
+
+  <!-- Email content -->
+  <rect x="180" y="155" width="200" height="12" rx="4" fill="#d8704d" />
+  <rect x="180" y="185" width="440" height="8" rx="3" fill="#c5bfb5" opacity="0.5" />
+  <rect x="180" y="205" width="400" height="8" rx="3" fill="#c5bfb5" opacity="0.5" />
+  <rect x="180" y="225" width="420" height="8" rx="3" fill="#c5bfb5" opacity="0.5" />
+
+  <!-- Image placeholder -->
+  <rect x="180" y="255" width="440" height="90" rx="6" fill="#e8e2d8" />
+  <circle cx="400" cy="300" r="20" fill="#c5bfb5" opacity="0.6" />
+  <path d="M 390 305 L 395 300 L 405 310 L 410 305" stroke="#a7a09a" stroke-width="2" fill="none" />
+
+  <!-- Title -->
+  <text x="400" y="420" font-size="24" font-family="Space Grotesk, sans-serif" fill="#1e1a19" text-anchor="middle" font-weight="600">Newsletter BU Chat</text>
+</svg>

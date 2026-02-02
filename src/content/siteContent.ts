@@ -120,9 +120,21 @@ export const siteContent = {
     ],
     interests: ["Manga", "Jeux vidéo", "Musique"],
     goals: {
-      short: ["À définir"],
-      mid: ["À définir"],
-      long: ["À définir"]
+      short: [
+        "Valider le M1 CDC avec mention",
+        "Développer l'activité e-commerce chez AVS",
+        "Améliorer mes compétences Shopify (apps, thèmes)"
+      ],
+      mid: [
+        "Obtenir le Master CDC",
+        "Évoluer vers un poste de Product Owner e-commerce",
+        "Développer une expertise en stratégie omnicanale"
+      ],
+      long: [
+        "Diriger une équipe e-commerce / digital",
+        "Lancer un projet entrepreneurial dans le commerce connecté",
+        "Devenir référent sur les sujets Shopify en France"
+      ]
     },
     skills: [
       {
@@ -155,6 +167,7 @@ export const siteContent = {
         title: "Migration Shopify (10/2025)",
         subtitle: "Étude de cas",
         tags: ["Shopify"],
+        image: "/projects/migration-shopify.svg",
         summary: "Préparer une migration propre, sans perdre la perf.",
         context: [
           "Plateforme à stabiliser",
@@ -183,6 +196,7 @@ export const siteContent = {
         title: "Newsletter BU Chat (3 emails / semaine)",
         subtitle: "Process & tests",
         tags: ["Emailing"],
+        image: "/projects/newsletter-bu-chat.svg",
         summary: "Rythme soutenu, contenu utile, amélioration continue.",
         context: ["Cadence élevée", "Audience multi-profils", "Besoin d'engagement"],
         objective: [
@@ -203,6 +217,7 @@ export const siteContent = {
         title: "Partenariats & développement",
         subtitle: "Approche commerciale",
         tags: ["Partenariats"],
+        image: "/projects/partenariats-developpement.svg",
         summary: "Cibler, qualifier, négocier sans bruit.",
         context: ["Opportunités hétérogènes", "Ressources limitées", "Besoin de prioriser"],
         objective: ["Cadrer les deals", "Maintenir la qualité", "Créer du long terme"],
@@ -261,8 +276,20 @@ export const siteContent = {
         }
       }
     },
-    postReview: ["À compléter après les prochains livrables"],
-    selfAssessment: ["À compléter", "Axes : rigueur, synthèse, prise de décision"]
+    postReview: [
+      "Meilleure compréhension des flux logistiques",
+      "Vision plus systémique des chaînes d'approvisionnement",
+      "Conscience accrue de l'importance de la coordination",
+      "Capacité à anticiper les effets domino",
+      "Liens concrets entre théorie SCM et réalité opérationnelle"
+    ],
+    selfAssessment: [
+      "Rigueur : capacité à suivre des process et documenter proprement",
+      "Synthèse : facilité à extraire l'essentiel pour des livrables clairs",
+      "Prise de décision : apprentissage en cours, besoin d'affiner l'arbitrage sous contraintes",
+      "Collaboration : bonne écoute et communication en équipe",
+      "Réflexivité : capacité à tirer des apprentissages de chaque exercice"
+    ]
   },
   contact: {
     links: [

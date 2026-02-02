@@ -57,8 +57,19 @@ export function ContactForm() {
     const nextErrors = validate();
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length === 0) {
-      setStatus("Message prêt. Tu peux me contacter directement par email.");
-      setValues(initialState);
+      const subject = encodeURIComponent(`Message de ${values.name}`);
+      const body = encodeURIComponent(
+        `Nom: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
+      );
+      const mailtoLink = `mailto:${siteContent.site.email}?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+
+      setStatus("Ton client email devrait s'ouvrir avec le message pré-rempli.");
+      setTimeout(() => {
+        setValues(initialState);
+        setStatus("");
+      }, 3000);
     }
   }
 
