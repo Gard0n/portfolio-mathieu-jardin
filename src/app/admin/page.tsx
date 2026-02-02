@@ -128,7 +128,7 @@ export default function AdminPage() {
                 : "bg-surface/80 text-muted hover:text-text"
             }`}
           >
-            Page d'accueil
+            Page d&apos;accueil
           </button>
           <button
             onClick={() => setActiveTab("goals")}
@@ -212,7 +212,7 @@ export default function AdminPage() {
         {activeTab === "home" && (
           <div className="space-y-4">
             <div className="rounded-3xl border border-border bg-surface/80 p-6 shadow-glow">
-              <h2 className="mb-4 text-xl font-semibold">Page d'accueil</h2>
+              <h2 className="mb-4 text-xl font-semibold">Page d&apos;accueil</h2>
               <div className="space-y-4">
                 <div>
                   <label className="mb-2 block text-sm font-medium">Titre principal</label>
