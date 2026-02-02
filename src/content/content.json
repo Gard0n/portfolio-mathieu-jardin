@@ -8,9 +8,13 @@
     "email": "mathieu.jardin.pro@gmail.com"
   },
   "home": {
-    "heroTitle": "Portfolio MJ V1.05",
-    "heroSubtitle": "Étudiant M1 CDC IAE Lille / Business Developer chez AVS /\nFreelance stratégie et Shopify",
-    "heroBullets": ["Fan de jeux vidéo", "Fan de manga", "Fan de musique"]
+    "heroTitle": "Mathieu Jardin",
+    "heroSubtitle": "Business Developer E-commerce | Shopify & CRM | M1 Commerce Connecté IAE Lille",
+    "heroBullets": [
+      "11 mois d'expérience alternance e-commerce B2C",
+      "Gestion newsletter 36K abonnés (50% taux d'ouverture)",
+      "Migration et développement Shopify (Liquid + no-code)"
+    ]
   },
   "about": {
     "goals": {
@@ -32,24 +36,24 @@
     },
     "skills": [
       {
-        "name": "Shopify (Liquid)",
-        "detail": "Appris via alternance + projets perso"
+        "name": "Shopify & Liquid",
+        "detail": "Migration complète (100 produits + 200 articles), customisation de thèmes, intégration d'apps (Recharge, Klaviyo, Flow). 11 mois de pratique quotidienne chez AVS."
       },
       {
         "name": "Emailing & CRM",
-        "detail": "Tests hebdo, analyses simples, itérations"
+        "detail": "Gestion de newsletter 36K abonnés (3x/semaine), 50% taux d'ouverture. Rédaction, analyse, optimisation éditoriale. Croissance +38% en 3 mois."
       },
       {
-        "name": "Partenariats",
-        "detail": "Négociation, cadrage, suivi"
+        "name": "Développement commercial",
+        "detail": "Prospection B2C, prise de RDV (~100/mois équipe), qualification de leads. Gestion d'équipe de 4 commerciaux chez Gabby."
       },
       {
-        "name": "Supply Chain basics",
-        "detail": "Cours + études de cas"
+        "name": "Analytics & Data",
+        "detail": "Analyse de performances emailing (ouvertures, clics, désabonnements), Shopify Analytics, optimisations data-driven."
       },
       {
-        "name": "Communication",
-        "detail": "Projets d'équipe, briefs clairs"
+        "name": "Gestion de projet",
+        "detail": "Coordination migration Shopify, gestion newsletter en autonomie, briefs clairs, respect des deadlines."
       }
     ],
     "timeline": [
@@ -87,102 +91,124 @@
   },
   "projects": [
     {
-      "slug": "migration-shopify",
-      "title": "Migration Shopify (10/2025)",
-      "subtitle": "Étude de cas",
-      "tags": ["Shopify"],
-      "image": "/projects/migration-shopify.svg",
-      "summary": "Préparer une migration propre, sans perdre la perf.",
-      "context": [
-        "Plateforme à stabiliser",
-        "Besoin d'un design plus clair",
-        "Timing contraint"
-      ],
-      "objective": [
-        "Assurer la continuité",
-        "Limiter les frictions",
-        "Garder une base saine"
-      ],
-      "actions": [
-        "Audit des pages clés",
-        "Plan de migration étape par étape",
-        "Coordination interne"
-      ],
-      "results": [
-        "Livrables de cadrage",
-        "Risques identifiés",
-        "Plan d'action validé"
-      ],
-      "learnings": [
-        "Importance des tests",
-        "Rôle du brief clair",
-        "Prioriser l'expérience client"
-      ]
-    },
-    {
-      "slug": "newsletter-bu-chat",
-      "title": "Newsletter BU Chat (3 emails / semaine)",
-      "subtitle": "Process & tests",
-      "tags": ["Emailing"],
+      "slug": "newsletter-chat-avs",
+      "title": "Newsletter Chat AVS (3 emails/semaine, 36K abonnés)",
+      "subtitle": "Rédaction, envoi, analyse et optimisation",
+      "tags": ["Emailing", "CRM", "Content Marketing"],
       "image": "/projects/newsletter-bu-chat.svg",
-      "summary": "Rythme soutenu, contenu utile, amélioration continue.",
+      "summary": "Gestion opérationnelle complète d'une newsletter B2C avec audience de 36 000 abonnés et rythme soutenu (3 envois/semaine).",
       "context": [
-        "Cadence élevée",
-        "Audience multi-profils",
-        "Besoin d'engagement"
+        "Newsletter Chat avec base de 26K abonnés (oct. 2025) → 36K (janv. 2026)",
+        "Rythme de 3 emails par semaine à tenir sur la durée",
+        "Taux d'ouverture exceptionnel de 50% (vs moyenne secteur 20-25%)",
+        "Audience multi-profils : propriétaires de chats, passionnés, professionnels"
       ],
       "objective": [
-        "Stabiliser un rythme",
-        "Tester des angles",
-        "Garder la cohérence"
+        "Maintenir un rythme éditorial de 12 emails/mois",
+        "Conserver un taux d'engagement élevé (50% d'ouverture)",
+        "Faire croître la base d'abonnés de manière organique",
+        "Mixer contenus éducatifs et promotionnels sans sur-solliciter"
       ],
       "actions": [
-        "Matrice de contenus",
-        "A/B tests simples",
-        "Rétros rapides"
+        "Rédaction complète des emails (sujet, corps, CTA)",
+        "Envoi et programmation via plateforme CRM",
+        "Analyse hebdomadaire des métriques (ouvertures, clics, désabonnements)",
+        "Adaptation éditoriale selon performances et feedbacks",
+        "Gestion de la ligne éditoriale (éducatif/promo)"
       ],
       "results": [
-        "Process clarifié",
-        "Meilleure régularité",
-        "Feedbacks internes"
+        "Croissance de +38% en 3 mois (26K → 36K abonnés)",
+        "Taux d'ouverture maintenu à 50% (exceptionnel)",
+        "Rythme de 3 emails/semaine stabilisé et tenu",
+        "Process éditorial documenté et autonome",
+        "Audience engagée et fidèle"
       ],
       "learnings": [
-        "Clarté > complexité",
-        "Mesurer ce qui compte",
-        "Itérer vite"
+        "La régularité prime sur la perfection",
+        "50% d'ouverture = preuve que le contenu résonne",
+        "Mixer éducatif/promo maintient l'intérêt sans lasser",
+        "L'analyse des données guide les choix éditoriaux"
       ]
     },
     {
-      "slug": "partenariats-developpement",
-      "title": "Partenariats & développement",
-      "subtitle": "Approche commerciale",
-      "tags": ["Partenariats"],
-      "image": "/projects/partenariats-developpement.svg",
-      "summary": "Cibler, qualifier, négocier sans bruit.",
+      "slug": "developpement-shopify-avs",
+      "title": "Migration et développement Shopify AVS",
+      "subtitle": "Migration, customisation et intégration d'apps",
+      "tags": ["Shopify", "E-commerce", "Liquid"],
+      "image": "/projects/migration-shopify.svg",
+      "summary": "Migration complète d'un système maison vers Shopify (100 produits, 200 articles) avec customisation Liquid et intégration de 6 apps clés.",
       "context": [
-        "Opportunités hétérogènes",
-        "Ressources limitées",
-        "Besoin de prioriser"
+        "Migration depuis système maison vers Shopify (oct. 2025)",
+        "100 produits + 200 articles de blog à migrer",
+        "Besoin de flexibilité et d'évolution constante",
+        "Stack : Shopify + Liquid (customisations) + apps tierces"
       ],
       "objective": [
-        "Cadrer les deals",
-        "Maintenir la qualité",
-        "Créer du long terme"
+        "Migrer sans perte de données ni interruption de service",
+        "Personnaliser le thème selon besoins métier (Liquid)",
+        "Intégrer des apps pour étendre les fonctionnalités",
+        "Améliorer l'expérience utilisateur (navigation, fiches produits)"
       ],
       "actions": [
-        "Pré-qualification",
-        "Pitch court",
-        "Suivi simple"
+        "Migration complète de 100 produits depuis système maison",
+        "Migration et optimisation de 200 articles de blog",
+        "Customisation du thème Shopify (HTML/CSS/Liquid)",
+        "Intégration de 6 apps : Recharge, Digital Downloads, Klaviyo, Flow, Shippingbo, Skeepers",
+        "Optimisations techniques (vitesse, responsive, SEO)"
       ],
       "results": [
-        "Pistes clarifiées",
-        "Partenaires alignés",
-        "Apprentissages terrain"
+        "Migration réussie sans perte de données",
+        "Boutique fonctionnelle et évolutive",
+        "Thème personnalisé selon l'identité de marque",
+        "6 apps intégrées et opérationnelles",
+        "Apprentissage autonome du développement Shopify"
       ],
       "learnings": [
-        "Moins mais mieux",
-        "Préparer ses échanges",
-        "Documenter"
+        "Shopify offre un bon équilibre entre flexibilité et simplicité",
+        "Le Liquid permet des customisations puissantes",
+        "Bien choisir ses apps évite la dette technique",
+        "Tester en staging évite les erreurs en production"
+      ]
+    },
+    {
+      "slug": "commercial-btoc-gabby",
+      "title": "Commercial B2C Gabby (Immobilier)",
+      "subtitle": "Prospection, prise de RDV et gestion d'équipe",
+      "tags": ["Commercial", "B2C", "Management"],
+      "image": "/projects/partenariats-developpement.svg",
+      "summary": "Développement commercial B2C dans l'immobilier : prospection téléphonique, génération de ~100 RDV/mois pour l'équipe et gestion de 4 commerciaux.",
+      "context": [
+        "Service de mise en relation entre particuliers et agences immobilières",
+        "Prise de RDV d'estimation pour agences partenaires",
+        "Objectif équipe : ~100 RDV/mois qualifiés",
+        "Gestion d'une équipe de 4 commerciaux B2C"
+      ],
+      "objective": [
+        "Générer un volume constant de RDV qualifiés",
+        "Maintenir un rythme de 6 RDV/semaine en propre",
+        "Former et accompagner l'équipe B2C (3 commerciaux)",
+        "Optimiser le process de qualification et de suivi"
+      ],
+      "actions": [
+        "Prospection téléphonique auprès de particuliers",
+        "Qualification des leads (propriétaires intéressés par estimation)",
+        "Prise de RDV pour agences immobilières partenaires",
+        "Suivi post-RDV et feedback aux agences",
+        "Formation et accompagnement des nouveaux commerciaux",
+        "Gestion quotidienne de l'équipe (objectifs, briefings)"
+      ],
+      "results": [
+        "~100 RDV générés/mois pour l'équipe",
+        "~24-30 RDV/mois en propre",
+        "Équipe de 4 personnes coordonnée et formée",
+        "Process de qualification stabilisé",
+        "Passage de stage à freelance (confiance renouvelée)"
+      ],
+      "learnings": [
+        "Le volume ne fait pas tout, la qualification est clé",
+        "Former les autres renforce sa propre maîtrise",
+        "La prospection B2C demande résilience et régularité",
+        "Le suivi des RDV aide à améliorer la qualification"
       ]
     }
   ]
