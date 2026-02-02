@@ -1,13 +1,8 @@
+import contentJson from "./content.json";
+
 export const siteContent = {
-  site: {
-    name: "Portfolio MJ V1.05",
-    role: "Business Developer / Shopify / E-commerce",
-    description:
-      "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
-    url: "https://gard0n.github.io/portfolio-mathieu-jardin",
-    ogImage: "/og.svg",
-    email: "mathieu.jardin.pro@gmail.com"
-  },
+  // Données depuis content.json (éditables via l'admin)
+  site: contentJson.site,
   nav: [
     { label: "Accueil", href: "/" },
     { label: "À propos", href: "/about" },
@@ -16,10 +11,7 @@ export const siteContent = {
     { label: "Contact", href: "/contact" }
   ],
   home: {
-    heroTitle: "Portfolio MJ V1.05",
-    heroSubtitle:
-      "Étudiant M1 CDC IAE Lille / Business Developer chez AVS /\nFreelance stratégie et Shopify",
-    heroBullets: ["Fan de jeux vidéo", "Fan de manga", "Fan de musique"],
+    ...contentJson.home,
     ctas: [
       { label: "Voir projets", href: "/projects" },
       { label: "Portfolio SCM", href: "/course-portfolio" },
@@ -46,60 +38,7 @@ export const siteContent = {
       "J'espère que ça vous plaira !",
       "Ici : expériences, projets, compétences."
     ],
-    timeline: [
-      {
-        date: "avr. 2025 - aujourd'hui",
-        title: "Business Developer",
-        subtitle: "Animaux Vie et Santé — stage puis alternance (Hybride, Wasquehal)",
-        details: [
-          "Gestion de la newsletter Chat",
-          "Développement de la boutique Shopify",
-          "Gestion de projet, CRM, vente"
-        ]
-      },
-      {
-        date: "sept. 2024 - mai 2025",
-        title: "Développement commercial",
-        subtitle: "Gabby — Freelance (Hybride, Lille)",
-        details: ["Prise de rendez-vous", "Suivi clients", "Formation B2C"]
-      },
-      {
-        date: "mai 2024 - juil. 2024",
-        title: "Commercial B2C",
-        subtitle: "Gabby — Stage (Hybride, Lille)",
-        details: [
-          "RDV d'estimations pour agences partenaires",
-          "Suivi des rendez-vous",
-          "Gestion de l'équipe B2C"
-        ]
-      },
-      {
-        date: "déc. 2023 - sept. 2025",
-        title: "Équipier polyvalent",
-        subtitle: "KOEZIO France — CDI temps partiel (Lille)",
-        details: [
-          "Accueil client",
-          "Service en salle",
-          "Préparation des plats / envoi en jeu"
-        ]
-      },
-      {
-        date: "janv. 2023 - déc. 2023",
-        title: "Équipier polyvalent",
-        subtitle: "Lidl France — CDI temps partiel (Lesquin)",
-        details: ["Accueil client et encaissement", "Mise en rayon", "Optimisation des stratégies"]
-      },
-      {
-        date: "juin 2023 - août 2023",
-        title: "Rédacteur",
-        subtitle: "Feel — Stage (À distance)",
-        details: [
-          "Production de textes",
-          "Visuels associés",
-          "Collaboration avec des professionnels de santé"
-        ]
-      }
-    ],
+    timeline: contentJson.about.timeline,
     education: [
       {
         date: "sept. 2025 - août 2027",
@@ -119,49 +58,19 @@ export const siteContent = {
       }
     ],
     interests: ["Manga", "Jeux vidéo", "Musique"],
-    goals: {
-      short: [
-        "Valider le M1 CDC avec mention",
-        "Développer l'activité e-commerce chez AVS",
-        "Améliorer mes compétences Shopify (apps, thèmes)"
-      ],
-      mid: [
-        "Obtenir le Master CDC",
-        "Évoluer vers un poste de Product Owner e-commerce",
-        "Développer une expertise en stratégie omnicanale"
-      ],
-      long: [
-        "Diriger une équipe e-commerce / digital",
-        "Lancer un projet entrepreneurial dans le commerce connecté",
-        "Devenir référent sur les sujets Shopify en France"
-      ]
-    },
-    skills: [
-      {
-        name: "Shopify (Liquid)",
-        detail: "Appris via alternance + projets perso"
-      },
-      {
-        name: "Emailing & CRM",
-        detail: "Tests hebdo, analyses simples, itérations"
-      },
-      {
-        name: "Partenariats",
-        detail: "Négociation, cadrage, suivi"
-      },
-      {
-        name: "Supply Chain basics",
-        detail: "Cours + études de cas"
-      },
-      {
-        name: "Communication",
-        detail: "Projets d'équipe, briefs clairs"
-      }
-    ]
+    goals: contentJson.about.goals,
+    skills: contentJson.about.skills
   },
   projects: {
     tags: ["Shopify", "Emailing", "Partenariats", "SCM"],
-    items: [
+    items: contentJson.projects.map(p => ({
+      ...p,
+      context: p.context || [],
+      objective: p.objective || [],
+      actions: p.actions || [],
+      results: p.results || [],
+      learnings: p.learnings || []
+    })) || [
       {
         slug: "migration-shopify",
         title: "Migration Shopify (10/2025)",
