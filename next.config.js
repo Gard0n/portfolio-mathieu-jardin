@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const basePath = "/portfolio-mathieu-jardin";
+
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
@@ -8,7 +10,10 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: "/portfolio-mathieu-jardin",
+  basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath
+  },
   trailingSlash: true
 };
 

@@ -5,6 +5,7 @@ import { Badge } from "@/components/Badge";
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { siteContent } from "@/content/siteContent";
+import { withBasePath } from "@/lib/utils";
 
 export function generateStaticParams() {
   return siteContent.projects.items.map((project) => ({ slug: project.slug }));
@@ -47,7 +48,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       {"image" in project && project.image && (
         <section className="rounded-3xl border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
           <Image
-            src={project.image}
+            src={withBasePath(project.image)}
             alt={project.title}
             width={800}
             height={450}
