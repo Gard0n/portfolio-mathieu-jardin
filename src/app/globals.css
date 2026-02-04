@@ -28,7 +28,7 @@
   --danger: #ff7b72;
 }
 
-* {
+html {
   scroll-behavior: smooth;
 }
 
@@ -57,7 +57,7 @@ h4 {
 }
 
 p {
-  @apply text-sm leading-relaxed text-muted;
+  @apply text-base leading-relaxed text-muted;
 }
 
 ul {
@@ -93,6 +93,9 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .reveal {
     animation: none;
   }

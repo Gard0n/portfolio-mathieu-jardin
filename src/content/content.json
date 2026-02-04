@@ -11,8 +11,8 @@
     "heroTitle": "Mathieu Jardin",
     "heroSubtitle": "Business Developer E-commerce | Shopify & CRM | M1 Commerce Connecté IAE Lille",
     "heroBullets": [
-      "11 mois d'expérience alternance e-commerce B2C",
-      "Gestion newsletter 36K abonnés (50% taux d'ouverture)",
+      "11 mois d'expérience en alternance e-commerce B2C",
+      "Gestion d'une newsletter 36 000 abonnés (50 % de taux d'ouverture)",
       "Migration et développement Shopify (Liquid + no-code)"
     ]
   },
@@ -41,7 +41,7 @@
       },
       {
         "name": "Emailing & CRM",
-        "detail": "Gestion de newsletter 36K abonnés (3x/semaine), 50% taux d'ouverture. Rédaction, analyse, optimisation éditoriale. Croissance +38% en 3 mois."
+        "detail": "Gestion d'une newsletter 36 000 abonnés (3x/semaine), 50 % de taux d'ouverture. Rédaction, analyse, optimisation éditoriale. Croissance +38% en 3 mois."
       },
       {
         "name": "Développement commercial",
@@ -92,20 +92,20 @@
   "projects": [
     {
       "slug": "newsletter-chat-avs",
-      "title": "Newsletter Chat AVS (3 emails/semaine, 36K abonnés)",
+      "title": "Newsletter Chat AVS (3 emails/semaine, 36 000 abonnés)",
       "subtitle": "Rédaction, envoi, analyse et optimisation",
       "tags": ["Emailing", "CRM", "Content Marketing"],
-      "image": "/portfolio-mathieu-jardin/projects/newsletter-chat-email.png",
+      "image": "/projects/newsletter-chat-email.jpg",
       "summary": "Gestion opérationnelle complète d'une newsletter B2C avec audience de 36 000 abonnés et rythme soutenu (3 envois/semaine).",
       "context": [
-        "Newsletter Chat avec base de 26K abonnés (oct. 2025) → 36K (janv. 2026)",
+        "Newsletter Chat avec base de 26 000 abonnés (oct. 2025) → 36 000 (janv. 2026)",
         "Rythme de 3 emails par semaine à tenir sur la durée",
-        "Taux d'ouverture exceptionnel de 50% (vs moyenne secteur 20-25%)",
+        "Taux d'ouverture exceptionnel de 50 % (vs moyenne secteur 20-25 %)",
         "Audience multi-profils : propriétaires de chats, passionnés, professionnels"
       ],
       "objective": [
         "Maintenir un rythme éditorial de 12 emails/mois",
-        "Conserver un taux d'engagement élevé (50% d'ouverture)",
+        "Conserver un taux d'engagement élevé (50 % d'ouverture)",
         "Faire croître la base d'abonnés de manière organique",
         "Mixer contenus éducatifs et promotionnels sans sur-solliciter"
       ],
@@ -117,15 +117,15 @@
         "Gestion de la ligne éditoriale (éducatif/promo)"
       ],
       "results": [
-        "Croissance de +38% en 3 mois (26K → 36K abonnés)",
-        "Taux d'ouverture maintenu à 50% (exceptionnel)",
+        "Croissance de +38% en 3 mois (26 000 → 36 000 abonnés)",
+        "Taux d'ouverture maintenu à 50 % (exceptionnel)",
         "Rythme de 3 emails/semaine stabilisé et tenu",
         "Process éditorial documenté et autonome",
         "Audience engagée et fidèle"
       ],
       "learnings": [
         "La régularité prime sur la perfection",
-        "50% d'ouverture = preuve que le contenu résonne",
+        "50 % d'ouverture = preuve que le contenu résonne",
         "Mixer éducatif/promo maintient l'intérêt sans lasser",
         "L'analyse des données guide les choix éditoriaux"
       ]
@@ -135,7 +135,7 @@
       "title": "Migration et développement Shopify AVS",
       "subtitle": "Migration, customisation et intégration d'apps",
       "tags": ["Shopify", "E-commerce", "Liquid"],
-      "image": "/portfolio-mathieu-jardin/projects/chat-vie-sante-website.png",
+      "image": "/projects/chat-vie-sante-website.jpg",
       "summary": "Migration complète d'un système maison vers Shopify (100 produits, 200 articles) avec customisation Liquid et intégration de 6 apps clés.",
       "context": [
         "Migration depuis système maison vers Shopify (oct. 2025)",
@@ -175,7 +175,7 @@
       "title": "Commercial B2C Gabby (Immobilier)",
       "subtitle": "Prospection, prise de RDV et gestion d'équipe",
       "tags": ["Commercial", "B2C", "Management"],
-      "image": "/portfolio-mathieu-jardin/projects/gabby-website.png",
+      "image": "/projects/gabby-website.jpg",
       "summary": "Développement commercial B2C dans l'immobilier : prospection téléphonique, génération de ~100 RDV/mois pour l'équipe et gestion de 4 commerciaux.",
       "context": [
         "Service de mise en relation entre particuliers et agences immobilières",

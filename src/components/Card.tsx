@@ -25,8 +25,11 @@ export function Card({ title, description, href, className, children }: CardProp
 
   if (href) {
     return (
-      <Link href={href} className="group block focus:outline-none">
-        <div className="transition group-hover:-translate-y-1 group-hover:shadow-soft">
+      <Link
+        href={href}
+        className="group block rounded-3xl focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+      >
+        <div className="transition motion-safe:group-hover:-translate-y-1 group-hover:shadow-soft">
           {content}
         </div>
       </Link>

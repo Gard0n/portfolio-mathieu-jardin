@@ -1,8 +1,31 @@
+"use client";
+
 import Link from "next/link";
-import { siteContent } from "@/content/siteContent";
+import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { siteContent } from "@/content/siteContent";
+import { cn } from "@/lib/utils";
+
+const basePath = (() => {
+  try {
+    return new URL(siteContent.site.url).pathname.replace(/\/$/, "");
+  } catch {
+    return "";
+  }
+})();
 
 export function Header() {
+  const pathname = usePathname() || "/";
+  const normalizedPath = pathname.replace(/\/$/, "");
+  const trimmedPath = basePath && normalizedPath.startsWith(basePath)
+    ? normalizedPath.slice(basePath.length) || "/"
+    : normalizedPath || "/";
+
+  const isActive = (href: string) => {
+    if (href === "/") return trimmedPath === "/";
+    return trimmedPath === href || trimmedPath.startsWith(`${href}/`);
+  };
+
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/70 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
@@ -14,7 +37,11 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-muted transition hover:text-text"
+              aria-current={isActive(item.href) ? "page" : undefined}
+              className={cn(
+                "text-sm transition",
+                isActive(item.href) ? "text-text" : "text-muted hover:text-text"
+              )}
             >
               {item.label}
             </Link>
@@ -38,7 +65,13 @@ export function Header() {
           <Link
             key={item.href}
             href={item.href}
-            className="whitespace-nowrap rounded-full border border-border bg-surface/70 px-3 py-1 text-muted"
+            aria-current={isActive(item.href) ? "page" : undefined}
+            className={cn(
+              "whitespace-nowrap rounded-full border px-3 py-1",
+              isActive(item.href)
+                ? "border-accent bg-accent text-bg"
+                : "border-border bg-surface/70 text-muted"
+            )}
           >
             {item.label}
           </Link>

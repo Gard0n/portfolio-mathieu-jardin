@@ -7,7 +7,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block rounded-3xl border border-border bg-surface/80 overflow-hidden shadow-glow transition hover:-translate-y-1 hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="group block rounded-3xl border border-border bg-surface/80 overflow-hidden shadow-glow transition hover:shadow-soft motion-safe:hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       {"image" in project && project.image && (
         <div className="w-full aspect-video overflow-hidden">
@@ -16,7 +16,7 @@ export function ProjectCard({ project }: { project: Project }) {
             alt={project.title}
             width={800}
             height={450}
-            className="w-full h-full object-cover transition group-hover:scale-105"
+            className="w-full h-full object-cover transition motion-safe:group-hover:scale-105"
           />
         </div>
       )}
