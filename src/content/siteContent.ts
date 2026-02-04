@@ -34,9 +34,10 @@ export const siteContent = {
   },
   about: {
     identity: [
-      "Bienvenue sur mon portfolio : le but est de résumer qui je suis.",
-      "J'espère que ça vous plaira !",
-      "Ici : expériences, projets, compétences."
+      "Business Development e-commerce avec culture Shopify et CRM.",
+      "Basé à Lille, mobile (voiture) et ouvert aux opportunités et nouveaux défis.",
+      "Autodidacte en code : je crée des sites et outils utiles (ex : bullet journal).",
+      "Passionné de jeux vidéo et de manga, j'aime les projets concrets et efficaces."
     ],
     timeline: contentJson.about.timeline,
     education: [
@@ -62,7 +63,17 @@ export const siteContent = {
     skills: contentJson.about.skills
   },
   projects: {
-    tags: ["Shopify", "Emailing", "Partenariats", "SCM"],
+    tags: [
+      "Shopify",
+      "Emailing",
+      "CRM",
+      "Content Marketing",
+      "E-commerce",
+      "Liquid",
+      "Business Development",
+      "B2C",
+      "Management"
+    ],
     items: contentJson.projects.map(p => ({
       ...p,
       context: p.context || [],

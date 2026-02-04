@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Portfolio MJ V1.09",
-    "role": "Business Developer / Shopify / E-commerce",
+    "name": "Portfolio MJ V1.10",
+    "role": "Business Dev e-commerce / Shopify / CRM",
     "description": "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
     "url": "https://gard0n.github.io/portfolio-mathieu-jardin",
     "ogImage": "/og.svg",
@@ -9,11 +9,11 @@
   },
   "home": {
     "heroTitle": "Mathieu Jardin",
-    "heroSubtitle": "Business Developer E-commerce | Shopify & CRM | M1 Commerce Connecté IAE Lille",
+    "heroSubtitle": "Business Dev e-commerce | Shopify & CRM | M1 Commerce Connecté (IAE Lille)",
     "heroBullets": [
-      "11 mois d'expérience en alternance e-commerce B2C",
-      "Gestion d'une newsletter 36 000 abonnés (50 % de taux d'ouverture)",
-      "Migration et développement Shopify (Liquid + no-code)"
+      "Business Dev e-commerce en alternance (depuis avr. 2025)",
+      "Newsletter Klaviyo : 3 emails/semaine, 36 000 abonnés",
+      "Migration Shopify complète : 100 produits + 200 articles (4 mois)"
     ]
   },
   "about": {
@@ -37,23 +37,39 @@
     "skills": [
       {
         "name": "Shopify & Liquid",
-        "detail": "Migration complète (100 produits + 200 articles), customisation de thèmes, intégration d'apps (Recharge, Klaviyo, Flow). 11 mois de pratique quotidienne chez AVS."
+        "detail": "Migration complète (100 produits + 200 articles) sur 4 mois, refonte avec thème Fullstack (blocs/sections), intégration d'apps : Recharge, Digital Downloads, Klaviyo, Flow, Shippingbo, Skeepers, Crisp."
       },
       {
         "name": "Emailing & CRM",
-        "detail": "Gestion d'une newsletter 36 000 abonnés (3x/semaine), 50 % de taux d'ouverture. Rédaction, analyse, optimisation éditoriale. Croissance +38% en 3 mois."
+        "detail": "Klaviyo : segmentation (nouveaux, VIP), automation (welcome, abandon, post-achat), 3 emails/semaine, 36 000 abonnés. Suivi ouvertures, clics, désabonnements, conversion."
       },
       {
-        "name": "Développement commercial",
-        "detail": "Prospection B2C, prise de RDV (~100/mois équipe), qualification de leads. Gestion d'équipe de 4 commerciaux chez Gabby."
+        "name": "Business Development",
+        "detail": "Prospection B2C, 50 appels/jour, script affiné en équipe, qualification et prise de RDV. Encadrement d'une équipe de 4 commerciaux."
+      },
+      {
+        "name": "Stratégie e-commerce",
+        "detail": "Architecture du site (tags, collections, navigation) et optimisation du parcours client (fiche produit, panier)."
+      },
+      {
+        "name": "Content marketing",
+        "detail": "Calendrier éditorial, équilibre éducatif/promo, angles produits (ex : oreilles des chats, Complexe Souplesse Articulaire)."
       },
       {
         "name": "Analytics & Data",
-        "detail": "Analyse de performances emailing (ouvertures, clics, désabonnements), Shopify Analytics, optimisations data-driven."
+        "detail": "GA4, Shopify Analytics, dashboards simples (Sheets), lecture des KPIs pour ajuster les actions."
       },
       {
         "name": "Gestion de projet",
-        "detail": "Coordination migration Shopify, gestion newsletter en autonomie, briefs clairs, respect des deadlines."
+        "detail": "Coordination avec l'équipe dev (Developr), cadrage V1, itérations et priorisation."
+      },
+      {
+        "name": "No-code & outils perso",
+        "detail": "VS Code pour prototyper des sites/outils, création d'un bullet journal pour suivre mes projets."
+      },
+      {
+        "name": "Négociation & relation",
+        "detail": "Relation B2C/B2B, suivi clients, feedback agences, posture orientée solution."
       }
     ],
     "timeline": [
@@ -96,38 +112,39 @@
       "subtitle": "Rédaction, envoi, analyse et optimisation",
       "tags": ["Emailing", "CRM", "Content Marketing"],
       "image": "/projects/newsletter-chat-email.jpg",
-      "summary": "Gestion opérationnelle complète d'une newsletter B2C avec audience de 36 000 abonnés et rythme soutenu (3 envois/semaine).",
+      "summary": "Pilotage complet d'une newsletter B2C via Klaviyo (3 envois/semaine) pour 36 000 abonnés, avec segmentation et automatisations.",
       "context": [
-        "Newsletter Chat avec base de 26 000 abonnés (oct. 2025) → 36 000 (janv. 2026)",
-        "Rythme de 3 emails par semaine à tenir sur la durée",
-        "Taux d'ouverture exceptionnel de 50 % (vs moyenne secteur 20-25 %)",
-        "Audience multi-profils : propriétaires de chats, passionnés, professionnels"
+        "Newsletter Chat sous Klaviyo, base de 26 000 abonnés (oct. 2025) → 36 000 (janv. 2026)",
+        "Rythme de 3 emails/semaine à tenir sur la durée",
+        "Segmentation (nouveaux, VIP, profils) et automatisations à déployer",
+        "Objectif conversion vers achat, audience multi-profils"
       ],
       "objective": [
-        "Maintenir un rythme éditorial de 12 emails/mois",
-        "Conserver un taux d'engagement élevé (50 % d'ouverture)",
-        "Faire croître la base d'abonnés de manière organique",
+        "Maintenir un calendrier éditorial clair (12 emails/mois)",
+        "Conserver un fort engagement et générer des achats",
+        "Mettre en place les flows welcome, abandon, post-achat",
         "Mixer contenus éducatifs et promotionnels sans sur-solliciter"
       ],
       "actions": [
         "Rédaction complète des emails (sujet, corps, CTA)",
-        "Envoi et programmation via plateforme CRM",
-        "Analyse hebdomadaire des métriques (ouvertures, clics, désabonnements)",
-        "Adaptation éditoriale selon performances et feedbacks",
-        "Gestion de la ligne éditoriale (éducatif/promo)"
+        "Segmentation des listes (nouveaux, VIP, etc.)",
+        "Automatisations Klaviyo : welcome, abandon, post-achat",
+        "Calendrier éditorial et angles produits (oreilles des chats, Complexe Souplesse Articulaire)",
+        "Analyse hebdo : ouvertures, clics, désabonnements, conversion",
+        "Adaptation éditoriale selon performances et feedbacks"
       ],
       "results": [
         "Croissance de +38% en 3 mois (26 000 → 36 000 abonnés)",
-        "Taux d'ouverture maintenu à 50 % (exceptionnel)",
-        "Rythme de 3 emails/semaine stabilisé et tenu",
-        "Process éditorial documenté et autonome",
-        "Audience engagée et fidèle"
+        "Taux d'ouverture maintenu à 50 %",
+        "Flows clés en place (welcome, abandon, post-achat)",
+        "Rythme de 3 emails/semaine stabilisé",
+        "Process éditorial documenté et autonome"
       ],
       "learnings": [
-        "La régularité prime sur la perfection",
-        "50 % d'ouverture = preuve que le contenu résonne",
-        "Mixer éducatif/promo maintient l'intérêt sans lasser",
-        "L'analyse des données guide les choix éditoriaux"
+        "Le rythme impose un process simple",
+        "Le choix du sujet fait l'ouverture",
+        "Segmentation = meilleure conversion",
+        "La data guide l'édito"
       ]
     },
     {
@@ -136,36 +153,35 @@
       "subtitle": "Migration, customisation et intégration d'apps",
       "tags": ["Shopify", "E-commerce", "Liquid"],
       "image": "/projects/chat-vie-sante-website.jpg",
-      "summary": "Migration complète d'un système maison vers Shopify (100 produits, 200 articles) avec customisation Liquid et intégration de 6 apps clés.",
+      "summary": "Migration complète vers Shopify sur 4 mois, refonte du site, thème Fullstack personnalisé, apps clés et SEO.",
       "context": [
-        "Migration depuis système maison vers Shopify (oct. 2025)",
-        "100 produits + 200 articles de blog à migrer",
-        "Besoin de flexibilité et d'évolution constante",
-        "Stack : Shopify + Liquid (customisations) + apps tierces"
+        "Migration depuis système maison vers Shopify (oct. 2025), 100 produits + 200 articles",
+        "Projet sur 4 mois, coordination avec l'équipe dev (Developr)",
+        "Besoin de structure (tags, collections) et d'un parcours client plus clair",
+        "Stack : Shopify + Liquid + apps (Recharge, Digital Downloads, Klaviyo, Flow, Shippingbo, Skeepers, Crisp)"
       ],
       "objective": [
-        "Migrer sans perte de données ni interruption de service",
-        "Personnaliser le thème selon besoins métier (Liquid)",
-        "Intégrer des apps pour étendre les fonctionnalités",
-        "Améliorer l'expérience utilisateur (navigation, fiches produits)"
+        "Migrer sans perte de données ni interruption",
+        "Repenser l'architecture du site et le SEO",
+        "Personnaliser le thème Fullstack (blocs/sections)",
+        "Optimiser les pages clés : fiche produit, panier"
       ],
       "actions": [
-        "Migration complète de 100 produits depuis système maison",
-        "Migration et optimisation de 200 articles de blog",
-        "Customisation du thème Shopify (HTML/CSS/Liquid)",
-        "Intégration de 6 apps : Recharge, Digital Downloads, Klaviyo, Flow, Shippingbo, Skeepers",
+        "Plan du site + organisation tags/collections",
+        "Redirections 301 avec l'équipe dev",
+        "Customisation thème Fullstack (sections/blocs)",
+        "Intégration d'apps : Recharge, Digital Downloads, Klaviyo, Flow, Shippingbo, Skeepers, Crisp",
         "Optimisations techniques (vitesse, responsive, SEO)"
       ],
       "results": [
-        "Migration réussie sans perte de données",
-        "Boutique fonctionnelle et évolutive",
-        "Thème personnalisé selon l'identité de marque",
-        "6 apps intégrées et opérationnelles",
-        "Apprentissage autonome du développement Shopify"
+        "Boutique repensée de A à Z et stable",
+        "Parcours client clarifié (fiche produit, panier)",
+        "Apps clés opérationnelles",
+        "Suivi des KPIs : vitesse, nouveaux visiteurs, conversion"
       ],
       "learnings": [
-        "Shopify offre un bon équilibre entre flexibilité et simplicité",
-        "Le Liquid permet des customisations puissantes",
+        "Cadrer une V1 fait gagner en efficacité",
+        "L'architecture du site conditionne l'expérience",
         "Bien choisir ses apps évite la dette technique",
         "Tester en staging évite les erreurs en production"
       ]
@@ -174,35 +190,34 @@
       "slug": "commercial-btoc-gabby",
       "title": "Commercial B2C Gabby (Immobilier)",
       "subtitle": "Prospection, prise de RDV et gestion d'équipe",
-      "tags": ["Commercial", "B2C", "Management"],
+      "tags": ["Business Development", "B2C", "Management"],
       "image": "/projects/gabby-website.jpg",
-      "summary": "Développement commercial B2C dans l'immobilier : prospection téléphonique, génération de ~100 RDV/mois pour l'équipe et gestion de 4 commerciaux.",
+      "summary": "Business development B2C dans l'immobilier : 50 appels/jour, ~100 RDV/mois équipe, management de 4 commerciaux.",
       "context": [
         "Service de mise en relation entre particuliers et agences immobilières",
-        "Prise de RDV d'estimation pour agences partenaires",
+        "50 appels/jour pour alimenter le pipeline",
         "Objectif équipe : ~100 RDV/mois qualifiés",
-        "Gestion d'une équipe de 4 commerciaux B2C"
+        "Suivi via tableau Google Sheets repensé"
       ],
       "objective": [
         "Générer un volume constant de RDV qualifiés",
-        "Maintenir un rythme de 6 RDV/semaine en propre",
-        "Former et accompagner l'équipe B2C (3 commerciaux)",
-        "Optimiser le process de qualification et de suivi"
+        "Affiner la qualification des prospects",
+        "Encadrer une équipe de 4 commerciaux",
+        "Gagner en visibilité sur le pipeline"
       ],
       "actions": [
-        "Prospection téléphonique auprès de particuliers",
-        "Qualification des leads (propriétaires intéressés par estimation)",
-        "Prise de RDV pour agences immobilières partenaires",
+        "Script d'appel affiné en équipe",
+        "Qualification des leads et prise de RDV",
         "Suivi post-RDV et feedback aux agences",
-        "Formation et accompagnement des nouveaux commerciaux",
-        "Gestion quotidienne de l'équipe (objectifs, briefings)"
+        "Refonte du tableau de suivi (Sheets)",
+        "Suivi des résultats et coaching de l'équipe"
       ],
       "results": [
         "~100 RDV générés/mois pour l'équipe",
         "~24-30 RDV/mois en propre",
-        "Équipe de 4 personnes coordonnée et formée",
-        "Process de qualification stabilisé",
-        "Passage de stage à freelance (confiance renouvelée)"
+        "Meilleure visibilité et compréhension du pipeline",
+        "Équipe de 4 personnes alignée",
+        "Process de qualification stabilisé"
       ],
       "learnings": [
         "Le volume ne fait pas tout, la qualification est clé",
