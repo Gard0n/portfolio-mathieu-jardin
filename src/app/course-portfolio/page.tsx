@@ -495,6 +495,51 @@ export default function CoursePortfolioPage() {
         </Section>
       ) : null}
 
+      {coursePortfolio.caseStudies.ecoMarket ? (
+        <Section title="Cas Eco-Market" description="Organisation et gestion des risques.">
+          <Card
+            title={coursePortfolio.caseStudies.ecoMarket.title}
+            description={coursePortfolio.caseStudies.ecoMarket.description}
+          >
+            <div className="grid gap-5 md:grid-cols-2">
+              <div>
+                <h3 className="text-sm font-semibold">Organisation &amp; opérations</h3>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {coursePortfolio.caseStudies.ecoMarket.bullets.restructuring.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold">Modèle social</h3>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {coursePortfolio.caseStudies.ecoMarket.bullets.socialModel.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold">Gestion des risques</h3>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {coursePortfolio.caseStudies.ecoMarket.bullets.riskPrinciples.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </Card>
+        </Section>
+      ) : null}
+
       <Section title="Synthèse d'apprentissage" description="Bilan a posteriori.">
         <Card>
           <ul className="space-y-2 text-sm">

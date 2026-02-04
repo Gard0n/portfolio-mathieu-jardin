@@ -311,6 +311,11 @@ export const siteContent = {
         note: "Nearshoring / Friendshoring / Reshoring"
       },
       {
+        date: "04/02/2026",
+        title: "Eco-Market",
+        note: "Cas + gestion des risques"
+      },
+      {
         date: "02/02/2026",
         title: "VUCA",
         note: "Analyse PS5"
@@ -446,6 +451,30 @@ export const siteContent = {
             "Communication officielle sur la pénurie.",
             "Explication publique des difficultés.",
             "Systèmes anti-scalping chez certains vendeurs."
+          ]
+        }
+      },
+      ecoMarket: {
+        title: "Cas Eco-Market",
+        description: "Organisation et gestion des risques dans un modèle social.",
+        bullets: {
+          restructuring: [
+            "Restructuration de l'équipe.",
+            "Inventaire en papier.",
+            "Inventaire entrepôt.",
+            "Paiement en espèces.",
+            "Information RS.",
+            "Offre « panier ».",
+            "Caissier et acheteur en balance."
+          ],
+          socialModel: [
+            "Donner aux précaires.",
+            "Réduction d'impôt."
+          ],
+          riskPrinciples: [
+            "Un risque n'est pas un événement, c'est l'effet potentiel d'un événement.",
+            "Notion évoquée : risque avant 2015.",
+            "« Demand risks » : risques de la demande."
           ]
         }
       }
