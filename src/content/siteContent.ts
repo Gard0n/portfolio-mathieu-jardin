@@ -152,9 +152,13 @@ export const siteContent = {
     ]
   },
   coursePortfolio: {
+    teacherNote: [
+      "Page structurée pour l'évaluation : objectifs, méthode, résultats, analyse.",
+      "Format volontairement synthétique pour faciliter la lecture."
+    ],
     intro: [
-      "Objectif : centraliser les livrables SCM du semestre.",
-      "Format : bullets, clair, actionnable."
+      "Objectif : présenter les livrables SCM du semestre.",
+      "Structure : contexte, méthodologie, résultats, analyse, transposition pro."
     ],
     priorReview: [
       "Connaissances de base en logistique",
@@ -168,7 +172,7 @@ export const siteContent = {
           "Simulation des flux et des décisions dans une chaîne d'approvisionnement.",
         bullets: {
           description: [
-            "Jeu en équipes",
+            "Simulation en équipes",
             "Rôles : détaillant, grossiste, distributeur, usine",
             "Objectif : minimiser les coûts et ruptures"
           ],
@@ -178,8 +182,8 @@ export const siteContent = {
             "Infos limitées"
           ],
           work: [
-            "Observation des ruptures",
-            "Analyse des bullwhip",
+            "Suivi des stocks et ruptures",
+            "Observation de l'effet bullwhip",
             "Debrief collectif"
           ],
           approach: ["Décisions progressives", "Ajustements prudents", "Notes à chaque tour"],

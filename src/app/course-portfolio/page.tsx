@@ -16,11 +16,26 @@ export default function CoursePortfolioPage() {
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Supply Chain</p>
         <h1 className="mt-3 text-3xl font-semibold">Portfolio SCM</h1>
         <p className="mt-3 text-sm text-muted">
-          Livrables, analyses, points d&apos;apprentissage.
+          Livrables, méthodologie, analyses, points d&apos;apprentissage.
         </p>
       </section>
 
-      <Section title="Intro" description="Point de départ du semestre.">
+      {coursePortfolio.teacherNote ? (
+        <Section title="Note à la prof" description="Contexte et intention de la page.">
+          <Card>
+            <ul className="space-y-2 text-sm">
+              {coursePortfolio.teacherNote.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+        </Section>
+      ) : null}
+
+      <Section title="Cadre et objectifs" description="Point de départ du semestre.">
         <Card>
           <ul className="space-y-2 text-sm">
             {coursePortfolio.intro.map((item) => (
@@ -33,7 +48,7 @@ export default function CoursePortfolioPage() {
         </Card>
       </Section>
 
-      <Section title="Bilan a priori" description="Ce que je pensais avant.">
+      <Section title="Hypothèses initiales" description="Ce que je pensais avant.">
         <Card>
           <ul className="space-y-2 text-sm">
             {coursePortfolio.priorReview.map((item) => (
@@ -46,11 +61,11 @@ export default function CoursePortfolioPage() {
         </Card>
       </Section>
 
-      <Section title="Études de cas" description="Cas et retours d'expérience.">
+      <Section title="Étude de cas principale" description="Beer Game : simulation des flux.">
         <Card title={beerGame.title} description={beerGame.description}>
           <div className="grid gap-5 md:grid-cols-2">
             <div>
-              <h3 className="text-sm font-semibold">Description activité</h3>
+              <h3 className="text-sm font-semibold">Contexte &amp; objectif</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.description.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -61,7 +76,7 @@ export default function CoursePortfolioPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold">Consignes</h3>
+              <h3 className="text-sm font-semibold">Règles &amp; contraintes</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.instructions.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -72,7 +87,7 @@ export default function CoursePortfolioPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold">Travail réalisé</h3>
+              <h3 className="text-sm font-semibold">Observations</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.work.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -83,7 +98,7 @@ export default function CoursePortfolioPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold">Démarche</h3>
+              <h3 className="text-sm font-semibold">Méthodologie</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.approach.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -94,7 +109,7 @@ export default function CoursePortfolioPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold">Résultats</h3>
+              <h3 className="text-sm font-semibold">Résultats observés</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.results.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -105,7 +120,7 @@ export default function CoursePortfolioPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold">Analyse réflexive</h3>
+              <h3 className="text-sm font-semibold">Analyse (effet bullwhip)</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.reflection.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -116,7 +131,7 @@ export default function CoursePortfolioPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold">Parallèle vie pro</h3>
+              <h3 className="text-sm font-semibold">Transposition pro</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 {beerGame.bullets.workParallel.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -130,7 +145,7 @@ export default function CoursePortfolioPage() {
         </Card>
       </Section>
 
-      <Section title="Bilan a posteriori" description="À compléter après le semestre.">
+      <Section title="Synthèse d'apprentissage" description="À compléter après le semestre.">
         <Card>
           <ul className="space-y-2 text-sm">
             {coursePortfolio.postReview.map((item) => (
@@ -143,7 +158,7 @@ export default function CoursePortfolioPage() {
         </Card>
       </Section>
 
-      <Section title="Auto-évaluation" description="Auto-critique simple.">
+      <Section title="Auto-évaluation" description="Posture et axes de progrès.">
         <Card>
           <ul className="space-y-2 text-sm">
             {coursePortfolio.selfAssessment.map((item) => (
