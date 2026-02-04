@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: siteContent.site.name,
     images: [
       {
-        url: siteContent.site.ogImage,
+        url: new URL(siteContent.site.ogImage, siteContent.site.url).toString(),
         width: 1200,
         height: 630,
         alt: siteContent.site.name
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteContent.site.name} — Portfolio`,
     description: siteContent.site.description,
-    images: [siteContent.site.ogImage]
+    images: [new URL(siteContent.site.ogImage, siteContent.site.url).toString()]
   },
   icons: {
     icon: "/favicon.svg"
