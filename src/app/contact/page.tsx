@@ -14,7 +14,7 @@ export default function ContactPage() {
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Contact</p>
         <h1 className="mt-3 text-3xl font-semibold">Discutons</h1>
         <p className="mt-3 text-sm text-muted">
-          Rapide, clair, sans blabla. Tu peux aussi passer par LinkedIn.
+          Ouvert aux opportunités et nouveaux défis. Réponse rapide par email ou LinkedIn.
         </p>
       </section>
 

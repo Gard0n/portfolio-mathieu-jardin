@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Portfolio MJ V1.16",
+    "name": "Portfolio MJ V1.17",
     "role": "Business Dev e-commerce / Shopify / CRM",
     "description": "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
     "url": "https://gard0n.github.io/portfolio-mathieu-jardin",
@@ -41,7 +41,7 @@
       },
       {
         "name": "Emailing & CRM",
-        "detail": "Klaviyo : segmentation (nouveaux, VIP), automation (welcome, abandon, post-achat), 3 emails/semaine, 36 000 abonnés. Suivi ouvertures, clics, désabonnements, conversion."
+        "detail": "Klaviyo : segmentation (nouveaux, VIP), automations (welcome, abandon, post-achat), 3 emails/semaine, 36 000 abonnés. Suivi ouvertures, clics, désabonnements, conversion."
       },
       {
         "name": "Business Development",
@@ -117,7 +117,7 @@
         "Newsletter Chat sous Klaviyo, base de 26 000 abonnés (oct. 2025) → 36 000 (janv. 2026)",
         "Rythme de 3 emails/semaine à tenir sur la durée",
         "Segmentation (nouveaux, VIP, profils) et automatisations à déployer",
-        "Objectif conversion vers achat, audience multi-profils"
+        "Objectif : conversion vers achat, audience multi-profils"
       ],
       "objective": [
         "Maintenir un calendrier éditorial clair (12 emails/mois)",
@@ -134,7 +134,7 @@
         "Adaptation éditoriale selon performances et feedbacks"
       ],
       "results": [
-        "Croissance de +38% en 3 mois (26 000 → 36 000 abonnés)",
+        "Croissance de +38 % en 3 mois (26 000 → 36 000 abonnés)",
         "Taux d'ouverture maintenu à 50 %",
         "Flows clés en place (welcome, abandon, post-achat)",
         "Rythme de 3 emails/semaine stabilisé",
