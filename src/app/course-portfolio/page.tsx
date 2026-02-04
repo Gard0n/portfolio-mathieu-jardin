@@ -359,7 +359,7 @@ export default function CoursePortfolioPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-sm font-semibold">Pourquoi c'est important</h3>
+                <h3 className="text-sm font-semibold">Pourquoi c&apos;est important</h3>
                 <ul className="mt-2 space-y-2 text-sm">
                   {coursePortfolio.caseStudies.trends.bullets.why.map((item) => (
                     <li key={item} className="flex gap-2">
