@@ -535,7 +535,7 @@ export const siteContent = {
               "Faille non comprise par l'IT.",
               "Appel à des experts externes + documentation continue."
             ]
-          ]
+          }
         }
       }
     },
