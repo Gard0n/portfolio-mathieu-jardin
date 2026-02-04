@@ -501,11 +501,11 @@ export default function CoursePortfolioPage() {
             title={coursePortfolio.caseStudies.ecoMarket.title}
             description={coursePortfolio.caseStudies.ecoMarket.description}
           >
-            <div className="grid gap-5 md:grid-cols-2">
+            <div className="space-y-8">
               <div>
-                <h3 className="text-sm font-semibold">Organisation &amp; opérations</h3>
+                <h3 className="text-sm font-semibold">Contexte (le choc)</h3>
                 <ul className="mt-2 space-y-2 text-sm">
-                  {coursePortfolio.caseStudies.ecoMarket.bullets.restructuring.map((item) => (
+                  {coursePortfolio.caseStudies.ecoMarket.bullets.context.map((item) => (
                     <li key={item} className="flex gap-2">
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
                       <span>{item}</span>
@@ -513,27 +513,160 @@ export default function CoursePortfolioPage() {
                   ))}
                 </ul>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold">Modèle social</h3>
-                <ul className="mt-2 space-y-2 text-sm">
-                  {coursePortfolio.caseStudies.ecoMarket.bullets.socialModel.map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+
+              <div className="grid gap-5 md:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold">Organisation &amp; opérations</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.restructuring.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Modèle social</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.socialModel.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Gestion des risques</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.riskPrinciples.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold">Gestion des risques</h3>
-                <ul className="mt-2 space-y-2 text-sm">
-                  {coursePortfolio.caseStudies.ecoMarket.bullets.riskPrinciples.map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+
+              <div className="grid gap-5 md:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold">Décisions immédiates (0–24h)</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.decisionsImmediate.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Décisions court terme (1–7 jours)</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.decisionsShortTerm.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="grid gap-5 md:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold">VUCA — Volatilité</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.vuca.volatility.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">VUCA — Incertitude</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.vuca.uncertainty.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">VUCA — Complexité</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.vuca.complexity.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">VUCA — Ambiguïté</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.vuca.ambiguity.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="grid gap-5 md:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold">BANI — Brittle</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.bani.brittle.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">BANI — Anxious</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.bani.anxious.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">BANI — Nonlinear</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.bani.nonlinear.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">BANI — Incomprehensible</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.ecoMarket.bullets.bani.incomprehensible.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </Card>

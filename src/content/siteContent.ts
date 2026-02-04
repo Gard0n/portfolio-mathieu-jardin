@@ -311,14 +311,14 @@ export const siteContent = {
         note: "Nearshoring / Friendshoring / Reshoring"
       },
       {
-        date: "04/02/2026",
-        title: "Eco-Market",
-        note: "Cas + gestion des risques"
-      },
-      {
         date: "02/02/2026",
         title: "VUCA",
         note: "Analyse PS5"
+      },
+      {
+        date: "04/02/2026",
+        title: "Eco-Market",
+        note: "Cas + gestion des risques"
       }
     ],
     caseStudies: {
@@ -456,8 +456,18 @@ export const siteContent = {
       },
       ecoMarket: {
         title: "Cas Eco-Market",
-        description: "Organisation et gestion des risques dans un modèle social.",
+        description:
+          "Gestion d'une crise ransomware en tant que directrice/directeur des opérations.",
         bullets: {
+          context: [
+            "Attaque ransomware sur les serveurs centraux.",
+            "Balances connectées et caisses automatiques hors service.",
+            "Stock périssable à écouler rapidement.",
+            "Algorithme de gestion des stocks effacé (flux entrants inconnus).",
+            "Données de 500 000 clients exfiltrées, crise d'image.",
+            "Clients filment les caissiers, climat tendu.",
+            "Le service informatique ne comprend pas la faille."
+          ],
           restructuring: [
             "Restructuration de l'équipe.",
             "Inventaire en papier.",
@@ -475,6 +485,56 @@ export const siteContent = {
             "Un risque n'est pas un événement, c'est l'effet potentiel d'un événement.",
             "Notion évoquée : risque avant 2015.",
             "« Demand risks » : risques de la demande."
+          ],
+          decisionsImmediate: [
+            "Activer une cellule de crise et clarifier les rôles en magasin.",
+            "Basculer en mode manuel : inventaire papier, caisse manuelle, pesée alternative.",
+            "Sécuriser l'écoulement du périssable (panier anti-gaspi, dons).",
+            "Isoler les systèmes touchés et bloquer les canaux numériques sensibles.",
+            "Informer clients et équipes avec des consignes claires."
+          ],
+          decisionsShortTerm: [
+            "Reconstituer un stock fiable (inventaires tournants + consolidation entrepôt).",
+            "Recréer des règles de réapprovisionnement simples (min/max temporaires).",
+            "Renforcer la cybersécurité (audit, sauvegardes, procédures de reprise).",
+            "Mettre en place un plan de communication post-incident.",
+            "Stabiliser l'offre et prioriser les produits essentiels."
+          ],
+          vuca: {
+            volatility: [
+              "Demande instable et achats opportunistes.",
+              "Risque de ruptures rapides sur produits frais."
+            ],
+            uncertainty: [
+              "Durée inconnue de la panne.",
+              "Flux entrants non visibles."
+            ],
+            complexity: [
+              "Multiplicité des acteurs : IT, magasins, entrepôt, clients.",
+              "Dépendance aux systèmes connectés."
+            ],
+            ambiguity: [
+              "Cause exacte et périmètre de l'attaque flous.",
+              "Décisions à prendre sans données fiables."
+            ]
+          },
+          bani: {
+            brittle: [
+              "Systèmes trop centralisés → panne globale.",
+              "Besoin de procédures manuelles de secours."
+            ],
+            anxious: [
+              "Stress des équipes et des clients.",
+              "Nécessité de consignes claires et rassurantes."
+            ],
+            nonlinear: [
+              "Un incident IT crée des impacts logistiques immédiats.",
+              "Prioriser les flux critiques pour limiter l'effet domino."
+            ],
+            incomprehensible: [
+              "Faille non comprise par l'IT.",
+              "Appel à des experts externes + documentation continue."
+            ]
           ]
         }
       }
