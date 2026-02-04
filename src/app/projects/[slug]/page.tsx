@@ -43,6 +43,16 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           ))}
         </div>
         <p className="mt-4 text-sm text-muted">{project.summary}</p>
+        {"role" in project || "duration" in project ? (
+          <div className="mt-4 flex flex-wrap gap-2 text-xs text-muted">
+            {"role" in project && project.role ? (
+              <Badge className="bg-surface/80 text-text">Rôle : {project.role}</Badge>
+            ) : null}
+            {"duration" in project && project.duration ? (
+              <Badge className="bg-surface/80 text-text">Durée : {project.duration}</Badge>
+            ) : null}
+          </div>
+        ) : null}
       </section>
 
       {"image" in project && project.image && (
@@ -95,6 +105,21 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </ul>
         </Card>
       </Section>
+
+      {"tools" in project && project.tools && project.tools.length > 0 ? (
+        <Section title="Outils & méthodes" description="Stack et pratiques utilisées.">
+          <Card>
+            <ul className="space-y-2 text-sm">
+              {project.tools.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+        </Section>
+      ) : null}
 
       <Section title="Résultats" description="Neutre et factuel.">
         <Card>

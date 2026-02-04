@@ -34,10 +34,10 @@ export const siteContent = {
   },
   about: {
     identity: [
-      "Business Development e-commerce avec culture Shopify et CRM.",
+      "Business Dev e-commerce, orienté Shopify, CRM et contenu.",
       "Basé à Lille, mobile (voiture) et ouvert aux opportunités et nouveaux défis.",
-      "Autodidacte en code : je crée des sites et outils utiles (ex : bullet journal).",
-      "Passionné de jeux vidéo et de manga, j'aime les projets concrets et efficaces."
+      "Autodidacte en code : je crée des sites et outils utiles (bullet journal).",
+      "Passionné de jeux vidéo, manga et rap français."
     ],
     timeline: contentJson.about.timeline,
     education: [
@@ -58,7 +58,7 @@ export const siteContent = {
         ]
       }
     ],
-    interests: ["Manga", "Jeux vidéo", "Musique"],
+    interests: ["Manga", "Jeux vidéo", "Rap français"],
     goals: contentJson.about.goals,
     skills: contentJson.about.skills
   },

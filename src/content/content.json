@@ -1,19 +1,19 @@
 {
   "site": {
-    "name": "Portfolio MJ V1.17",
-    "role": "Business Dev e-commerce / Shopify / CRM",
-    "description": "Portfolio simple et direct : parcours, alternance, projets et livrables Supply Chain.",
+    "name": "Portfolio MJ V1.18",
+    "role": "Business Dev e-commerce | Shopify | CRM",
+    "description": "Portfolio Business Dev e-commerce (Shopify, CRM, email) à Lille : parcours, alternance, projets et livrables SCM.",
     "url": "https://gard0n.github.io/portfolio-mathieu-jardin",
     "ogImage": "/og.svg",
     "email": "mathieu.jardin.pro@gmail.com"
   },
   "home": {
     "heroTitle": "Mathieu Jardin",
-    "heroSubtitle": "Business Dev e-commerce | Shopify & CRM | M1 Commerce Connecté (IAE Lille)",
+    "heroSubtitle": "Business Dev e-commerce | Shopify, CRM & contenu | M1 CDC (IAE Lille)",
     "heroBullets": [
-      "Business Dev e-commerce en alternance (depuis avr. 2025)",
-      "Newsletter Klaviyo : 3 emails/semaine, 36 000 abonnés",
-      "Migration Shopify complète : 100 produits + 200 articles (4 mois)"
+      "Alternance e-commerce B2C (AVS) depuis avr. 2025",
+      "Newsletter Klaviyo : 3 emails/semaine, 36 000 abonnés, 50 % d'ouverture",
+      "Migration Shopify : 100 produits + 200 articles (4 mois)"
     ]
   },
   "about": {
@@ -64,7 +64,7 @@
         "detail": "Coordination avec l'équipe dev (Developr), cadrage V1, itérations et priorisation."
       },
       {
-        "name": "No-code & outils perso",
+        "name": "Prototypage & outils perso",
         "detail": "VS Code pour prototyper des sites/outils, création d'un bullet journal pour suivre mes projets."
       },
       {
@@ -106,13 +106,16 @@
     ]
   },
   "projects": [
-    {
-      "slug": "newsletter-chat-avs",
-      "title": "Newsletter Chat AVS (3 emails/semaine, 36 000 abonnés)",
-      "subtitle": "Rédaction, envoi, analyse et optimisation",
-      "tags": ["Emailing", "CRM", "Content Marketing"],
-      "image": "/projects/newsletter-chat-email.jpg",
-      "summary": "Pilotage complet d'une newsletter B2C via Klaviyo (3 envois/semaine) pour 36 000 abonnés, avec segmentation et automatisations.",
+      {
+        "slug": "newsletter-chat-avs",
+        "title": "Newsletter Chat AVS (3 emails/semaine, 36 000 abonnés)",
+        "subtitle": "Rédaction, envoi, analyse et optimisation",
+        "tags": ["Emailing", "CRM", "Content Marketing"],
+        "role": "Responsable BU chat / Email & CRM",
+        "duration": "oct. 2025 - janv. 2026",
+        "tools": ["Klaviyo", "Segmentation", "Automations", "Calendrier éditorial"],
+        "image": "/projects/newsletter-chat-email.jpg",
+        "summary": "Pilotage complet d'une newsletter B2C via Klaviyo (3 envois/semaine) pour 36 000 abonnés, avec segmentation et automatisations.",
       "context": [
         "Newsletter Chat sous Klaviyo, base de 26 000 abonnés (oct. 2025) → 36 000 (janv. 2026)",
         "Rythme de 3 emails/semaine à tenir sur la durée",
@@ -147,13 +150,27 @@
         "La data guide l'édito"
       ]
     },
-    {
-      "slug": "developpement-shopify-avs",
-      "title": "Migration et développement Shopify AVS",
-      "subtitle": "Migration, customisation et intégration d'apps",
-      "tags": ["Shopify", "E-commerce", "Liquid"],
-      "image": "/projects/chat-vie-sante-website.jpg",
-      "summary": "Migration complète vers Shopify sur 4 mois, refonte du site, thème Fullstack personnalisé, apps clés et SEO.",
+      {
+        "slug": "developpement-shopify-avs",
+        "title": "Migration et développement Shopify AVS",
+        "subtitle": "Migration, customisation et intégration d'apps",
+        "tags": ["Shopify", "E-commerce", "Liquid"],
+        "role": "Dev Shopify & pilotage migration",
+        "duration": "4 mois (2025)",
+        "tools": [
+          "Shopify",
+          "Liquid",
+          "Thème Fullstack",
+          "Recharge",
+          "Digital Downloads",
+          "Klaviyo",
+          "Flow",
+          "Shippingbo",
+          "Skeepers",
+          "Crisp"
+        ],
+        "image": "/projects/chat-vie-sante-website.jpg",
+        "summary": "Migration complète vers Shopify sur 4 mois, refonte du site, thème Fullstack personnalisé, apps clés et SEO.",
       "context": [
         "Migration depuis système maison vers Shopify (oct. 2025), 100 produits + 200 articles",
         "Projet sur 4 mois, coordination avec l'équipe dev (Developr)",
@@ -186,13 +203,16 @@
         "Tester en staging évite les erreurs en production"
       ]
     },
-    {
-      "slug": "commercial-btoc-gabby",
-      "title": "Commercial B2C Gabby (Immobilier)",
-      "subtitle": "Prospection, prise de RDV et gestion d'équipe",
-      "tags": ["Business Development", "B2C", "Management"],
-      "image": "/projects/gabby-website.jpg",
-      "summary": "Business development B2C dans l'immobilier : 50 appels/jour, ~100 RDV/mois équipe, management de 4 commerciaux.",
+      {
+        "slug": "commercial-btoc-gabby",
+        "title": "Commercial B2C Gabby (Immobilier)",
+        "subtitle": "Prospection, prise de RDV et gestion d'équipe",
+        "tags": ["Business Development", "B2C", "Management"],
+        "role": "Business Dev B2C + management",
+        "duration": "2024 - 2025",
+        "tools": ["Script d'appel", "Google Sheets", "Suivi pipeline"],
+        "image": "/projects/gabby-website.jpg",
+        "summary": "Business development B2C dans l'immobilier : 50 appels/jour, ~100 RDV/mois équipe, management de 4 commerciaux.",
       "context": [
         "Service de mise en relation entre particuliers et agences immobilières",
         "50 appels/jour pour alimenter le pipeline",
