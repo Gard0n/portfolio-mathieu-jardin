@@ -319,6 +319,16 @@ export const siteContent = {
         date: "04/02/2026",
         title: "Eco-Market",
         note: "Cas + gestion des risques"
+      },
+      {
+        date: "04/02/2026",
+        title: "For Sure",
+        note: "Matrice des risques R1–R7"
+      },
+      {
+        date: "04/03/2026",
+        title: "GIFI ERP",
+        note: "Migration ERP — étude de cas"
       }
     ],
     caseStudies: {
@@ -454,6 +464,89 @@ export const siteContent = {
           ]
         }
       },
+      forSure: {
+        title: "For Sure — Matrice des risques",
+        description: "Identification et priorisation des risques supply chain pour Eco-Market.",
+        risks: [
+          {
+            id: "R1",
+            label: "Rupture de stock provisionnelle",
+            description: "Mauvaise synchronisation des stocks",
+            proba: 4,
+            impact: 4,
+            score: 16,
+            level: 1,
+            strategy: "Anticiper mieux",
+            action: "Créer un planning de suivi. Contrôles du stock (entre commande et reçu)."
+          },
+          {
+            id: "R2",
+            label: "Défaillance logistique",
+            description: "Retards de livraison en période forte",
+            proba: 3,
+            impact: 4,
+            score: 12,
+            level: 3,
+            strategy: "Adapter aux périodes",
+            action: "Prévoir la demande avec des employés supplémentaires et des machines de rechange."
+          },
+          {
+            id: "R3",
+            label: "Cyberattaque",
+            description: "Fuite de données clients",
+            proba: 3,
+            impact: 5,
+            score: 15,
+            level: 2,
+            strategy: "Mieux se protéger",
+            action: "Audit de sécurité et contrôles. Prévoir un plan d'action d'urgence."
+          },
+          {
+            id: "R4",
+            label: "Résistance des vendeurs",
+            description: "Difficulté d'adoption des outils digitaux",
+            proba: 4,
+            impact: 3,
+            score: 12,
+            level: 3,
+            strategy: "Former",
+            action: "Via les managers. Plans long terme et audit de satisfaction employé."
+          },
+          {
+            id: "R5",
+            label: "Dépassement budgétaire",
+            description: "Sous-estimation des coûts IT",
+            proba: 3,
+            impact: 4,
+            score: 12,
+            level: 3,
+            strategy: "Point mensuel (voire bi-hebdo)",
+            action: "Point sur les démarches (frais + bénéf). Ajustement en fonction du budget."
+          },
+          {
+            id: "R6",
+            label: "Baisse temporaire des ventes",
+            description: "Perturbation durant le déploiement",
+            proba: 3,
+            impact: 3,
+            score: 9,
+            level: 4,
+            strategy: "Prévoir",
+            action: "Avoir une solution de backup en cas de mauvaise réception. Être prêt à agir pour récupérer le retard."
+          },
+          {
+            id: "R7",
+            label: "Dépendance fournisseur IT",
+            description: "Retard de livraison des modules",
+            proba: 2,
+            impact: 4,
+            score: 8,
+            level: 5,
+            strategy: "Rechercher un autre fournisseur",
+            action: "Backup fournisseur et pression prix / livraison."
+          }
+        ]
+      },
       ecoMarket: {
         title: "Cas Eco-Market",
         description:
@@ -537,6 +630,49 @@ export const siteContent = {
             ]
           }
         }
+      },
+      gifiErp: {
+        title: "GiFi — Migration ERP (juin 2023)",
+        description: "Étude de cas : bascule vers SAP ECC 6 et ses conséquences sur la supply chain.",
+        intro: [
+          "En juin 2023, GiFi a procédé à la bascule vers un nouvel ERP (SAP ECC 6 + Aptos, Reflex, Optimix).",
+          "L'intégration s'est révélée plus complexe que prévu : suivi des résultats, stocks et approvisionnements perturbés.",
+          "Ce cas illustre les risques liés à la transformation numérique dans la grande distribution."
+        ],
+        dysfunctions: [
+          "Désorganisation logistique totale : rayons vides, mauvaises destinations, stocks désynchronisés.",
+          "Procédures manuelles d'urgence mises en place pour pallier les défaillances.",
+          "Perte de CA de ~9% sur l'année (jusqu'à -25/30% sur les mois post-déploiement).",
+          "Négociation de nouveaux financements bancaires.",
+          "Tensions internes entre IT et opérationnels, dégradation de l'image client."
+        ],
+        pilotErrors: [
+          "Timing catastrophique : bascule en juin, période d'intensification des achats estivaux.",
+          "Instabilité dans la direction : le directeur de la transformation quittera l'entreprise début 2024.",
+          "Architecture trop complexe (best-of-breed : SAP + Aptos + Reflex + Optimix) mal orchestrée."
+        ],
+        technicalRisks: [
+          "Désynchronisation des données : stocks virtuels ≠ réalité physique en entrepôts.",
+          "Mauvais paramétrage du module MM (Material Management).",
+          "Tests insuffisants avant déploiement généralisé sur 600 points de vente."
+        ],
+        internalResistance: [
+          "Équipes non formées aux nouveaux processus.",
+          "Gestion du changement trop centralisée, éloignant les collaborateurs.",
+          "Démotivation et surcharge opérationnelle (retour aux process manuels)."
+        ],
+        correctiveActions: [
+          "Plan de continuité d'activité (PCA) avec procédures de rollback dès le départ.",
+          "Chef de projet dédié + gouvernance claire + jalons de validation stricts.",
+          "Déploiement progressif par vagues (pilote 5–10 magasins) avant généralisation.",
+          "Impliquer les opérationnels dès la conception (approche 'key users').",
+          "Accompagnement au changement structuré avec formations et ambassadeurs internes."
+        ],
+        conclusion: [
+          "Changer d'ERP n'est pas une décision anodine : une migration mal conduite coûte plus cher que maintenir l'existant.",
+          "La gestion du changement n'est pas un accessoire — elle est centrale.",
+          "Évaluer la maturité des processus, la qualité des données et la capacité organisationnelle avant de décider."
+        ]
       }
     },
     postReview: [

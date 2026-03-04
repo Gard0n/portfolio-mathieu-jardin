@@ -495,6 +495,43 @@ export default function CoursePortfolioPage() {
         </Section>
       ) : null}
 
+      {coursePortfolio.caseStudies.forSure ? (
+        <Section title="For Sure — Matrice des risques" description="Identification, priorisation et plans d'action R1–R7.">
+          <Card title={coursePortfolio.caseStudies.forSure.title} description={coursePortfolio.caseStudies.forSure.description}>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border text-left text-xs uppercase tracking-wider text-muted">
+                    <th className="pb-2 pr-4">Risque</th>
+                    <th className="pb-2 pr-4">Description</th>
+                    <th className="pb-2 pr-2 text-center">P</th>
+                    <th className="pb-2 pr-2 text-center">I</th>
+                    <th className="pb-2 pr-2 text-center">Score</th>
+                    <th className="pb-2 pr-4 text-center">Niv.</th>
+                    <th className="pb-2 pr-4">Stratégie</th>
+                    <th className="pb-2">Plan d&apos;action</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {coursePortfolio.caseStudies.forSure.risks.map((r) => (
+                    <tr key={r.id} className="align-top">
+                      <td className="py-3 pr-4 font-semibold">{r.id}</td>
+                      <td className="py-3 pr-4 text-muted">{r.label}</td>
+                      <td className="py-3 pr-2 text-center">{r.proba}</td>
+                      <td className="py-3 pr-2 text-center">{r.impact}</td>
+                      <td className="py-3 pr-2 text-center font-semibold">{r.score}</td>
+                      <td className="py-3 pr-4 text-center">{r.level}</td>
+                      <td className="py-3 pr-4 text-muted">{r.strategy}</td>
+                      <td className="py-3 text-muted">{r.action}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Card>
+        </Section>
+      ) : null}
+
       {coursePortfolio.caseStudies.ecoMarket ? (
         <Section title="Cas Eco-Market" description="Organisation et gestion des risques.">
           <Card
@@ -662,6 +699,94 @@ export default function CoursePortfolioPage() {
                     {coursePortfolio.caseStudies.ecoMarket.bullets.bani.incomprehensible.map((item) => (
                       <li key={item} className="flex gap-2">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </Section>
+      ) : null}
+
+      {coursePortfolio.caseStudies.gifiErp ? (
+        <Section title="Cas GiFi — Migration ERP" description="Risques, erreurs et leçons d'une transformation numérique ratée.">
+          <Card title={coursePortfolio.caseStudies.gifiErp.title} description={coursePortfolio.caseStudies.gifiErp.description}>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-sm font-semibold">Contexte</h3>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {coursePortfolio.caseStudies.gifiErp.intro.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold">Dysfonctionnements engendrés</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.gifiErp.dysfunctions.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Erreurs de pilotage</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.gifiErp.pilotErrors.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Risques techniques</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.gifiErp.technicalRisks.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Résistances internes</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.gifiErp.internalResistance.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Actions correctives possibles</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.gifiErp.correctiveActions.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Faut-il vraiment changer d&apos;ERP ?</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.gifiErp.conclusion.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
                         <span>{item}</span>
                       </li>
                     ))}
