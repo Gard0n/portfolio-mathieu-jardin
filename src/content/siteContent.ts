@@ -72,7 +72,13 @@ export const siteContent = {
       "Liquid",
       "Business Development",
       "B2C",
-      "Management"
+      "Management",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "WebSocket",
+      "Python",
+      "Dev personnel"
     ],
     items: contentJson.projects.map(p => ({
       ...p,

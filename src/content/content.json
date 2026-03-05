@@ -245,6 +245,132 @@
         "La prospection B2C demande résilience et régularité",
         "Le suivi des RDV aide à améliorer la qualification"
       ]
+    },
+    {
+      "slug": "nexus-journal-culturel",
+      "title": "Nexus — Journal culturel personnel",
+      "subtitle": "App web React pour tracker films, séries, livres, jeux et musique",
+      "tags": ["React", "TypeScript", "Dev personnel"],
+      "role": "Développeur (solo)",
+      "duration": "2025 - en cours",
+      "tools": ["React 19", "Vite", "TypeScript", "Tailwind CSS v4", "TMDB API", "OpenLibrary", "RAWG", "MusicBrainz", "localStorage", "GitHub Pages"],
+      "summary": "Application de journal culturel multi-catégories (films, séries, livres, jeux, musique) avec recherche multi-API, wishlist, profil et visualisations statistiques.",
+      "context": [
+        "Besoin personnel de tracker sa consommation culturelle dans un seul endroit",
+        "5 catégories de médias → 4 APIs différentes à normaliser",
+        "Hébergement statique (GitHub Pages) → pas de backend, persistance localStorage",
+        "Stack moderne : React 19 + Vite + TypeScript + Tailwind CSS v4"
+      ],
+      "objective": [
+        "Créer une vraie app utilisable au quotidien, pas juste un exercice",
+        "Concevoir un pattern d'adapter unifié pour normaliser toutes les APIs",
+        "Proposer une UI soignée avec des stats et un profil culturel visuel",
+        "Déployer proprement sur GitHub Pages avec HashRouter"
+      ],
+      "actions": [
+        "Architecture adapter pattern : chaque API normalisée en NormalizedMedia",
+        "Recherche multi-API avec filtres, pagination et dédoublonnage",
+        "Journal (LogMediaModal) avec tags, notes, dates et états de lecture",
+        "Wishlist persistée en localStorage",
+        "Profil avec 'ADN culturel' (recharts), top 10 et export/import JSON",
+        "Gestion des edge cases API (OpenLibrary TypedText, MusicBrainz 404...)"
+      ],
+      "results": [
+        "App déployée et utilisée au quotidien sur https://gardenny.github.io/nexus/",
+        "4 APIs intégrées et normalisées avec un pattern unifié",
+        "Journal, wishlist et profil fonctionnels avec persistance locale",
+        "Visualisations statistiques avec recharts (répartition, top 10)"
+      ],
+      "learnings": [
+        "Normaliser des APIs hétérogènes avec un adapter pattern évite la dette technique",
+        "Concevoir pour un usage réel pousse à soigner les edge cases",
+        "TypeScript + localStorage suffisent pour une app personnelle robuste",
+        "L'architecture initiale conditionne la facilité d'évolution"
+      ]
+    },
+    {
+      "slug": "fresq-v2-fresque-collaborative",
+      "title": "FRESQ-V2 — Fresque collaborative commerciale",
+      "subtitle": "App temps réel de vente collaborative de cases sur une toile partagée",
+      "tags": ["Node.js", "WebSocket", "Dev personnel"],
+      "role": "Développeur fullstack (solo)",
+      "duration": "2025 - en cours",
+      "tools": ["Node.js", "Express", "Socket.IO", "PostgreSQL", "Supabase", "Render.com", "WebSocket", "Stripe (en cours)"],
+      "summary": "Application web temps réel permettant à des utilisateurs d'acheter et peindre des cases sur une toile collaborative partagée, avec système de tiers, loterie et parrainage.",
+      "context": [
+        "Concept : toile partagée découpée en cases vendues à des participants",
+        "Synchronisation temps réel entre tous les utilisateurs connectés",
+        "Système commercial complet : tiers, packs, loterie, parrainage",
+        "Stack backend : Node.js + Express + Socket.IO + PostgreSQL (Supabase)"
+      ],
+      "objective": [
+        "Concevoir un système de vente collaborative avec progression de tiers",
+        "Assurer la cohérence temps réel via WebSocket + PostgreSQL LISTEN/NOTIFY",
+        "Construire un dashboard admin pour gérer les ventes et tirages",
+        "Intégrer Stripe pour la monétisation"
+      ],
+      "actions": [
+        "Architecture WebSocket avec synchronisation PostgreSQL LISTEN/NOTIFY",
+        "Système de 10 tiers avec expansion automatique de la grille",
+        "Dashboard admin complet (gestion tickets, loteries, lots, utilisateurs)",
+        "Système de loterie (1 ticket = 1 chance) et programme de parrainage",
+        "Auth email + tokens de session, rate limiting, cache, transactions PG",
+        "Déploiement sur Render.com, gestion des tokens et sessions"
+      ],
+      "results": [
+        "Application à 90 % fonctionnelle déployée sur Render.com",
+        "Synchronisation temps réel stable entre plusieurs utilisateurs",
+        "Dashboard admin opérationnel (4 onglets)",
+        "Système de loterie et parrainage fonctionnels",
+        "En attente d'intégration Stripe pour la mise en production"
+      ],
+      "learnings": [
+        "WebSocket + PostgreSQL LISTEN/NOTIFY est une combinaison puissante pour le temps réel",
+        "Un système commercial complet implique beaucoup de logique métier à anticiper",
+        "Les transactions PostgreSQL sont indispensables pour la cohérence des données",
+        "Décomposer les fonctionnalités en services isolés facilite les tests et la maintenance"
+      ]
+    },
+    {
+      "slug": "youtube-downloader",
+      "title": "YouTube Downloader",
+      "subtitle": "Outil de téléchargement MP3/MP4 avec support playlists et stockage cloud",
+      "tags": ["Python", "Dev personnel"],
+      "role": "Développeur (solo)",
+      "duration": "2025",
+      "tools": ["Python", "Flask", "yt-dlp", "Cloudinary", "Gunicorn", "Render.com"],
+      "summary": "Application web Python/Flask permettant de télécharger des vidéos YouTube en MP3 (128/192/320 kbps) ou MP4 (360p à best), avec support playlists, ZIP automatique et stockage Cloudinary.",
+      "context": [
+        "Besoin d'un outil simple et autonome pour télécharger du contenu YouTube",
+        "Support de plusieurs formats audio et vidéo avec choix de qualité",
+        "Gestion des playlists et téléchargements multiples",
+        "Déploiement sur Render.com avec stockage cloud Cloudinary"
+      ],
+      "objective": [
+        "Créer une interface simple et fonctionnelle sans dépendances JS front-end lourdes",
+        "Intégrer yt-dlp pour la robustesse et la compatibilité maximale",
+        "Permettre le téléchargement multi-fichiers avec génération de ZIP automatique",
+        "Proposer un stockage cloud optionnel via Cloudinary"
+      ],
+      "actions": [
+        "Backend Flask avec routes de téléchargement MP3/MP4",
+        "Intégration yt-dlp avec paramétrage des qualités audio/vidéo",
+        "Génération de ZIP automatique pour les téléchargements multiples",
+        "Support playlists avec extraction de la liste de vidéos",
+        "Stockage Cloudinary en option et déploiement Gunicorn sur Render.com"
+      ],
+      "results": [
+        "Application déployée et opérationnelle sur Render.com",
+        "Téléchargement MP3 (3 qualités) et MP4 (plusieurs résolutions) fonctionnels",
+        "Support playlists et ZIP automatique opérationnels",
+        "Projet terminé et stable, aucune maintenance nécessaire"
+      ],
+      "learnings": [
+        "Flask est parfait pour des outils utilitaires légers à déployer rapidement",
+        "yt-dlp est bien plus robuste que youtube-dl pour la compatibilité",
+        "Gérer les téléchargements asynchrones en Python demande de l'attention",
+        "Un projet simple mais fini vaut mieux qu'un projet ambitieux inachevé"
+      ]
     }
   ]
 }
