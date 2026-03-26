@@ -1,6 +1,7 @@
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { Timeline } from "@/components/Timeline";
+import { PasswordGate } from "@/components/PasswordGate";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function CoursePortfolioPage() {
   const beerGame = coursePortfolio.caseStudies.beerGame;
 
   return (
+    <PasswordGate>
     <div className="space-y-16">
       <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Supply Chain</p>
@@ -854,5 +856,6 @@ export default function CoursePortfolioPage() {
         </Section>
       ) : null}
     </div>
+    </PasswordGate>
   );
 }

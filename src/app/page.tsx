@@ -1,7 +1,16 @@
+import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { siteContent } from "@/content/siteContent";
+import { withBasePath } from "@/lib/utils";
+
+const metrics = [
+  { value: "36 000", label: "abonnés newsletter" },
+  { value: "50%", label: "taux d'ouverture" },
+  { value: "100+", label: "produits migrés" },
+  { value: "4 mois", label: "migration Shopify" }
+];
 
 export default function HomePage() {
   const { home } = siteContent;
@@ -13,15 +22,24 @@ export default function HomePage() {
           <div className="space-y-6">
             <div>
               <div className="flex flex-wrap items-center gap-3">
-                <p className="text-xs uppercase tracking-[0.3em] text-muted">
-                  Portfolio
-                </p>
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-                  Freelance disponible
-                </span>
+                <Image
+                  src={withBasePath("/projects/photoMJ.jpeg")}
+                  alt="Mathieu Jardin"
+                  width={56}
+                  height={56}
+                  className="rounded-full object-cover ring-2 ring-border"
+                />
+                <div className="flex flex-wrap items-center gap-2">
+                  <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                    Portfolio
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                    Freelance disponible
+                  </span>
+                </div>
               </div>
-              <h1 className="mt-3 text-4xl font-semibold md:text-5xl">
+              <h1 className="mt-4 text-4xl font-semibold md:text-5xl">
                 {home.heroTitle}
               </h1>
               <p className="mt-3 text-lg text-text whitespace-pre-line">
@@ -63,6 +81,18 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        {metrics.map((m) => (
+          <div
+            key={m.label}
+            className="rounded-2xl border border-border bg-surface/80 p-5 text-center"
+          >
+            <p className="text-2xl font-semibold text-accent">{m.value}</p>
+            <p className="mt-1 text-xs text-muted">{m.label}</p>
+          </div>
+        ))}
       </section>
 
       <Section

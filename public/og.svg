@@ -1,22 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#f6f3ee" />
-      <stop offset="100%" stop-color="#f1e6dd" />
+      <stop offset="0%" stop-color="#0e1012" />
+      <stop offset="100%" stop-color="#111418" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" x2="1" y1="1" y2="0">
-      <stop offset="0%" stop-color="#d8704d" />
-      <stop offset="100%" stop-color="#2b7a78" />
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="64" fill="url(#bg)" />
-  <circle cx="980" cy="120" r="180" fill="url(#accent)" opacity="0.2" />
-  <circle cx="220" cy="520" r="220" fill="url(#accent)" opacity="0.18" />
-  <text x="120" y="260" font-size="64" font-family="Space Grotesk, sans-serif" fill="#1e1a19" font-weight="600">
-    Portfolio MJ V1.05
-  </text>
-  <text x="120" y="330" font-size="32" font-family="Space Grotesk, sans-serif" fill="#6b6560">
-    Portfolio — Business Developer / Shopify / E-commerce
-  </text>
-  <rect x="120" y="390" width="320" height="8" rx="4" fill="#d8704d" />
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="100" r="220" fill="url(#blue)" opacity="0.08" />
+  <circle cx="150" cy="560" r="260" fill="url(#blue)" opacity="0.06" />
+  <circle cx="1050" cy="100" r="120" fill="url(#blue)" opacity="0.07" />
+  <!-- Badge -->
+  <rect x="120" y="160" width="200" height="36" rx="18" fill="#3b82f6" fill-opacity="0.15" />
+  <rect x="120" y="160" width="200" height="36" rx="18" fill="none" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="148" cy="178" r="5" fill="#3b82f6" />
+  <text x="162" y="183" font-size="13" font-family="Space Grotesk, system-ui, sans-serif" fill="#60a5fa" font-weight="500">Freelance disponible</text>
+  <!-- Main title -->
+  <text x="120" y="280" font-size="72" font-family="Space Grotesk, system-ui, sans-serif" fill="#f0ebe6" font-weight="600">GRDN Freelance</text>
+  <!-- Subtitle -->
+  <text x="120" y="340" font-size="28" font-family="Space Grotesk, system-ui, sans-serif" fill="#a7a09a" font-weight="400">Développeur Shopify &amp; Stratège E-commerce</text>
+  <!-- Blue bar -->
+  <rect x="120" y="390" width="280" height="5" rx="3" fill="url(#blue)" opacity="0.9" />
+  <!-- Stats -->
+  <text x="120" y="460" font-size="16" font-family="Space Grotesk, system-ui, sans-serif" fill="#3b82f6" font-weight="600">36 000 abonnés</text>
+  <text x="120" y="484" font-size="13" font-family="Space Grotesk, system-ui, sans-serif" fill="#6b7280">Newsletter Klaviyo · 50% taux d'ouverture</text>
+  <text x="380" y="460" font-size="16" font-family="Space Grotesk, system-ui, sans-serif" fill="#3b82f6" font-weight="600">100+ produits</text>
+  <text x="380" y="484" font-size="13" font-family="Space Grotesk, system-ui, sans-serif" fill="#6b7280">Migration Shopify · 4 mois</text>
+  <!-- URL -->
+  <text x="120" y="560" font-size="14" font-family="Space Grotesk, system-ui, sans-serif" fill="#374151">gard0n.github.io/portfolio-mathieu-jardin</text>
 </svg>
