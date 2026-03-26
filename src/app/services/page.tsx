@@ -19,7 +19,7 @@ const featured = {
     "Calendrier éditorial + 4 premières newsletters",
     "Formation prise en main (1h)"
   ],
-  delay: "5-8 semaines selon les besoins",
+  delay: "~4 semaines · 350 €/semaine · ajustable selon le périmètre",
   price: "À partir de 1 400 €"
 };
 
@@ -35,7 +35,7 @@ const services = [
       "Intégration des apps essentielles",
       "Redirections 301 & SEO de base"
     ],
-    delay: "3-5 semaines selon les besoins",
+    delay: "2-3 semaines · ~200 €/semaine · selon la sophistication",
     price: "À partir de 800 €"
   },
   {
@@ -49,36 +49,22 @@ const services = [
       "Calendrier éditorial + rédaction",
       "Reporting mensuel"
     ],
-    delay: "1-2 semaines selon les besoins",
+    delay: "~1 semaine · 100 €/semaine · selon les besoins",
     price: "À partir de 400 €"
   },
   {
     icon: "📊",
-    title: "Stratégie E-commerce",
+    title: "Stratégie & Audit E-commerce",
     description:
-      "Audit de votre boutique, identification des points de friction et recommandations concrètes pour améliorer la conversion et la croissance.",
+      "Audit de la boutique, identification des points de friction et recommandations concrètes pour améliorer la conversion et la croissance.",
     deliverables: [
       "Audit complet de la boutique",
       "Rapport de recommandations",
       "Roadmap priorisée",
       "Session de restitution (1h)"
     ],
-    delay: "1 semaine",
+    delay: "~1 semaine · 100 €/semaine · selon les besoins",
     price: "À partir de 300 €"
-  },
-  {
-    icon: "🎨",
-    title: "UI/UX & Contenu",
-    description:
-      "Refonte de pages clés, optimisation des fiches produits et copywriting orienté conversion pour améliorer l&apos;expérience client.",
-    deliverables: [
-      "Refonte des pages prioritaires",
-      "Fiches produits optimisées",
-      "Copywriting orienté conversion",
-      "Intégration dans Shopify"
-    ],
-    delay: "1-2 semaines selon les besoins",
-    price: "À partir de 250 €"
   },
   {
     icon: "🔧",
@@ -98,15 +84,15 @@ const services = [
     icon: "🎓",
     title: "Formation & Accompagnement",
     description:
-      "Sessions 1:1 pour apprendre à gérer Shopify ou Klaviyo en autonomie. Format adapté à ton niveau et à tes besoins concrets.",
+      "Sessions 1:1 adaptées à ton profil et tes objectifs. Du commerce à la technique, on couvre ce dont tu as besoin pour avancer.",
     deliverables: [
-      "Audit de ton niveau et de tes besoins",
-      "Sessions en visio (1h ou 2h)",
-      "Support écrit post-session",
-      "Accès à mes ressources et templates"
+      "Shopify (thème, apps, gestion quotidienne)",
+      "Stratégie e-commerce & email marketing",
+      "Techniques de vente, négociation, phoning",
+      "Support écrit + ressources post-session"
     ],
     delay: "À définir selon le programme",
-    price: "À partir de 150 €/session"
+    price: "150 €/session"
   }
 ];
 
