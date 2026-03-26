@@ -114,7 +114,7 @@ export default function ServicesPage() {
 
       <section className="rounded-[32px] border border-accent/30 bg-accent/5 p-8 text-center">
         <p className="text-sm text-muted">Projet spécifique ou budget différent ?</p>
-        <h2 className="mt-2 text-xl font-semibold">Parlons-en, je m'adapte.</h2>
+        <h2 className="mt-2 text-xl font-semibold">Parlons-en, je m&apos;adapte.</h2>
         <p className="mt-3 text-sm text-muted">
           Actuellement disponible pour des missions freelance. Réponse sous 24h.
         </p>
