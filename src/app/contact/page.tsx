@@ -82,18 +82,13 @@ export default function ContactPage() {
       <Section title="Liens" description="Où me trouver.">
         <div className="flex flex-wrap gap-3">
           {siteContent.contact.links.map((link) => {
-            const isFreelance = link.label === "Fiverr" || link.label === "Malt";
             return (
               <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className={
-                  isFreelance
-                    ? "rounded-full border border-accent/50 bg-accent/10 px-5 py-2.5 text-sm font-medium text-accent transition hover:bg-accent/20"
-                    : "rounded-full border border-border bg-surface/80 px-4 py-2 text-sm text-muted transition hover:border-accent/60 hover:text-text"
-                }
+                className="rounded-full border border-border bg-surface/80 px-4 py-2 text-sm text-muted transition hover:border-accent/60 hover:text-text"
               >
                 {link.label}
               </a>
