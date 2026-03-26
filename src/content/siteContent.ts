@@ -15,8 +15,8 @@ export const siteContent = {
     ...contentJson.home,
     ctas: [
       { label: "Me recruter", href: "/contact" },
-      { label: "Voir les projets", href: "/projects" },
-      { label: "Portfolio SCM", href: "/course-portfolio" }
+      { label: "Mes services", href: "/services" },
+      { label: "Voir les projets", href: "/projects" }
     ],
     highlights: [
       {
@@ -35,9 +35,9 @@ export const siteContent = {
   },
   about: {
     identity: [
-      "Business Dev e-commerce, orienté Shopify, CRM et contenu.",
-      "Basé à Lille, mobile (voiture) et ouvert aux opportunités et nouveaux défis.",
-      "Autodidacte en code : je crée des sites et outils utiles (bullet journal).",
+      "Développeur Shopify et stratège e-commerce freelance.",
+      "Basé à Lille, disponible en remote sur tout le territoire.",
+      "Autodidacte en code : je construis mes propres outils (Nexus, Minus, Bullet).",
       "Passionné de jeux vidéo, manga et rap français."
     ],
     timeline: contentJson.about.timeline,

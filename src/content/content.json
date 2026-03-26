@@ -1,8 +1,8 @@
 {
   "site": {
-    "name": "Portfolio MJ V1.18",
+    "name": "GRDN Freelance",
     "role": "Développeur Shopify & Stratège E-commerce | Freelance",
-    "description": "Portfolio Business Dev e-commerce (Shopify, CRM, email) à Lille : parcours, alternance, projets et livrables SCM.",
+    "description": "Développeur Shopify & stratège e-commerce freelance basé à Lille. Création de boutiques, migrations, email marketing Klaviyo et stratégie e-commerce pour TPE, PME et créateurs.",
     "url": "https://gard0n.github.io/portfolio-mathieu-jardin",
     "ogImage": "/og.svg",
     "email": "mathieu.jardin.pro@gmail.com"
@@ -16,20 +16,15 @@
   },
   "about": {
     "goals": {
-      "short": [
-        "Valider le M1 CDC avec mention",
-        "Développer l'activité e-commerce chez AVS",
-        "Améliorer mes compétences Shopify (apps, thèmes)"
+      "freelance": [
+        "Développer une clientèle freelance en Shopify et email marketing",
+        "Livrer des missions à impact mesurable pour des TPE, PME et créateurs",
+        "Construire une réputation solide dans l'e-commerce DTC"
       ],
-      "mid": [
-        "Obtenir le Master CDC",
-        "Évoluer vers un poste de Product Owner e-commerce",
-        "Développer une expertise en stratégie omnicanale"
-      ],
-      "long": [
-        "Diriger une équipe e-commerce / digital",
-        "Lancer un projet entrepreneurial dans le commerce connecté",
-        "Devenir référent sur les sujets Shopify en France"
+      "career": [
+        "Valider le M1 CDC (IAE Lille) avec mention",
+        "Développer l'activité e-commerce chez AVS en alternance",
+        "Évoluer vers un rôle stratégique e-commerce après l'alternance"
       ]
     },
     "skills": [
@@ -105,6 +100,7 @@
   },
   "projects": [
       {
+        "category": "pro",
         "slug": "newsletter-chat-avs",
         "title": "Newsletter Chat AVS (3 emails/semaine, 36 000 abonnés)",
         "subtitle": "Rédaction, envoi, analyse et optimisation",
@@ -150,6 +146,7 @@
       ]
     },
       {
+        "category": "pro",
         "slug": "developpement-shopify-avs",
         "title": "Migration et développement Shopify AVS",
         "subtitle": "Migration, customisation et intégration d'apps",
@@ -204,6 +201,7 @@
       ]
     },
       {
+        "category": "pro",
         "slug": "commercial-btoc-gabby",
         "title": "Commercial B2C Gabby (Immobilier)",
         "subtitle": "Prospection, prise de RDV et gestion d'équipe",
@@ -247,10 +245,12 @@
       ]
     },
     {
+      "category": "perso",
       "slug": "nexus-journal-culturel",
       "title": "Nexus — Journal culturel personnel",
       "subtitle": "App web React pour tracker films, séries, livres, jeux et musique",
       "tags": ["React", "TypeScript", "Dev personnel"],
+      "image": "/projects/Nexus.png",
       "liveUrl": "https://gard0n.github.io/Nexus/",
       "role": "Développeur (solo)",
       "duration": "2025 - en cours",
@@ -290,11 +290,13 @@
       ]
     },
     {
+      "category": "perso",
       "slug": "minus-flechettes",
       "title": "Minus — App de fléchettes",
       "subtitle": "PWA de classement et suivi de parties de fléchettes",
       "tags": ["Dev personnel"],
       "liveUrl": "https://gard0n.github.io/Minus/",
+      "image": "/projects/Minus.png",
       "role": "Développeur (solo)",
       "duration": "2025",
       "tools": ["Vanilla JS", "Supabase", "PWA", "CSS"],
@@ -327,11 +329,13 @@
       ]
     },
     {
+      "category": "perso",
       "slug": "bullet-journal",
       "title": "Bullet Journal — App quotidien",
       "subtitle": "Daily log, habitudes, projets et reviews — 100% local",
       "tags": ["Dev personnel"],
       "liveUrl": "https://gard0n.github.io/bullet/",
+      "image": "/projects/Bullet.png",
       "role": "Développeur (solo)",
       "duration": "2025 - en cours",
       "tools": ["Vanilla JS", "localStorage", "PWA", "CSS"],

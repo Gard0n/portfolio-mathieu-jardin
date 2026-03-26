@@ -14,9 +14,6 @@ export function Footer() {
               {siteContent.site.email}
             </a>
           </p>
-          <Link href="/admin" className="mt-2 inline-block text-xs opacity-50 hover:opacity-100">
-            Admin ⚙️
-          </Link>
         </div>
         <div className="flex flex-wrap gap-3">
           {siteContent.nav.map((item) => (

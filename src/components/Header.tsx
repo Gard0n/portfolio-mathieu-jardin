@@ -49,9 +49,9 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="hidden rounded-full border border-border bg-surface/80 px-4 py-2 text-xs font-medium text-text transition hover:border-accent/50 md:inline-flex"
+            className="hidden rounded-full border border-accent/50 bg-accent/10 px-4 py-2 text-xs font-medium text-accent transition hover:bg-accent/20 md:inline-flex"
           >
-            Contact
+            Travailler ensemble
           </Link>
         </div>
       </div>

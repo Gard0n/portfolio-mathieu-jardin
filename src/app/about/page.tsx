@@ -45,31 +45,21 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section title="Objectifs pro" description="Court, moyen et long terme.">
+      <Section title="Objectifs" description="Deux axes en parallèle.">
         <div className="section-grid">
-          <Card title="Court terme">
+          <Card title="Freelance">
             <ul className="space-y-2 text-sm">
-              {about.goals.short.map((goal) => (
+              {about.goals.freelance.map((goal) => (
                 <li key={goal} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
                   <span>{goal}</span>
                 </li>
               ))}
             </ul>
           </Card>
-          <Card title="Moyen terme">
+          <Card title="Alternance & parcours">
             <ul className="space-y-2 text-sm">
-              {about.goals.mid.map((goal) => (
-                <li key={goal} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
-                  <span>{goal}</span>
-                </li>
-              ))}
-            </ul>
-          </Card>
-          <Card title="Long terme">
-            <ul className="space-y-2 text-sm">
-              {about.goals.long.map((goal) => (
+              {about.goals.career.map((goal) => (
                 <li key={goal} className="flex gap-2">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
                   <span>{goal}</span>
