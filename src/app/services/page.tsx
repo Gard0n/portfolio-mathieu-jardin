@@ -3,7 +3,8 @@ import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 
 export const metadata = {
-  title: "Services"
+  title: "Services",
+  description: "Création et migration Shopify, email marketing, stratégie e-commerce. Missions freelance pour TPE, PME et créateurs."
 };
 
 const featured = {
@@ -193,7 +194,7 @@ export default function ServicesPage() {
               href="/contact"
               className="rounded-full bg-accent px-5 py-2 text-xs font-medium text-bg transition hover:opacity-90"
             >
-              Me contacter →
+              Travailler ensemble →
             </Link>
           </div>
         </Card>
@@ -227,7 +228,7 @@ export default function ServicesPage() {
                   href="/contact"
                   className="rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-medium text-text transition hover:border-accent/50 hover:text-accent"
                 >
-                  Me contacter →
+                  Travailler ensemble →
                 </Link>
               </div>
             </Card>
@@ -256,7 +257,7 @@ export default function ServicesPage() {
           href="/contact"
           className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
         >
-          Me contacter
+          Travailler ensemble
         </Link>
       </section>
     </div>

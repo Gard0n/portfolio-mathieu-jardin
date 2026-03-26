@@ -164,7 +164,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           href="/contact"
           className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
         >
-          Me contacter →
+          Travailler ensemble →
         </Link>
       </section>
     </div>

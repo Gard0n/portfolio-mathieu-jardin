@@ -6,10 +6,10 @@ import { siteContent } from "@/content/siteContent";
 import { withBasePath } from "@/lib/utils";
 
 const metrics = [
-  { value: "36 000", label: "abonnés newsletter" },
+  { value: "40 000", label: "abonnés newsletter" },
   { value: "50%", label: "taux d'ouverture" },
-  { value: "100+", label: "produits migrés" },
-  { value: "4 mois", label: "migration Shopify" }
+  { value: "4 mois", label: "migration Shopify" },
+  { value: "2 boutiques", label: "Shopify pilotées" }
 ];
 
 export default function HomePage() {
@@ -94,6 +94,23 @@ export default function HomePage() {
           </div>
         ))}
       </section>
+
+      <Section title="Ils en parlent" description="Retours de personnes avec qui j'ai travaillé.">
+        <div className="grid gap-6 md:grid-cols-2">
+          <Card>
+            <p className="text-sm leading-relaxed">
+              &ldquo;Proactif et fiable. J&apos;ai pu travailler avec lui pendant plusieurs mois et je suis très satisfait de son implication, son autonomie et sa communication claire. Ça m&apos;a permis d&apos;avancer sur des sujets commerciaux importants.&rdquo;
+            </p>
+            <p className="mt-4 text-xs text-muted">Co-fondateur, entreprise e-commerce</p>
+          </Card>
+          <Card>
+            <p className="text-sm leading-relaxed">
+              &ldquo;Professionnel dans son travail. Il va au bout de ses idées et a totalement compris les enjeux du marketing et de la communication. La bonne personne pour un projet sérieux.&rdquo;
+            </p>
+            <p className="mt-4 text-xs text-muted">Entrepreneur, secteur tech &amp; influence</p>
+          </Card>
+        </div>
+      </Section>
 
       <Section
         title="À propos, en bref"

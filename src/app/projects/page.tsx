@@ -6,7 +6,8 @@ import { siteContent } from "@/content/siteContent";
 import { withBasePath } from "@/lib/utils";
 
 export const metadata = {
-  title: "Projets"
+  title: "Projets",
+  description: "Missions e-commerce et projets personnels : migration Shopify, newsletter, développement commercial, et applications web."
 };
 
 function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items }) {

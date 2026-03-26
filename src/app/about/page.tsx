@@ -5,7 +5,8 @@ import { Timeline } from "@/components/Timeline";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata = {
-  title: "À propos"
+  title: "À propos",
+  description: "Développeur Shopify et stratège e-commerce freelance basé à Lille. Découvrez mon parcours, mes compétences et mes objectifs."
 };
 
 export default function AboutPage() {

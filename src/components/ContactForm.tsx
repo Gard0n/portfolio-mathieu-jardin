@@ -4,8 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
 
-// Remplace YOUR_FORM_ID par ton ID Formspree (formspree.io → New Form → copie l'ID)
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xojpqzyj";
+const FORMSPREE_ENDPOINT = `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`;
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -100,7 +99,7 @@ export function ContactForm() {
           placeholder="Ton prénom ou nom d'entreprise"
           required
         />
-        {errors.name && <p className="mt-1 text-xs text-danger">{errors.name}</p>}
+        {errors.name && <p role="alert" className="mt-1 text-xs text-danger">{errors.name}</p>}
       </div>
 
       <div>
@@ -116,7 +115,7 @@ export function ContactForm() {
           placeholder="ton@email.com"
           required
         />
-        {errors.email && <p className="mt-1 text-xs text-danger">{errors.email}</p>}
+        {errors.email && <p role="alert" className="mt-1 text-xs text-danger">{errors.email}</p>}
       </div>
 
       <div>
@@ -131,7 +130,7 @@ export function ContactForm() {
           placeholder="Décris ton projet ou ta question..."
           required
         />
-        {errors.message && <p className="mt-1 text-xs text-danger">{errors.message}</p>}
+        {errors.message && <p role="alert" className="mt-1 text-xs text-danger">{errors.message}</p>}
       </div>
 
       <div className="flex flex-wrap items-center gap-3">

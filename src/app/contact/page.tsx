@@ -4,7 +4,8 @@ import { Section } from "@/components/Section";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata = {
-  title: "Contact"
+  title: "Contact",
+  description: "Disponible pour des missions freelance Shopify et e-commerce. Réponse sous 24h, basé à Lille, remote possible."
 };
 
 export default function ContactPage() {

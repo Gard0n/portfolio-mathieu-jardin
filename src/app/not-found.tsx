@@ -19,7 +19,7 @@ export default function NotFound() {
           href="/contact"
           className="rounded-full border border-border bg-surface/80 px-6 py-2.5 text-sm font-medium text-text transition hover:border-accent/50"
         >
-          Me contacter
+          Travailler ensemble
         </Link>
       </div>
     </div>
