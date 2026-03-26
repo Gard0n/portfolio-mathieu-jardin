@@ -15,12 +15,12 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(siteContent.site.url),
   title: {
-    default: `${siteContent.site.name} — Portfolio`,
+    default: siteContent.site.name,
     template: `%s — ${siteContent.site.name}`
   },
   description: siteContent.site.description,
   openGraph: {
-    title: `${siteContent.site.name} — Portfolio`,
+    title: siteContent.site.name,
     description: siteContent.site.description,
     url: siteContent.site.url,
     siteName: siteContent.site.name,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteContent.site.name} — Portfolio`,
+    title: siteContent.site.name,
     description: siteContent.site.description,
     images: [new URL(siteContent.site.ogImage, siteContent.site.url).toString()]
   },
