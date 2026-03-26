@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
 
 // Remplace YOUR_FORM_ID par ton ID Formspree (formspree.io → New Form → copie l'ID)
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xojpqzyj";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
