@@ -53,6 +53,16 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             ) : null}
           </div>
         ) : null}
+        {"liveUrl" in project && project.liveUrl ? (
+          <a
+            href={project.liveUrl as string}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-flex rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-medium text-accent transition hover:bg-accent/20"
+          >
+            Voir le projet en ligne ↗
+          </a>
+        ) : null}
       </section>
 
       {"image" in project && project.image && (

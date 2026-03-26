@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Portfolio MJ V1.18",
-    "role": "Business Dev e-commerce | Shopify | CRM",
+    "role": "Développeur Shopify & Stratège E-commerce | Freelance",
     "description": "Portfolio Business Dev e-commerce (Shopify, CRM, email) à Lille : parcours, alternance, projets et livrables SCM.",
     "url": "https://gard0n.github.io/portfolio-mathieu-jardin",
     "ogImage": "/og.svg",
@@ -251,6 +251,7 @@
       "title": "Nexus — Journal culturel personnel",
       "subtitle": "App web React pour tracker films, séries, livres, jeux et musique",
       "tags": ["React", "TypeScript", "Dev personnel"],
+      "liveUrl": "https://gard0n.github.io/Nexus/",
       "role": "Développeur (solo)",
       "duration": "2025 - en cours",
       "tools": ["React 19", "Vite", "TypeScript", "Tailwind CSS v4", "TMDB API", "OpenLibrary", "RAWG", "MusicBrainz", "localStorage", "GitHub Pages"],
@@ -286,49 +287,6 @@
         "Concevoir pour un usage réel pousse à soigner les edge cases",
         "TypeScript + localStorage suffisent pour une app personnelle robuste",
         "L'architecture initiale conditionne la facilité d'évolution"
-      ]
-    },
-    {
-      "slug": "fresq-v2-fresque-collaborative",
-      "title": "FRESQ-V2 — Fresque collaborative commerciale",
-      "subtitle": "App temps réel de vente collaborative de cases sur une toile partagée",
-      "tags": ["Node.js", "WebSocket", "Dev personnel"],
-      "role": "Développeur fullstack (solo)",
-      "duration": "2025 - en cours",
-      "tools": ["Node.js", "Express", "Socket.IO", "PostgreSQL", "Supabase", "Render.com", "WebSocket", "Stripe (en cours)"],
-      "summary": "Application web temps réel permettant à des utilisateurs d'acheter et peindre des cases sur une toile collaborative partagée, avec système de tiers, loterie et parrainage.",
-      "context": [
-        "Concept : toile partagée découpée en cases vendues à des participants",
-        "Synchronisation temps réel entre tous les utilisateurs connectés",
-        "Système commercial complet : tiers, packs, loterie, parrainage",
-        "Stack backend : Node.js + Express + Socket.IO + PostgreSQL (Supabase)"
-      ],
-      "objective": [
-        "Concevoir un système de vente collaborative avec progression de tiers",
-        "Assurer la cohérence temps réel via WebSocket + PostgreSQL LISTEN/NOTIFY",
-        "Construire un dashboard admin pour gérer les ventes et tirages",
-        "Intégrer Stripe pour la monétisation"
-      ],
-      "actions": [
-        "Architecture WebSocket avec synchronisation PostgreSQL LISTEN/NOTIFY",
-        "Système de 10 tiers avec expansion automatique de la grille",
-        "Dashboard admin complet (gestion tickets, loteries, lots, utilisateurs)",
-        "Système de loterie (1 ticket = 1 chance) et programme de parrainage",
-        "Auth email + tokens de session, rate limiting, cache, transactions PG",
-        "Déploiement sur Render.com, gestion des tokens et sessions"
-      ],
-      "results": [
-        "Application à 90 % fonctionnelle déployée sur Render.com",
-        "Synchronisation temps réel stable entre plusieurs utilisateurs",
-        "Dashboard admin opérationnel (4 onglets)",
-        "Système de loterie et parrainage fonctionnels",
-        "En attente d'intégration Stripe pour la mise en production"
-      ],
-      "learnings": [
-        "WebSocket + PostgreSQL LISTEN/NOTIFY est une combinaison puissante pour le temps réel",
-        "Un système commercial complet implique beaucoup de logique métier à anticiper",
-        "Les transactions PostgreSQL sont indispensables pour la cohérence des données",
-        "Décomposer les fonctionnalités en services isolés facilite les tests et la maintenance"
       ]
     },
     {
@@ -370,6 +328,81 @@
         "yt-dlp est bien plus robuste que youtube-dl pour la compatibilité",
         "Gérer les téléchargements asynchrones en Python demande de l'attention",
         "Un projet simple mais fini vaut mieux qu'un projet ambitieux inachevé"
+      ]
+    },
+    {
+      "slug": "minus-flechettes",
+      "title": "Minus — App de fléchettes",
+      "subtitle": "PWA de classement et suivi de parties de fléchettes",
+      "tags": ["Dev personnel"],
+      "liveUrl": "https://gard0n.github.io/Minus/",
+      "role": "Développeur (solo)",
+      "duration": "2025",
+      "tools": ["Vanilla JS", "Supabase", "PWA", "CSS"],
+      "summary": "Application web progressive (PWA) pour scorer et suivre des parties de fléchettes entre joueurs : classement, historique et statistiques.",
+      "context": [
+        "Besoin d'un outil simple pour gérer des parties de fléchettes en soirée",
+        "Pas de solution légère et rapide disponible sans inscription ni pub",
+        "PWA pour l'installer sur téléphone comme une app native"
+      ],
+      "objective": [
+        "Créer une app fluide et sans friction, utilisable en pleine partie",
+        "Gérer plusieurs joueurs et plusieurs formats de jeu",
+        "Persister les scores et l'historique sans backend lourd"
+      ],
+      "actions": [
+        "Interfaces de saisie des scores par tour et par joueur",
+        "Calcul automatique du classement et de l'historique",
+        "Intégration Supabase pour la persistance des données",
+        "Configuration PWA (manifest, service worker) pour installation mobile"
+      ],
+      "results": [
+        "App v1.2 déployée et utilisée en conditions réelles",
+        "Installation possible sur téléphone (PWA)",
+        "Scores et historique persistés via Supabase"
+      ],
+      "learnings": [
+        "Une PWA bien configurée offre une vraie expérience native sans framework",
+        "Supabase simplifie énormément la persistance sur des apps légères",
+        "Concevoir pour un usage réel (en soirée, sur mobile) change les priorités UX"
+      ]
+    },
+    {
+      "slug": "bullet-journal",
+      "title": "Bullet Journal — App quotidien",
+      "subtitle": "Daily log, habitudes, projets et reviews — 100% local",
+      "tags": ["Dev personnel"],
+      "liveUrl": "https://gard0n.github.io/bullet/",
+      "role": "Développeur (solo)",
+      "duration": "2025 - en cours",
+      "tools": ["Vanilla JS", "localStorage", "PWA", "CSS"],
+      "summary": "Application de bullet journal locale (v2.13) : daily log, suivi des habitudes, gestion de projets et reviews hebdo/mensuels. Aucune donnée en ligne.",
+      "context": [
+        "Besoin d'un outil de suivi quotidien simple, rapide et privé",
+        "Les apps existantes sont trop lourdes ou nécessitent un compte",
+        "Approche local-first : toutes les données restent sur l'appareil"
+      ],
+      "objective": [
+        "Reproduire le système bullet journal en version numérique légère",
+        "Couvrir daily log, habitudes, projets et reviews dans une seule app",
+        "Zéro dépendance, zéro compte, zéro tracking"
+      ],
+      "actions": [
+        "Daily log avec entrées rapides et tags",
+        "Tracker d'habitudes avec visualisation de régularité",
+        "Gestion de projets et tâches associées",
+        "Reviews hebdomadaires et mensuelles",
+        "Persistance localStorage, export JSON"
+      ],
+      "results": [
+        "App v2.13 déployée et utilisée au quotidien",
+        "Couverture complète du workflow bullet journal",
+        "Légèreté maximale : vanilla JS, aucun framework"
+      ],
+      "learnings": [
+        "localStorage suffit pour des apps personnelles si bien structuré",
+        "Itérer sur sa propre app quotidienne accélère l'amélioration UX",
+        "La contrainte 'zéro dépendance' force à bien maîtriser les APIs native"
       ]
     }
   ]

@@ -14,8 +14,8 @@ export const siteContent = {
   home: {
     ...contentJson.home,
     ctas: [
-      { label: "Voir les projets", href: "/projects" },
       { label: "Me recruter", href: "/contact" },
+      { label: "Voir les projets", href: "/projects" },
       { label: "Portfolio SCM", href: "/course-portfolio" }
     ],
     highlights: [

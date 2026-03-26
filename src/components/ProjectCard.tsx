@@ -45,9 +45,20 @@ export function ProjectCard({ project }: { project: Project }) {
         {"duration" in project && project.duration ? (
           <p className="mt-2 text-xs text-muted">{project.duration as string}</p>
         ) : null}
-        <span className="mt-4 inline-flex text-xs font-medium text-accent">
-          Voir le détail →
-        </span>
+        <div className="mt-4 flex items-center gap-3">
+          <span className="text-xs font-medium text-accent">Voir le détail →</span>
+          {"liveUrl" in project && project.liveUrl ? (
+            <a
+              href={project.liveUrl as string}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="rounded-full border border-border px-3 py-1 text-xs text-muted transition hover:border-accent/50 hover:text-text"
+            >
+              Voir le projet ↗
+            </a>
+          ) : null}
+        </div>
       </div>
     </Link>
   );

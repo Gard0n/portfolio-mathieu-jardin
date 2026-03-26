@@ -69,15 +69,14 @@ export default function HomePage() {
         title="À propos, en bref"
         description="Repères rapides avant d&apos;entrer dans le détail."
       >
-        <div className="section-grid">
+        <div className="grid gap-6 md:grid-cols-3">
           <Card
             title="Identité"
-            description="Business + digital + SCM"
+            description="Shopify · Email · Stratégie"
             className="motion-safe:animate-rise"
           >
             <p>
-              Étudiant M1 en SCM, alternant dans l&apos;e-commerce. J&apos;aime les
-              projets directs et les résultats lisibles.
+              Développeur Shopify et stratège e-commerce. J&apos;aide les marques à lancer, migrer et faire croître leur boutique en ligne.
             </p>
           </Card>
           <Card
@@ -97,6 +96,26 @@ export default function HomePage() {
               <li className="flex gap-2">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
                 <span>Documenter simple</span>
+              </li>
+            </ul>
+          </Card>
+          <Card
+            title="Disponibilité"
+            description="Freelance ouvert"
+            className="motion-safe:animate-rise"
+          >
+            <ul className="space-y-2 text-sm">
+              <li className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                <span>Missions freelance ouvertes</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                <span>Réponse sous 24h</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                <span>Remote &amp; Lille</span>
               </li>
             </ul>
           </Card>
