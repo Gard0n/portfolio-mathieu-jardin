@@ -26,17 +26,19 @@ export function Footer() {
           ))}
         </div>
         <div className="flex gap-3">
-          {siteContent.contact.links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="rounded-full border border-border px-3 py-1 hover:border-accent/60"
-              target={link.href.startsWith("http") ? "_blank" : undefined}
-              rel={link.href.startsWith("http") ? "noreferrer" : undefined}
-            >
-              {link.label}
-            </a>
-          ))}
+          {siteContent.contact.links
+            .filter((link) => link.label === "GitHub" || link.label === "LinkedIn")
+            .map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="rounded-full border border-border px-3 py-1 hover:border-accent/60"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link.label}
+              </a>
+            ))}
         </div>
       </div>
     </footer>

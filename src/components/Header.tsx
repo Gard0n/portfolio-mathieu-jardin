@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { siteContent } from "@/content/siteContent";
 import { cn } from "@/lib/utils";
 
@@ -48,7 +47,6 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <ThemeToggle />
           <Link
             href="/contact"
             className="hidden rounded-full border border-border bg-surface/80 px-4 py-2 text-xs font-medium text-text transition hover:border-accent/50 md:inline-flex"

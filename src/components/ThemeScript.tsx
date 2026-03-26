@@ -1,14 +1,7 @@
 /* eslint-disable @next/next/no-before-interactive-script-outside-document */
 import Script from "next/script";
 
-const code = `(() => {
-  try {
-    const stored = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = stored === 'dark' || stored === 'light' ? stored : (prefersDark ? 'dark' : 'light');
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  } catch {}
-})();`;
+const code = `document.documentElement.classList.add('dark');`;
 
 export function ThemeScript() {
   return (

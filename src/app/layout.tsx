@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={spaceGrotesk.variable} suppressHydrationWarning>
+    <html lang="fr" className={`${spaceGrotesk.variable} dark`} suppressHydrationWarning>
       <body>
         <ThemeScript />
         <a className="skip-link" href="#contenu">
