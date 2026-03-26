@@ -717,26 +717,31 @@ export const siteContent = {
       }
     },
     postReview: [
-      "Comparer le bilan initial et le bilan final.",
-      "Expliquer ce que je connais désormais du SCM.",
-      "Identifier les connaissances consolidées ou remises en question.",
-      "Dégager les compétences acquises.",
-      "Montrer l'évolution du lien apprentissage / supply chain."
+      "Ma vision initiale était juste mais partielle : flux, stocks, ruptures, logistique — c'était là, mais incomplet.",
+      "Ce que j'ai découvert : l'effet bullwhip et l'importance de l'information dans les décisions de commande (Beer Game).",
+      "Les stratégies face à l'instabilité mondiale : nearshoring, friendshoring, reshoring — et pourquoi elles émergent.",
+      "Les cadres VUCA et BANI pour analyser un environnement incertain (PS5, Eco-Market).",
+      "La gestion des risques supply chain : identification, scoring, plans d'action (For Sure).",
+      "Les risques de la transformation numérique en grande distribution (GiFi ERP).",
+      "L'impact de l'IoT sur le retail et la SCM : données en temps réel, prévision, traçabilité.",
+      "Ce qui a été remis en question : j'avais sous-estimé la dimension stratégique — la SCM n'est pas qu'opérationnelle, elle est au cœur des décisions d'entreprise.",
+      "Compétences acquises : prise de recul face à une situation complexe, analyse des enjeux à partir d'un cas concret, identification et priorisation des risques.",
+      "Ce cours m'a donné des grilles de lecture pour des situations que je vivais déjà en alternance (commandes fournisseurs, gestion des stocks chez AVS) sans avoir les mots pour les analyser.",
+      "Passage de la pratique intuitive à une compréhension structurée : je fais des choix similaires, mais je suis maintenant capable de les justifier et d'en anticiper les impacts."
     ],
     valorization: [
-      "Réutiliser ces connaissances en entreprise.",
-      "Créer des liens avec l'alternance et le futur métier.",
-      "Identifier les apports dans les autres cours.",
-      "Montrer la valeur ajoutée du cours dans le parcours global."
+      "En alternance chez AVS, j'ai récemment repris la gestion des stocks : le cours m'a fourni un cadre pour aborder cette tâche différemment — anticiper les ruptures, penser en flux plutôt qu'en instantané.",
+      "La notion d'effet bullwhip éclaire directement les décisions de commande : commander trop ou trop peu par manque d'anticipation, c'est exactement ce que j'essaie d'éviter au quotidien.",
+      "Lien fort avec le cours de Digital & Green Supply : les deux abordent la transformation de la chaîne logistique, l'un par l'angle technologique/durable, l'autre par l'angle stratégique et opérationnel.",
+      "Valeur ajoutée dans le parcours global : comprendre les tenants et aboutissants de la supply chain, même sans en faire le cœur de métier, permet de mieux appréhender les décisions d'entreprise — qu'il s'agisse de choisir un fournisseur, de gérer un projet de migration, ou d'anticiper un risque."
     ],
     selfAssessment: [
-      "Auto-évaluation honnête sur 6 points (progression, compréhension, prise de recul).",
-      "Justifier brièvement chaque ligne pour montrer la cohérence.",
-      "Rigueur : capacité à suivre des process et documenter proprement",
-      "Synthèse : facilité à extraire l'essentiel pour des livrables clairs",
-      "Prise de décision : apprentissage en cours, besoin d'affiner l'arbitrage sous contraintes",
-      "Collaboration : bonne écoute et communication en équipe",
-      "Réflexivité : capacité à tirer des apprentissages de chaque exercice"
+      "Acquisition de nouvelles connaissances — 0,75/1 : J'ai bien enrichi ma compréhension du SCM. Les concepts clés (bullwhip, VUCA, gestion des risques, IoT) sont désormais solides, même si certaines nuances restent à approfondir.",
+      "Progression personnelle — 0,75/1 : Ma progression est réelle et visible. Je suis passé d'une vision intuitive et opérationnelle à une approche plus structurée et analytique.",
+      "Remobiliser en situation professionnelle — 0,75/1 : J'applique directement ces connaissances dans ma gestion des stocks chez AVS. La logique d'anticipation et de flux remplace progressivement le pilotage au cas par cas.",
+      "Compréhension du cours et de ses notions clés — 0,75/1 : Bonne compréhension globale de l'ensemble du cours. Quelques notions (APS, WMS) restent moins maîtrisées dans leur profondeur technique.",
+      "Prise de recul sur les études de cas — 0,5/1 : Analyse correcte sur la plupart des cas, mais perfectible. Certains exercices (Beer Game, IoT) ont demandé plus de recul que d'autres (GiFi, For Sure).",
+      "Faire des liens (cours ↔ autres enseignements ↔ parcours pro) — 0,75/1 : Liens cohérents identifiés avec le cours Digital & Green Supply et avec mon alternance chez AVS. L'articulation entre théorie et pratique est de plus en plus naturelle."
     ],
     annexes: [
       "Document source : Management Supply Chain (PDF)."
