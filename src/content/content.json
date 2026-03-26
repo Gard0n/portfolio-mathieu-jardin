@@ -9,11 +9,9 @@
   },
   "home": {
     "heroTitle": "Mathieu Jardin",
-    "heroSubtitle": "Business Dev e-commerce | Shopify, CRM & contenu | M1 CDC (IAE Lille)",
+    "heroSubtitle": "Développeur Shopify & Stratège E-commerce — J'aide les marques à lancer, migrer et développer leur boutique en ligne.",
     "heroBullets": [
-      "Alternance e-commerce B2C (AVS) depuis avr. 2025",
-      "Newsletter Klaviyo : 3 emails/semaine, 36 000 abonnés, 50 % d'ouverture",
-      "Migration Shopify : 100 produits + 200 articles (4 mois)"
+      "Disponible pour des missions freelance — Shopify, Email Marketing, Stratégie E-commerce"
     ]
   },
   "about": {
@@ -111,6 +109,7 @@
         "title": "Newsletter Chat AVS (3 emails/semaine, 36 000 abonnés)",
         "subtitle": "Rédaction, envoi, analyse et optimisation",
         "tags": ["Emailing", "CRM", "Content Marketing"],
+        "metrics": ["36 000 abonnés", "50% taux d'ouverture"],
         "role": "Responsable BU chat / Email & CRM",
         "duration": "oct. 2025 - janv. 2026",
         "tools": ["Klaviyo", "Segmentation", "Automations", "Calendrier éditorial"],
@@ -155,6 +154,7 @@
         "title": "Migration et développement Shopify AVS",
         "subtitle": "Migration, customisation et intégration d'apps",
         "tags": ["Shopify", "E-commerce", "Liquid"],
+        "metrics": ["100 produits", "200 articles", "4 mois"],
         "role": "Dev Shopify & pilotage migration",
         "duration": "4 mois (2025)",
         "tools": [

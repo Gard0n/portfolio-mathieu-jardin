@@ -7,15 +7,16 @@ export const siteContent = {
     { label: "Accueil", href: "/" },
     { label: "À propos", href: "/about" },
     { label: "Projets", href: "/projects" },
+    { label: "Services", href: "/services" },
     { label: "Portfolio SCM", href: "/course-portfolio" },
     { label: "Contact", href: "/contact" }
   ],
   home: {
     ...contentJson.home,
     ctas: [
-      { label: "Voir projets", href: "/projects" },
-      { label: "Portfolio SCM", href: "/course-portfolio" },
-      { label: "Me contacter", href: "/contact" }
+      { label: "Voir les projets", href: "/projects" },
+      { label: "Me recruter", href: "/contact" },
+      { label: "Portfolio SCM", href: "/course-portfolio" }
     ],
     highlights: [
       {
@@ -24,11 +25,11 @@ export const siteContent = {
       },
       {
         title: "Spécialités",
-        items: ["Shopify (Liquid)", "Communication", "Stratégie commerciale"]
+        items: ["Shopify (Liquid)", "Email Marketing", "Stratégie e-commerce"]
       },
       {
-        title: "Actuellement",
-        items: ["M1 + alternance", "Projets perso", "Veille e-commerce"]
+        title: "Disponibilité",
+        items: ["Missions freelance ouvertes", "Réponse sous 24h", "Remote & Lille"]
       }
     ]
   },
@@ -710,7 +711,9 @@ export const siteContent = {
   contact: {
     links: [
       { label: "GitHub", href: "https://github.com/Gard0n" },
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/mathieujardin/" }
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/mathieujardin/" },
+      { label: "Fiverr", href: "https://www.fiverr.com/mathieujardin" },
+      { label: "Malt", href: "https://www.malt.fr/profile/mathieujardin" }
     ]
   }
 } as const;

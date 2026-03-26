@@ -12,9 +12,15 @@ export default function HomePage() {
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div className="space-y-6">
             <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-muted">
-                Portfolio
-              </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                  Portfolio
+                </p>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                  Freelance disponible
+                </span>
+              </div>
               <h1 className="mt-3 text-4xl font-semibold md:text-5xl">
                 {home.heroTitle}
               </h1>

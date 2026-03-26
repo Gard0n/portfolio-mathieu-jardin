@@ -8,6 +8,12 @@ export function Footer() {
         <div>
           <p className="text-text font-medium">{siteContent.site.name}</p>
           <p>{siteContent.site.role}</p>
+          <p className="mt-1 text-xs">
+            Freelance disponible —{" "}
+            <a href={`mailto:${siteContent.site.email}`} className="hover:text-text">
+              {siteContent.site.email}
+            </a>
+          </p>
           <Link href="/admin" className="mt-2 inline-block text-xs opacity-50 hover:opacity-100">
             Admin ⚙️
           </Link>

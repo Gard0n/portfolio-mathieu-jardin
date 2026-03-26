@@ -146,6 +146,17 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </ul>
         </Card>
       </Section>
+
+      <section className="rounded-[32px] border border-accent/30 bg-accent/5 p-8 text-center">
+        <p className="text-sm text-muted">Projet similaire ?</p>
+        <h2 className="mt-2 text-xl font-semibold">Travaillons ensemble.</h2>
+        <Link
+          href="/contact"
+          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
+        >
+          Me contacter →
+        </Link>
+      </section>
     </div>
   );
 }
