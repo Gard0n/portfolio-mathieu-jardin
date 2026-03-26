@@ -96,7 +96,7 @@ export function ContactForm() {
           autoComplete="name"
           value={values.name}
           onChange={(event) => handleChange("name", event.target.value)}
-          className="mt-2 w-full rounded-2xl border border-border bg-surface/80 px-4 py-3 text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="mt-2 w-full rounded-2xl border border-border bg-surface/80 px-4 py-3 text-sm text-text placeholder:text-muted [color-scheme:dark] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           aria-invalid={Boolean(errors.name)}
           aria-describedby={errors.name ? "name-error" : undefined}
           required
@@ -119,7 +119,7 @@ export function ContactForm() {
           autoComplete="email"
           value={values.email}
           onChange={(event) => handleChange("email", event.target.value)}
-          className="mt-2 w-full rounded-2xl border border-border bg-surface/80 px-4 py-3 text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="mt-2 w-full rounded-2xl border border-border bg-surface/80 px-4 py-3 text-sm text-text placeholder:text-muted [color-scheme:dark] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           aria-invalid={Boolean(errors.email)}
           aria-describedby={errors.email ? "email-error" : undefined}
           required
@@ -141,7 +141,7 @@ export function ContactForm() {
           rows={5}
           value={values.message}
           onChange={(event) => handleChange("message", event.target.value)}
-          className="mt-2 w-full rounded-2xl border border-border bg-surface/80 px-4 py-3 text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="mt-2 w-full rounded-2xl border border-border bg-surface/80 px-4 py-3 text-sm text-text placeholder:text-muted [color-scheme:dark] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           aria-invalid={Boolean(errors.message)}
           aria-describedby={errors.message ? "message-error" : undefined}
           required

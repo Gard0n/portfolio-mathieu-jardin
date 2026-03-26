@@ -711,9 +711,7 @@ export const siteContent = {
   contact: {
     links: [
       { label: "GitHub", href: "https://github.com/Gard0n" },
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/mathieujardin/" },
-      { label: "Fiverr", href: "https://www.fiverr.com/mathieujardin" },
-      { label: "Malt", href: "https://www.malt.fr/profile/mathieujardin" }
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/mathieujardin/" }
     ]
   }
 } as const;
