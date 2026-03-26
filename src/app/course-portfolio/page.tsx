@@ -800,6 +800,72 @@ export default function CoursePortfolioPage() {
         </Section>
       ) : null}
 
+      {coursePortfolio.caseStudies.iot ? (
+        <Section title="Cas IoT & Distribution" description="Comment l'Internet of Things révolutionne le retail et la supply chain.">
+          <Card title={coursePortfolio.caseStudies.iot.title} description={coursePortfolio.caseStudies.iot.description}>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-sm font-semibold">Introduction</h3>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {coursePortfolio.caseStudies.iot.intro.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2">
+                <div>
+                  <h3 className="text-sm font-semibold">I. Implications dans le retail</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.iot.retailImplications.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">II. Révolution du modèle de distribution</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.iot.retailRevolution.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">III. Conséquences sur le SCM</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.iot.scmConsequences.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">Conclusion</h3>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    {coursePortfolio.caseStudies.iot.conclusion.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </Section>
+      ) : null}
+
       <Section title="Synthèse d'apprentissage" description="Bilan a posteriori.">
         <Card>
           <ul className="space-y-2 text-sm">

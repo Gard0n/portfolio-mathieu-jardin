@@ -336,6 +336,11 @@ export const siteContent = {
         date: "04/03/2026",
         title: "GIFI ERP",
         note: "Migration ERP — étude de cas"
+      },
+      {
+        date: "25/03/2026",
+        title: "IoT",
+        note: "Comment l'IoT peut-il révolutionner la distribution ?"
       }
     ],
     caseStudies: {
@@ -679,6 +684,35 @@ export const siteContent = {
           "Changer d'ERP n'est pas une décision anodine : une migration mal conduite coûte plus cher que maintenir l'existant.",
           "La gestion du changement n'est pas un accessoire — elle est centrale.",
           "Évaluer la maturité des processus, la qualité des données et la capacité organisationnelle avant de décider."
+        ]
+      },
+      iot: {
+        title: "IoT & Distribution",
+        description: "Comment l'Internet of Things révolutionne le retail et la supply chain.",
+        intro: [
+          "L'IoT désigne les objets physiques connectés capables d'échanger des données en temps réel.",
+          "Dans un contexte de distribution où la demande est de plus en plus individualisée (D < O), l'IoT s'impose comme un levier de transformation profonde.",
+          "Le cours illustre cette réalité à travers quatre objets connectés : réfrigérateur, machine à laver, cafetière et imprimante."
+        ],
+        retailImplications: [
+          "Commande automatique et prédictive : le réfrigérateur connecté détecte les manquants et déclenche une commande (Amazon Fresh, Leclerc Drive) — c'est l'objet qui achète, plus le consommateur.",
+          "Fidélisation par l'usage : cafetière ou imprimante connectée (Nespresso, HP Instant Ink) lie le consommateur à une marque via abonnement automatique — le retail devient serviciel.",
+          "Collecte massive de données comportementales (fréquence, quantité, moment) → Smart Data → offres ultra-personnalisées, marketing prédictif, meilleure gestion des stocks."
+        ],
+        retailRevolution: [
+          "Du retail transactionnel au retail proactif : l'objet initie la transaction avant que le besoin soit conscient — passage d'un modèle réactif à un modèle prédictif.",
+          "Désintermédiation du point de vente physique : le magasin est court-circuité, forçant les enseignes vers l'omnicanal et des modèles de type 'Product as a Service'.",
+          "Nouveaux modèles économiques : maintenance prédictive (la machine à laver signale la panne avant qu'elle survienne), vente de service plutôt que de produit (Michelin vend des km, pas des pneus)."
+        ],
+        scmConsequences: [
+          "Gestion des stocks en temps réel : capteurs IoT (RFID, balises) dans entrepôts et rayons → suivi précis des flux → réduction ruptures et surstock → lien direct avec le WMS.",
+          "Traçabilité totale de la chaîne : de l'usine au consommateur final, chaque produit est suivi individuellement — avantage concurrentiel critique en cas de crise (rappel produit, rupture), et réponse aux exigences RSE.",
+          "Planification plus précise : données IoT des consommateurs alimentent les outils APS → prévision de la demande plus fine → réduction de l'effet bullwhip (amplification des variations tout au long de la chaîne)."
+        ],
+        conclusion: [
+          "L'IoT représente une transformation systémique du retail et de la supply chain, pas seulement une évolution technologique.",
+          "Double enjeu pour les enseignes : saisir les opportunités (fidélisation, data, nouveaux modèles) tout en maîtrisant les risques (dépendance technologique, cybersécurité, désintermédiation subie).",
+          "En résumé : l'IoT fait basculer le retail d'un modèle transactionnel et réactif vers un modèle prédictif, serviciel et data-driven."
         ]
       }
     },
