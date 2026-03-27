@@ -34,7 +34,7 @@
       },
       {
         "name": "Emailing & CRM",
-        "detail": "Klaviyo : segmentation (nouveaux, VIP), automations (welcome, abandon, post-achat), 3 emails/semaine, 36 000 abonnés. Suivi ouvertures, clics, désabonnements, conversion."
+        "detail": "Klaviyo : segmentation (nouveaux, VIP), automations (welcome, abandon, post-achat), 3 emails/semaine, 40 000 abonnés, 50 % de taux d'ouverture. Suivi ouvertures, clics, désabonnements, conversion."
       },
       {
         "name": "Business Development",
@@ -71,9 +71,9 @@
         "title": "Business Developer",
         "subtitle": "Animaux Vie et Santé — stage puis alternance (Hybride, Wasquehal)",
         "details": [
-          "Gestion de la newsletter Chat",
-          "Développement de la boutique Shopify",
-          "Gestion de projet, CRM, vente"
+          "Newsletter Chat Klaviyo : 3 emails/semaine, 40 000 abonnés, 50 % d'ouverture",
+          "Migration et développement boutique Shopify (100 produits, thème Fullstack)",
+          "Développement partenariats, gestion de projet, CRM"
         ]
       },
       {
@@ -81,9 +81,9 @@
         "title": "Développement commercial",
         "subtitle": "Gabby — Freelance (Hybride, Lille)",
         "details": [
-          "Prise de rendez-vous",
-          "Suivi clients",
-          "Formation B2C"
+          "Prospection B2C : 50 appels/jour, ~100 RDV/mois équipe",
+          "Encadrement d'une équipe de 4 commerciaux",
+          "Refonte du tableau de suivi (Google Sheets)"
         ]
       },
       {
@@ -91,9 +91,29 @@
         "title": "Commercial B2C",
         "subtitle": "Gabby — Stage (Hybride, Lille)",
         "details": [
-          "RDV d'estimations pour agences partenaires",
-          "Suivi des rendez-vous",
-          "Gestion de l'équipe B2C"
+          "Prise de RDV d'estimations pour agences immobilières partenaires",
+          "Gestion des conflits et suivi clients BtoB/BtoC",
+          "Premières armes en prospection commerciale intensive"
+        ]
+      },
+      {
+        "date": "déc. 2023 - sept. 2025",
+        "title": "Agent d'accueil & responsable parcours",
+        "subtitle": "Koezio — Job étudiant (Lille)",
+        "details": [
+          "Accueil, briefing client, barman et cuisine",
+          "Responsable parcours en hauteur (CQPOPAH niveau 4)",
+          "Formation SST — management en environnement dynamique"
+        ]
+      },
+      {
+        "date": "janv. 2023 - déc. 2023",
+        "title": "Employé polyvalent",
+        "subtitle": "Lidl — Job étudiant (Lille)",
+        "details": [
+          "Mise en rayon, responsable boulangerie, caissier",
+          "Première expérience en grande distribution",
+          "Rigueur opérationnelle et sens des responsabilités"
         ]
       }
     ]
@@ -102,47 +122,47 @@
       {
         "category": "pro",
         "slug": "newsletter-chat-avs",
-        "title": "Newsletter Chat AVS (3 emails/semaine, 36 000 abonnés)",
+        "title": "Newsletter Chat AVS (3 emails/semaine, 40 000 abonnés)",
         "subtitle": "Rédaction, envoi, analyse et optimisation",
         "tags": ["Emailing", "CRM", "Content Marketing"],
-        "metrics": ["36 000 abonnés", "50% taux d'ouverture"],
+        "metrics": ["40 000 abonnés", "50% taux d'ouverture"],
         "role": "Responsable BU chat / Email & CRM",
-        "duration": "oct. 2025 - janv. 2026",
+        "duration": "oct. 2025 - présent",
         "tools": ["Klaviyo", "Segmentation", "Automations", "Calendrier éditorial"],
         "image": "/projects/newsletter-chat-email.jpg",
-        "summary": "Pilotage complet d'une newsletter B2C via Klaviyo (3 envois/semaine) pour 36 000 abonnés, avec segmentation et automatisations.",
+        "summary": "Pilotage complet d'une newsletter B2C via Klaviyo (3 envois/semaine) pour 40 000 abonnés, avec segmentation et automatisations.",
       "context": [
-        "Newsletter Chat sous Klaviyo, base de 26 000 abonnés (oct. 2025) → 36 000 (janv. 2026)",
-        "Rythme de 3 emails/semaine à tenir sur la durée",
-        "Segmentation (nouveaux, VIP, profils) et automatisations à déployer",
-        "Objectif : conversion vers achat, audience multi-profils"
+        "Newsletter Chat sous Klaviyo, base de 26 000 abonnés à la reprise (oct. 2025)",
+        "Rythme de 3 emails/semaine à tenir sur la durée, soit ~12 emails/mois",
+        "Segmentation (nouveaux, VIP, profils) et automatisations à déployer depuis zéro",
+        "Objectif : conversion vers achat sur une audience multi-profils (propriétaires de chats)"
       ],
       "objective": [
-        "Maintenir un calendrier éditorial clair (12 emails/mois)",
-        "Conserver un fort engagement et générer des achats",
-        "Mettre en place les flows welcome, abandon, post-achat",
-        "Mixer contenus éducatifs et promotionnels sans sur-solliciter"
+        "Maintenir un calendrier éditorial rigoureux sans sur-solliciter l'audience",
+        "Conserver un fort taux d'engagement et générer des achats récurrents",
+        "Mettre en place les flows clés : welcome, abandon panier, post-achat",
+        "Mixer contenus éducatifs (soins, santé chat) et promotionnels de façon équilibrée"
       ],
       "actions": [
-        "Rédaction complète des emails (sujet, corps, CTA)",
-        "Segmentation des listes (nouveaux, VIP, etc.)",
-        "Automatisations Klaviyo : welcome, abandon, post-achat",
-        "Calendrier éditorial et angles produits (oreilles des chats, Complexe Souplesse Articulaire)",
-        "Analyse hebdo : ouvertures, clics, désabonnements, conversion",
-        "Adaptation éditoriale selon performances et feedbacks"
+        "Rédaction complète des emails (sujet, corps, CTA) pour chaque envoi",
+        "Segmentation des listes (nouveaux abonnés, VIP, profils d'engagement)",
+        "Mise en place des automatisations Klaviyo : welcome, abandon, post-achat",
+        "Construction du calendrier éditorial mensuel avec angles produits spécifiques",
+        "Analyse hebdo des KPIs : ouvertures, clics, désabonnements, conversion",
+        "Itérations éditoriales selon les performances et feedbacks"
       ],
       "results": [
-        "Croissance de +38 % en 3 mois (26 000 → 36 000 abonnés)",
-        "Taux d'ouverture maintenu à 50 %",
-        "Flows clés en place (welcome, abandon, post-achat)",
-        "Rythme de 3 emails/semaine stabilisé",
-        "Process éditorial documenté et autonome"
+        "Croissance de +54 % (26 000 → 40 000 abonnés)",
+        "Taux d'ouverture maintenu à 50 % malgré le volume",
+        "Flows welcome, abandon et post-achat opérationnels",
+        "Rythme de 3 emails/semaine stabilisé sur la durée",
+        "Process éditorial documenté, autonome et reproductible"
       ],
       "learnings": [
-        "Le rythme impose un process simple",
-        "Le choix du sujet fait l'ouverture",
-        "Segmentation = meilleure conversion",
-        "La data guide l'édito"
+        "Le rythme soutenu exige un process simple et des templates réutilisables",
+        "Le choix du sujet est le premier levier d'ouverture",
+        "La segmentation améliore la pertinence et réduit les désabonnements",
+        "La data hebdo guide l'édito bien plus que l'intuition"
       ]
     },
       {

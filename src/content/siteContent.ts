@@ -35,9 +35,11 @@ export const siteContent = {
   },
   about: {
     identity: [
-      "Développeur Shopify et stratège e-commerce freelance.",
-      "Basé à Lille, disponible en remote sur tout le territoire.",
-      "Autodidacte en code : je construis mes propres outils (Nexus, Minus, Bullet).",
+      "21 ans, en M1 Commerce & Distribution Connectés à l'IAE Lille.",
+      "Développeur Shopify et stratège e-commerce en alternance chez Animaux Vie et Santé (Wasquehal).",
+      "Freelance en parallèle : Shopify, email marketing Klaviyo, stratégie e-commerce.",
+      "Basé à Lille, disponible 100 % en remote sur tout le territoire.",
+      "Autodidacte en développement web — je construis mes propres outils (Nexus, Minus, Bullet Journal).",
       "Passionné de jeux vidéo, manga et rap français."
     ],
     timeline: contentJson.about.timeline,
