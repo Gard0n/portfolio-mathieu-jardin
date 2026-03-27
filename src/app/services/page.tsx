@@ -49,8 +49,8 @@ const services = [
       "Calendrier éditorial + rédaction",
       "Reporting mensuel"
     ],
-    delay: "~1 semaine · 100 €/semaine · selon les besoins",
-    price: "À partir de 400 €"
+    delay: "~1 semaine · selon les besoins",
+    price: "À partir de 600 €"
   },
   {
     icon: "📊",
@@ -78,7 +78,7 @@ const services = [
       "Point mensuel de bilan"
     ],
     delay: "Récurrent — engagement mensuel",
-    price: "À partir de 300 €/mois"
+    price: "À partir de 500 €/mois"
   },
   {
     icon: "🎓",
@@ -92,7 +92,7 @@ const services = [
       "Support écrit + ressources post-session"
     ],
     delay: "À définir selon le programme",
-    price: "150 €/session"
+    price: "200 €/session"
   }
 ];
 
