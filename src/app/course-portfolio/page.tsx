@@ -867,16 +867,33 @@ export default function CoursePortfolioPage() {
       ) : null}
 
       <Section title="Synthèse d'apprentissage" description="Bilan a posteriori.">
-        <Card>
-          <ul className="space-y-2 text-sm">
-            {coursePortfolio.postReview.map((item) => (
-              <li key={item} className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
+        <div className="space-y-4">
+          <Card title="Point de départ">
+            <p className="text-sm">{coursePortfolio.postReview[0]}</p>
+          </Card>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card title="Nouveaux concepts acquis">
+              <ul className="space-y-2 text-sm">
+                {coursePortfolio.postReview.slice(1, 7).map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+            <Card title="Ce qui a changé">
+              <ul className="space-y-2 text-sm">
+                {coursePortfolio.postReview.slice(7).map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent2" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </div>
+        </div>
       </Section>
 
       {coursePortfolio.valorization ? (
@@ -895,32 +912,37 @@ export default function CoursePortfolioPage() {
       ) : null}
 
       <Section title="Auto-évaluation" description="Posture et axes de progrès.">
-        <Card>
-          <ul className="space-y-2 text-sm">
-            {coursePortfolio.selfAssessment.map((item) => (
-              <li key={item} className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent2" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
+        <div className="grid gap-4 md:grid-cols-2">
+          {coursePortfolio.selfAssessment.map((item) => {
+            const match = item.match(/^(.+?)\s*—\s*(\d+[,.]?\d*)\/1\s*:\s*(.+)$/);
+            if (!match) return null;
+            const [, criterion, rawScore, description] = match;
+            const score = parseFloat(rawScore.replace(",", "."));
+            const pct = Math.round(score * 100);
+            const scoreLabel = rawScore.replace(".", ",") + "/1";
+            return (
+              <Card key={item}>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="text-sm font-semibold leading-snug">{criterion.trim()}</p>
+                    <span className="shrink-0 rounded-full border border-accent/40 bg-accent/10 px-2.5 py-0.5 text-xs font-semibold tabular-nums text-accent">
+                      {scoreLabel}
+                    </span>
+                  </div>
+                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-border">
+                    <div
+                      className="h-full rounded-full bg-accent transition-all"
+                      style={{ width: `${pct}%` }}
+                    />
+                  </div>
+                  <p className="text-xs text-muted leading-relaxed">{description.trim()}</p>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
       </Section>
 
-      {coursePortfolio.annexes ? (
-        <Section title="Annexes" description="Documents complémentaires.">
-          <Card>
-            <ul className="space-y-2 text-sm">
-              {coursePortfolio.annexes.map((item) => (
-                <li key={item} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </Card>
-        </Section>
-      ) : null}
     </div>
     </PasswordGate>
   );
