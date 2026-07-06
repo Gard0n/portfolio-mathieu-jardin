@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://gard0n.github.io/portfolio-mathieu-jardin/sitemap.xml

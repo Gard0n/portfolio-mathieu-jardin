@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg-partner" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f3ee" />
+      <stop offset="100%" stop-color="#e8e2d8" />
+    </linearGradient>
+    <linearGradient id="accent-partner-1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d8704d" />
+      <stop offset="50%" stop-color="#d8704d" />
+      <stop offset="100%" stop-color="#2b7a78" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-partner)" />
+
+  <!-- Decorative circles -->
+  <circle cx="650" cy="350" r="75" fill="#d8704d" opacity="0.1" />
+  <circle cx="150" cy="120" r="65" fill="#2b7a78" opacity="0.1" />
+
+  <!-- Partnership diagram -->
+  <!-- Center node -->
+  <circle cx="400" cy="225" r="50" fill="url(#accent-partner-1)" />
+  <text x="400" y="233" font-size="16" font-family="Space Grotesk, sans-serif" fill="#f6f3ee" text-anchor="middle" font-weight="600">Partenariats</text>
+
+  <!-- Partner nodes -->
+  <circle cx="250" cy="140" r="35" fill="#ffffff" stroke="#d8704d" stroke-width="3" />
+  <circle cx="550" cy="140" r="35" fill="#ffffff" stroke="#d8704d" stroke-width="3" />
+  <circle cx="250" cy="310" r="35" fill="#ffffff" stroke="#2b7a78" stroke-width="3" />
+  <circle cx="550" cy="310" r="35" fill="#ffffff" stroke="#2b7a78" stroke-width="3" />
+
+  <!-- Connection lines -->
+  <line x1="360" y1="205" x2="280" y2="160" stroke="#d8704d" stroke-width="2" opacity="0.6" />
+  <line x1="440" y1="205" x2="520" y2="160" stroke="#d8704d" stroke-width="2" opacity="0.6" />
+  <line x1="360" y1="245" x2="280" y2="290" stroke="#2b7a78" stroke-width="2" opacity="0.6" />
+  <line x1="440" y1="245" x2="520" y2="290" stroke="#2b7a78" stroke-width="2" opacity="0.6" />
+
+  <!-- Icons in partner nodes -->
+  <text x="250" y="150" font-size="24" text-anchor="middle">🤝</text>
+  <text x="550" y="150" font-size="24" text-anchor="middle">💼</text>
+  <text x="250" y="320" font-size="24" text-anchor="middle">📊</text>
+  <text x="550" y="320" font-size="24" text-anchor="middle">✨</text>
+
+  <!-- Title -->
+  <text x="400" y="420" font-size="24" font-family="Space Grotesk, sans-serif" fill="#1e1a19" text-anchor="middle" font-weight="600">Partenariats & Développement</text>
+</svg>
