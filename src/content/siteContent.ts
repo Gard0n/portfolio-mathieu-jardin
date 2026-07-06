@@ -77,6 +77,7 @@ export const siteContent = {
       "B2C",
       "Management",
       "React",
+      "React Native",
       "TypeScript",
       "Node.js",
       "WebSocket",

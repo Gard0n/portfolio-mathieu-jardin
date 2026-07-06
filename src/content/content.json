@@ -387,6 +387,54 @@
         "Itérer sur sa propre app quotidienne accélère l'amélioration UX",
         "La contrainte 'zéro dépendance' force à bien maîtriser les APIs native"
       ]
+    },
+    {
+      "category": "perso",
+      "slug": "stepz-app",
+      "title": "Stepz — App de classement de pas",
+      "subtitle": "App mobile React Native — iOS & Android",
+      "tags": ["React Native", "Dev personnel"],
+      "liveUrl": "https://play.google.com/store/apps/details?id=com.gardenny.stepz",
+      "role": "Développeur (solo)",
+      "duration": "2025 - en cours",
+      "tools": ["React Native", "Expo", "TypeScript", "Supabase", "EAS Build", "expo-notifications", "Health Connect"],
+      "summary": "Application mobile iOS & Android pour comptabiliser ses pas, suivre son streak et se classer avec ses amis en groupes hebdomadaires. Disponible sur Google Play Store.",
+      "context": [
+        "Envie d'un outil simple pour se motiver à marcher plus au quotidien",
+        "Aucune app de classement de pas entre amis sans tracking publicitaire",
+        "Besoin de gérer iOS (podomètre natif) et Android (Health Connect) avec la même codebase",
+        "Déploiement mobile natif via Expo EAS Build + mises à jour OTA"
+      ],
+      "objective": [
+        "Créer une app utilisable chaque jour avec une friction minimale",
+        "Classement en temps réel entre amis dans des groupes personnalisés",
+        "Notifications intelligentes (streak en danger, objectif atteint, victoire hebdo)",
+        "Widget Android natif visible sur l'écran d'accueil"
+      ],
+      "actions": [
+        "Architecture React Native + Expo SDK 54 avec TypeScript strict",
+        "Authentification et base de données via Supabase (profils, pas, groupes, défis)",
+        "Synchronisation des pas via podomètre iOS et Health Connect Android",
+        "Système de classement hebdomadaire et mensuel par groupe avec réactions 👏",
+        "ThemeContext dynamique : 6 couleurs d'accent persistées, dark mode",
+        "Notifications intelligentes : streak risk, objectif atteint, vainqueur hebdo",
+        "Widget Android 4×2 (react-native-android-widget) avec pas, objectif et rang",
+        "Défis avec 6 templates pré-faits et cartes de résultats avec 👑 pour le gagnant",
+        "Build natif Android via EAS Build + OTA updates via eas update"
+      ],
+      "results": [
+        "App v1.6.0 publiée sur Google Play Store",
+        "iOS + Android avec une seule codebase TypeScript",
+        "Widget Android natif sur l'écran d'accueil",
+        "Notifications intelligentes (streak, objectif, classement)",
+        "Mises à jour OTA sans recompiler l'APK pour les évolutions JS"
+      ],
+      "learnings": [
+        "Expo managed workflow + EAS couvre 95% des besoins natifs sans écrire de Java/Kotlin",
+        "Les config plugins permettent de modifier le code natif généré sans l'éjecter",
+        "OTA updates (eas update) = itérations rapides pour la logique JS",
+        "Health Connect (Android) nécessite une publication Play Store avant d'autoriser les permissions"
+      ]
     }
   ]
 }
