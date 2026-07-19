@@ -23,7 +23,7 @@ export default function HomePage() {
             <div>
               <div className="flex flex-wrap items-center gap-3">
                 <Image
-                  src={withBasePath("/projects/photoMJ.jpeg")}
+                  src={withBasePath("/projects/photoMJ.png")}
                   alt="Mathieu Jardin"
                   width={56}
                   height={56}
