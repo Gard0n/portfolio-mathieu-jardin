@@ -17,6 +17,7 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
         const imageSrc = "image" in project && project.image
           ? withBasePath(project.image as string)
           : null;
+        const employer = "employer" in project ? (project.employer as string | undefined) : undefined;
         return (
           <div key={project.slug} className="group relative rounded-3xl border border-border bg-surface/80 overflow-hidden shadow-glow transition hover:shadow-soft motion-safe:hover:-translate-y-1">
             {imageSrc ? (
@@ -31,6 +32,11 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
               </Link>
             ) : null}
             <div className="p-6">
+              {employer ? (
+                <p className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-structure/30 bg-structure/10 px-3 py-1 text-[11px] font-medium text-structure">
+                  Réalisé en alternance chez {employer}
+                </p>
+              ) : null}
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <Badge key={tag}>{tag}</Badge>
@@ -77,8 +83,8 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
 
 export default function ProjectsPage() {
   const { projects } = siteContent;
-  const proProjects = projects.items.filter(
-    (p) => "category" in p && p.category === "pro"
+  const alternanceProjects = projects.items.filter(
+    (p) => "category" in p && p.category === "alternance"
   );
   const persoProjects = projects.items.filter(
     (p) => "category" in p && p.category === "perso"
@@ -90,12 +96,37 @@ export default function ProjectsPage() {
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Sélection</p>
         <h1 className="mt-3 text-3xl font-semibold">Projets</h1>
         <p className="mt-3 text-sm text-muted">
-          Missions e-commerce et projets personnels.
+          Trois volets : mon activité freelance GRDN, mon expérience professionnelle en alternance, et mes projets personnels.
         </p>
       </section>
 
-      <Section title="Missions e-commerce" description="Projets pro : résultats concrets, format court.">
-        <ProjectGrid projects={proProjects as typeof projects.items} />
+      <Section title="Freelance GRDN" description="Missions Shopify, email marketing et stratégie e-commerce, en indépendant.">
+        <div className="rounded-3xl border border-border bg-surface/80 p-8 shadow-glow">
+          <Badge className="bg-accent/10 text-accent border-accent/30">Freelance</Badge>
+          <h3 className="mt-4 text-lg font-semibold">GRDN — Développeur Shopify &amp; stratège e-commerce</h3>
+          <p className="mt-2 text-sm text-muted">
+            En parallèle de mon alternance, j&apos;accompagne des TPE, PME et créateurs sur leurs projets Shopify : création et migration de boutiques,
+            email marketing (Klaviyo) et stratégie e-commerce. Les études de cas clients seront publiées ici au fur et à mesure des missions.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Badge>Shopify</Badge>
+            <Badge>Email Marketing</Badge>
+            <Badge>Stratégie e-commerce</Badge>
+          </div>
+          <Link
+            href="/services"
+            className="mt-6 inline-flex rounded-full bg-accent px-5 py-2 text-xs font-medium text-bg transition hover:bg-accent-hover"
+          >
+            Voir les services GRDN →
+          </Link>
+        </div>
+      </Section>
+
+      <Section
+        title="Expérience professionnelle (alternance)"
+        description="Stages et alternance : missions e-commerce chez Animaux Vie et Santé, développement commercial chez Gabby."
+      >
+        <ProjectGrid projects={alternanceProjects as typeof projects.items} />
       </Section>
 
       <Section title="Projets personnels" description="Apps construites pour un usage réel.">

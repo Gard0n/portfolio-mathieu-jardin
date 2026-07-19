@@ -119,7 +119,7 @@ export default function StepzPrivacyPage() {
           href="https://play.google.com/store/apps/details?id=com.gardenny.stepz"
           target="_blank"
           rel="noreferrer"
-          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
+          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
         >
           Voir sur Google Play ↗
         </a>

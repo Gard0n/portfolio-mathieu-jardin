@@ -23,7 +23,7 @@ type ButtonProps = ButtonLinkProps | ButtonButtonProps;
 
 const variants = {
   primary:
-    "bg-accent text-bg hover:bg-accent/90 shadow-soft focus-visible:ring-2 focus-visible:ring-ring",
+    "bg-accent text-bg hover:bg-accent-hover shadow-soft focus-visible:ring-2 focus-visible:ring-ring",
   secondary:
     "bg-surface text-text border border-border hover:border-accent/50 focus-visible:ring-2 focus-visible:ring-ring",
   ghost:

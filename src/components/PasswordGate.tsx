@@ -56,7 +56,7 @@ export function PasswordGate({ children }: { children: React.ReactNode }) {
           )}
           <button
             type="submit"
-            className="w-full rounded-full bg-accent px-4 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
+            className="w-full rounded-full bg-accent px-4 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
           >
             Accéder
           </button>

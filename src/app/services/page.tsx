@@ -178,7 +178,7 @@ export default function ServicesPage() {
             </div>
             <Link
               href="/contact"
-              className="rounded-full bg-accent px-5 py-2 text-xs font-medium text-bg transition hover:opacity-90"
+              className="rounded-full bg-accent px-5 py-2 text-xs font-medium text-bg transition hover:bg-accent-hover"
             >
               Travailler ensemble →
             </Link>
@@ -241,7 +241,7 @@ export default function ServicesPage() {
         </p>
         <Link
           href="/contact"
-          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
+          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
         >
           Travailler ensemble
         </Link>

@@ -9,9 +9,10 @@
   },
   "home": {
     "heroTitle": "Mathieu Jardin",
-    "heroSubtitle": "Développeur Shopify & Stratège E-commerce — J'aide les marques à lancer, migrer et développer leur boutique en ligne.",
+    "heroSubtitle": "Freelance GRDN, développeur Shopify & stratège e-commerce — actuellement en Master Commerce & Distribution Connectés à l'IAE Lille. J'aide les marques à lancer, migrer et développer leur boutique en ligne.",
     "heroBullets": [
-      "Disponible pour des missions freelance — Shopify, Email Marketing, Stratégie E-commerce"
+      "Disponible pour des missions freelance — Shopify, Email Marketing, Stratégie e-commerce",
+      "En alternance chez Animaux Vie et Santé, en parallèle du Master CDC (IAE Lille)"
     ]
   },
   "about": {
@@ -120,7 +121,8 @@
   },
   "projects": [
       {
-        "category": "pro",
+        "category": "alternance",
+        "employer": "Animaux Vie et Santé",
         "slug": "newsletter-chat-avs",
         "title": "Newsletter Chat AVS (3 emails/semaine, 40 000 abonnés)",
         "subtitle": "Rédaction, envoi, analyse et optimisation",
@@ -166,7 +168,8 @@
       ]
     },
       {
-        "category": "pro",
+        "category": "alternance",
+        "employer": "Animaux Vie et Santé",
         "slug": "developpement-shopify-avs",
         "title": "Migration et développement Shopify AVS",
         "subtitle": "Migration, customisation et intégration d'apps",
@@ -221,7 +224,7 @@
       ]
     },
       {
-        "category": "pro",
+        "category": "alternance",
         "slug": "commercial-btoc-gabby",
         "title": "Commercial B2C Gabby (Immobilier)",
         "subtitle": "Prospection, prise de RDV et gestion d'équipe",
@@ -262,6 +265,89 @@
         "Former les autres renforce sa propre maîtrise",
         "La prospection B2C demande résilience et régularité",
         "Le suivi des RDV aide à améliorer la qualification"
+      ]
+    },
+    {
+      "category": "alternance",
+      "employer": "Animaux Vie et Santé",
+      "slug": "grdn-smart-crosssell",
+      "title": "GRDN Smart CrossSell",
+      "subtitle": "App Shopify de cross-sell pilotée par un moteur de scoring",
+      "tags": ["Shopify", "Remix", "TypeScript"],
+      "metrics": ["Moteur de scoring configurable", "Extension checkout"],
+      "role": "Développeur (solo)",
+      "duration": "2026 - en cours",
+      "tools": ["Remix", "TypeScript", "Polaris", "Prisma", "PostgreSQL", "Shopify CLI", "Sentry"],
+      "summary": "Application Shopify interne pour animauxvieetsante.com : recommandations de vente croisée pilotées par un moteur de scoring dynamique (pas de règles statiques), pour augmenter le panier moyen.",
+      "context": [
+        "Boutique Shopify AVS avec besoin d'augmenter le panier moyen via des recommandations pertinentes",
+        "Pas de solution de cross-sell adaptée au catalogue produits animaliers (espèce, catégorie, objectif)",
+        "Besoin d'un moteur configurable plutôt que des règles statiques figées dans le thème"
+      ],
+      "objective": [
+        "Concevoir un moteur de scoring pour classer dynamiquement les recommandations",
+        "Intégrer les recommandations dans le panier et le checkout",
+        "Garder une configuration flexible et un suivi de performance (revenu attribué, impressions)"
+      ],
+      "actions": [
+        "Architecture Remix + TypeScript + Prisma, app installée sur animauxvieetsante.myshopify.com",
+        "Moteur de scoring pur (ScoringEngine) séparé de l'orchestration DB (RecommendationEngine)",
+        "Critères de scoring pondérés et configurables : animal, catégorie, objectif, collection, type, position",
+        "Theme App Extension (widget panier carrousel) + Checkout UI Extension",
+        "Attribution du chiffre d'affaires via webhooks, tracking impressions/clics, dashboard analytics dans l'admin",
+        "Rate limiting, cache des recommandations et suivi d'erreurs (Sentry)"
+      ],
+      "results": [
+        "Moteur de scoring fonctionnel avec critères pondérés et configurables",
+        "App installée et utilisée en production sur la boutique AVS",
+        "Widget panier et extension checkout intégrés au parcours d'achat",
+        "Dashboard admin avec analytics (panier, checkout, attribution de revenu)"
+      ],
+      "learnings": [
+        "Séparer le calcul pur (scoring) de l'orchestration (I/O) simplifie les tests et l'évolution",
+        "Un moteur configurable évite de re-livrer du code à chaque ajustement métier",
+        "Les extensions Shopify (Theme App Extension, Checkout UI) demandent une bonne compréhension des points d'intégration natifs",
+        "Le suivi de l'attribution de revenu est indispensable pour prouver la valeur d'une fonctionnalité"
+      ]
+    },
+    {
+      "category": "alternance",
+      "employer": "Animaux Vie et Santé",
+      "slug": "skeeper-checkout-reviews",
+      "title": "GRDN Skeeper Checkout Reviews",
+      "subtitle": "Extension checkout Shopify affichant des avis vérifiés Skeepers",
+      "tags": ["Shopify", "Cloudflare Workers", "TypeScript"],
+      "metrics": ["Avis vérifiés en checkout", "Proxy OAuth2 Cloudflare"],
+      "role": "Développeur (solo)",
+      "duration": "2026 - en cours",
+      "tools": ["Shopify Checkout UI Extension", "Preact", "Cloudflare Workers", "TypeScript"],
+      "summary": "Extension checkout Shopify custom pour animauxvieetsante.com affichant des avis clients Skeepers vérifiés au moment du paiement, pour rassurer les clients hésitants.",
+      "context": [
+        "Besoin de rassurer les clients hésitants au moment du paiement avec de vrais avis vérifiés",
+        "Avis clients déjà collectés via Skeepers mais non exploités dans le tunnel d'achat",
+        "Aucune app du marché ne couvrait ce cas d'usage précis pour la boutique AVS"
+      ],
+      "objective": [
+        "Afficher des avis Skeepers pertinents directement dans le checkout Shopify",
+        "Sécuriser l'accès à l'API Skeepers sans exposer les identifiants côté client",
+        "Laisser le merchant personnaliser l'affichage (titre, lien, badge) depuis l'admin"
+      ],
+      "actions": [
+        "Cloudflare Worker proxy gérant l'authentification OAuth2 Skeepers (Basic auth)",
+        "Extension checkout Shopify (Preact + web components natifs s-stack/s-text/s-badge)",
+        "Appel du Worker proxy depuis l'extension via fetch (network access approuvé par Shopify)",
+        "Panneau de réglages marchand (useSettings) : titre, lien, couleur du badge, affichage",
+        "App admin custom pour la configuration et le suivi"
+      ],
+      "results": [
+        "Avis Skeepers affichés en temps réel dans le checkout de la boutique AVS",
+        "Proxy Cloudflare Worker sécurisé, credentials Skeepers isolés côté serveur",
+        "Personnalisation de l'affichage disponible pour le marchand"
+      ],
+      "learnings": [
+        "Les extensions checkout Shopify 2026 imposent des web components natifs (s-*), pas de composants React/Preact importables",
+        "Un proxy serverless (Cloudflare Worker) est le bon endroit pour isoler des secrets tiers (OAuth2) hors du client",
+        "Documenter précisément les contraintes d'API (types de settings, tons, gap) évite des allers-retours coûteux en dev"
       ]
     },
     {

@@ -37,6 +37,11 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Link>
         <h1 className="mt-3 text-3xl font-semibold">{project.title}</h1>
         <p className="mt-2 text-sm text-muted">{project.subtitle}</p>
+        {"employer" in project && project.employer ? (
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-structure/30 bg-structure/10 px-3 py-1 text-[11px] font-medium text-structure">
+            Réalisé en alternance chez {project.employer as string}
+          </p>
+        ) : null}
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <Badge key={tag}>{tag}</Badge>
@@ -162,7 +167,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <h2 className="mt-2 text-xl font-semibold">Travaillons ensemble.</h2>
         <Link
           href="/contact"
-          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
+          className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
         >
           Travailler ensemble →
         </Link>
