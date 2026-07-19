@@ -122,6 +122,7 @@
   "projects": [
       {
         "category": "alternance",
+        "employmentType": "Alternance",
         "employer": "Animaux Vie et Santé",
         "slug": "newsletter-chat-avs",
         "title": "Newsletter Chat AVS (3 emails/semaine, 40 000 abonnés)",
@@ -169,6 +170,7 @@
     },
       {
         "category": "alternance",
+        "employmentType": "Alternance",
         "employer": "Animaux Vie et Santé",
         "slug": "developpement-shopify-avs",
         "title": "Migration et développement Shopify AVS",
@@ -225,6 +227,8 @@
     },
       {
         "category": "alternance",
+        "employmentType": "Stage",
+        "employer": "Gabby",
         "slug": "commercial-btoc-gabby",
         "title": "Commercial B2C Gabby (Immobilier)",
         "subtitle": "Prospection, prise de RDV et gestion d'équipe",
@@ -269,6 +273,7 @@
     },
     {
       "category": "alternance",
+      "employmentType": "Alternance",
       "employer": "Animaux Vie et Santé",
       "slug": "grdn-smart-crosssell",
       "title": "GRDN Smart CrossSell",
@@ -277,6 +282,8 @@
       "metrics": ["Moteur de scoring configurable", "Extension checkout"],
       "role": "Développeur (solo)",
       "duration": "2026 - en cours",
+      "image": "/projects/cross-sell2.png",
+      "images": ["/projects/cross-sell1.png"],
       "tools": ["Remix", "TypeScript", "Polaris", "Prisma", "PostgreSQL", "Shopify CLI", "Sentry"],
       "summary": "Application Shopify interne pour animauxvieetsante.com : recommandations de vente croisée pilotées par un moteur de scoring dynamique (pas de règles statiques), pour augmenter le panier moyen.",
       "context": [
@@ -312,6 +319,7 @@
     },
     {
       "category": "alternance",
+      "employmentType": "Alternance",
       "employer": "Animaux Vie et Santé",
       "slug": "skeeper-checkout-reviews",
       "title": "GRDN Skeeper Checkout Reviews",
@@ -320,6 +328,7 @@
       "metrics": ["Avis vérifiés en checkout", "Proxy OAuth2 Cloudflare"],
       "role": "Développeur (solo)",
       "duration": "2026 - en cours",
+      "image": "/projects/skeepers-reviews.png",
       "tools": ["Shopify Checkout UI Extension", "Preact", "Cloudflare Workers", "TypeScript"],
       "summary": "Extension checkout Shopify custom pour animauxvieetsante.com affichant des avis clients Skeepers vérifiés au moment du paiement, pour rassurer les clients hésitants.",
       "context": [

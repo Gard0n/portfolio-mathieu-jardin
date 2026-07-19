@@ -18,6 +18,7 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
           ? withBasePath(project.image as string)
           : null;
         const employer = "employer" in project ? (project.employer as string | undefined) : undefined;
+        const employmentType = "employmentType" in project ? (project.employmentType as string | undefined) : undefined;
         return (
           <div key={project.slug} className="group relative rounded-3xl border border-border bg-surface/80 overflow-hidden shadow-glow transition hover:shadow-soft motion-safe:hover:-translate-y-1">
             {imageSrc ? (
@@ -32,9 +33,9 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
               </Link>
             ) : null}
             <div className="p-6">
-              {employer ? (
+              {employer && employmentType ? (
                 <p className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-structure/30 bg-structure/10 px-3 py-1 text-[11px] font-medium text-structure">
-                  Réalisé en alternance chez {employer}
+                  Réalisé en {employmentType.toLowerCase()} chez {employer}
                 </p>
               ) : null}
               <div className="flex flex-wrap gap-2">
@@ -84,7 +85,10 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
 export default function ProjectsPage() {
   const { projects } = siteContent;
   const alternanceProjects = projects.items.filter(
-    (p) => "category" in p && p.category === "alternance"
+    (p) => "category" in p && p.category === "alternance" && "employmentType" in p && p.employmentType === "Alternance"
+  );
+  const stageProjects = projects.items.filter(
+    (p) => "category" in p && p.category === "alternance" && "employmentType" in p && p.employmentType === "Stage"
   );
   const persoProjects = projects.items.filter(
     (p) => "category" in p && p.category === "perso"
@@ -96,7 +100,7 @@ export default function ProjectsPage() {
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Sélection</p>
         <h1 className="mt-3 text-3xl font-semibold">Projets</h1>
         <p className="mt-3 text-sm text-muted">
-          Trois volets : mon activité freelance GRDN, mon expérience professionnelle en alternance, et mes projets personnels.
+          Trois volets : mon activité freelance GRDN, mon expérience professionnelle (alternance et stage), et mes projets personnels.
         </p>
       </section>
 
@@ -123,10 +127,23 @@ export default function ProjectsPage() {
       </Section>
 
       <Section
-        title="Expérience professionnelle (alternance)"
-        description="Stages et alternance : missions e-commerce chez Animaux Vie et Santé, développement commercial chez Gabby."
+        title="Expérience professionnelle"
+        description="Alternance et stages, chacun chez un employeur différent."
       >
-        <ProjectGrid projects={alternanceProjects as typeof projects.items} />
+        <div className="space-y-10">
+          <div className="space-y-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">
+              Alternance — Animaux Vie et Santé
+            </h3>
+            <ProjectGrid projects={alternanceProjects as typeof projects.items} />
+          </div>
+          <div className="space-y-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">
+              Stage — Gabby
+            </h3>
+            <ProjectGrid projects={stageProjects as typeof projects.items} />
+          </div>
+        </div>
       </Section>
 
       <Section title="Projets personnels" description="Apps construites pour un usage réel.">

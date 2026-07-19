@@ -37,9 +37,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Link>
         <h1 className="mt-3 text-3xl font-semibold">{project.title}</h1>
         <p className="mt-2 text-sm text-muted">{project.subtitle}</p>
-        {"employer" in project && project.employer ? (
+        {"employer" in project && project.employer && "employmentType" in project && project.employmentType ? (
           <p className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-structure/30 bg-structure/10 px-3 py-1 text-[11px] font-medium text-structure">
-            Réalisé en alternance chez {project.employer as string}
+            Réalisé en {(project.employmentType as string).toLowerCase()} chez {project.employer as string}
           </p>
         ) : null}
         <div className="mt-4 flex flex-wrap gap-2">
@@ -81,6 +81,22 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           />
         </section>
       )}
+
+      {"images" in project && Array.isArray(project.images) && project.images.length > 0 ? (
+        <section className="grid gap-4 sm:grid-cols-2">
+          {(project.images as string[]).map((img) => (
+            <div key={img} className="rounded-3xl border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
+              <Image
+                src={withBasePath(img)}
+                alt={project.title}
+                width={800}
+                height={450}
+                className="w-full h-auto rounded-2xl"
+              />
+            </div>
+          ))}
+        </section>
+      ) : null}
 
       <Section title="Contexte" description="D'où on part.">
         <Card>

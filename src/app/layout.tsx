@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: siteContent.site.name,
     images: [
       {
-        url: new URL(siteContent.site.ogImage, siteContent.site.url).toString(),
+        url: `${siteContent.site.url}${siteContent.site.ogImage}`,
         width: 1200,
         height: 630,
         alt: siteContent.site.name
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteContent.site.name,
     description: siteContent.site.description,
-    images: [new URL(siteContent.site.ogImage, siteContent.site.url).toString()]
+    images: [`${siteContent.site.url}${siteContent.site.ogImage}`]
   },
   icons: {
-    icon: "/favicon.svg"
+    icon: `${siteContent.site.url}/favicon.png`
   }
 };
 
