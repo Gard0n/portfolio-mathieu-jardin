@@ -9,7 +9,7 @@ const metrics = [
   { value: "40 000", label: "abonnés newsletter" },
   { value: "50%", label: "taux d'ouverture" },
   { value: "4 mois", label: "migration Shopify" },
-  { value: "2 boutiques", label: "Shopify pilotées" }
+  { value: "1 boutique", label: "Shopify pilotée" }
 ];
 
 export default function HomePage() {

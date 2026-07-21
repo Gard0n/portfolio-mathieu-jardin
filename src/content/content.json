@@ -35,7 +35,7 @@
       },
       {
         "name": "Emailing & CRM",
-        "detail": "Klaviyo : segmentation (nouveaux, VIP), automations (welcome, abandon, post-achat), 3 emails/semaine, 40 000 abonnés, 50 % de taux d'ouverture. Suivi ouvertures, clics, désabonnements, conversion."
+        "detail": "Klaviyo : segmentation (nouveaux, VIP), automations (welcome, abandon panier, post-achat), 3 emails/semaine, 40 000 abonnés, 50 % de taux d'ouverture. Suivi ouvertures, clics, désabonnements, conversion."
       },
       {
         "name": "Business Development",
@@ -132,7 +132,7 @@
         "role": "Responsable BU chat / Email & CRM",
         "duration": "oct. 2025 - présent",
         "tools": ["Klaviyo", "Segmentation", "Automations", "Calendrier éditorial"],
-        "image": "/projects/newsletter-chat-email.jpg",
+        "image": "/projects/newsletter-chat-avs.png",
         "summary": "Pilotage complet d'une newsletter B2C via Klaviyo (3 envois/semaine) pour 40 000 abonnés, avec segmentation et automatisations.",
       "context": [
         "Newsletter Chat sous Klaviyo, base de 26 000 abonnés à la reprise (oct. 2025)",
@@ -149,7 +149,7 @@
       "actions": [
         "Rédaction complète des emails (sujet, corps, CTA) pour chaque envoi",
         "Segmentation des listes (nouveaux abonnés, VIP, profils d'engagement)",
-        "Mise en place des automatisations Klaviyo : welcome, abandon, post-achat",
+        "Mise en place des automatisations Klaviyo : welcome, abandon panier, post-achat",
         "Construction du calendrier éditorial mensuel avec angles produits spécifiques",
         "Analyse hebdo des KPIs : ouvertures, clics, désabonnements, conversion",
         "Itérations éditoriales selon les performances et feedbacks"
@@ -157,7 +157,7 @@
       "results": [
         "Croissance de +54 % (26 000 → 40 000 abonnés)",
         "Taux d'ouverture maintenu à 50 % malgré le volume",
-        "Flows welcome, abandon et post-achat opérationnels",
+        "Flows welcome, abandon panier et post-achat opérationnels",
         "Rythme de 3 emails/semaine stabilisé sur la durée",
         "Process éditorial documenté, autonome et reproductible"
       ],
@@ -191,7 +191,7 @@
           "Skeepers",
           "Crisp"
         ],
-        "image": "/projects/chat-vie-sante-website.jpg",
+        "image": "/projects/avs-shopify-screen.png",
         "summary": "Migration complète vers Shopify sur 4 mois, refonte du site, thème Fullstack personnalisé, apps clés et SEO.",
       "context": [
         "Migration depuis système maison vers Shopify (oct. 2025), 100 produits + 200 articles",
@@ -229,12 +229,50 @@
         "category": "alternance",
         "employmentType": "Stage",
         "employer": "Gabby",
-        "slug": "commercial-btoc-gabby",
-        "title": "Commercial B2C Gabby (Immobilier)",
-        "subtitle": "Prospection, prise de RDV et gestion d'équipe",
+        "slug": "commercial-btoc-gabby-stage",
+        "title": "Commercial B2C Gabby — Stage (Immobilier)",
+        "subtitle": "Prise de RDV et suivi clients pour agences immobilières partenaires",
+        "tags": ["Business Development", "B2C"],
+        "role": "Commercial B2C (stage)",
+        "duration": "mai 2024 - juil. 2024",
+        "tools": ["Script d'appel", "Suivi clients"],
+        "summary": "Stage commercial B2C chez Gabby : prise de RDV d'estimations pour agences immobilières partenaires, premières armes en prospection intensive.",
+      "context": [
+        "Service de mise en relation entre particuliers et agences immobilières",
+        "Premier poste en prospection commerciale intensive, par téléphone",
+        "Volume de RDV à générer pour alimenter les agences partenaires"
+      ],
+      "objective": [
+        "Prendre des RDV d'estimations qualifiés pour les agences partenaires",
+        "Gérer la relation client des deux côtés (BtoB agences / BtoC particuliers)",
+        "Monter en compétence rapidement sur la prospection commerciale"
+      ],
+      "actions": [
+        "Prospection téléphonique et prise de RDV d'estimations",
+        "Suivi et gestion des conflits côté clients BtoB/BtoC",
+        "Premiers scripts d'appel et ajustements terrain"
+      ],
+      "results": [
+        "RDV d'estimations générés en continu pour les agences partenaires",
+        "Premières bases solides en prospection commerciale intensive",
+        "Stage transformé en mission freelance élargie (encadrement d'équipe) juste après"
+      ],
+      "learnings": [
+        "La gestion des conflits demande autant de sang-froid que la prospection elle-même",
+        "La relation BtoB (agences) et BtoC (particuliers) se travaille différemment",
+        "Un bon rythme d'appel se construit avec la répétition, pas l'improvisation"
+      ]
+    },
+      {
+        "category": "alternance",
+        "employmentType": "Freelance",
+        "employer": "Gabby",
+        "slug": "developpement-commercial-gabby",
+        "title": "Développement commercial Gabby (Freelance)",
+        "subtitle": "Prospection, encadrement d'équipe et gestion de pipeline",
         "tags": ["Business Development", "B2C", "Management"],
         "role": "Business Dev B2C + management",
-        "duration": "2024 - 2025",
+        "duration": "sept. 2024 - mai 2025",
         "tools": ["Script d'appel", "Google Sheets", "Suivi pipeline"],
         "image": "/projects/gabby-website.jpg",
         "summary": "Business development B2C dans l'immobilier : 50 appels/jour, ~100 RDV/mois équipe, management de 4 commerciaux.",

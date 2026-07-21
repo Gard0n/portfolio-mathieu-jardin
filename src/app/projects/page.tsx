@@ -90,6 +90,9 @@ export default function ProjectsPage() {
   const stageProjects = projects.items.filter(
     (p) => "category" in p && p.category === "alternance" && "employmentType" in p && p.employmentType === "Stage"
   );
+  const freelanceGabbyProjects = projects.items.filter(
+    (p) => "category" in p && p.category === "alternance" && "employmentType" in p && p.employmentType === "Freelance"
+  );
   const persoProjects = projects.items.filter(
     (p) => "category" in p && p.category === "perso"
   );
@@ -100,7 +103,7 @@ export default function ProjectsPage() {
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Sélection</p>
         <h1 className="mt-3 text-3xl font-semibold">Projets</h1>
         <p className="mt-3 text-sm text-muted">
-          Trois volets : mon activité freelance GRDN, mon expérience professionnelle (alternance et stage), et mes projets personnels.
+          Trois volets : mon activité freelance GRDN, mon expérience professionnelle (alternance, freelance et stage), et mes projets personnels.
         </p>
       </section>
 
@@ -128,7 +131,7 @@ export default function ProjectsPage() {
 
       <Section
         title="Expérience professionnelle"
-        description="Alternance et stages, chacun chez un employeur différent."
+        description="Alternance et missions, chacune chez un employeur différent."
       >
         <div className="space-y-10">
           <div className="space-y-6">
@@ -136,6 +139,12 @@ export default function ProjectsPage() {
               Alternance — Animaux Vie et Santé
             </h3>
             <ProjectGrid projects={alternanceProjects as typeof projects.items} />
+          </div>
+          <div className="space-y-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">
+              Freelance — Gabby
+            </h3>
+            <ProjectGrid projects={freelanceGabbyProjects as typeof projects.items} />
           </div>
           <div className="space-y-6">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">

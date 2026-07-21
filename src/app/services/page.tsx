@@ -15,9 +15,9 @@ const featured = {
   deliverables: [
     "Boutique Shopify personnalisée (thème + apps)",
     "Architecture produits, collections, navigation",
-    "Klaviyo configuré : welcome, abandon, post-achat",
+    "Klaviyo configuré : welcome, abandon panier, post-achat",
     "Calendrier éditorial + 4 premières newsletters",
-    "Formation prise en main (1h)"
+    "Formations prise en main autant que nécessaire"
   ],
   delay: "~4 semaines · 350 €/semaine · ajustable selon le périmètre",
   price: "À partir de 1 400 €"
@@ -45,7 +45,7 @@ const services = [
       "Mise en place de Klaviyo, création des séquences automatisées et gestion des newsletters. Segmentation, A/B tests et suivi des KPIs.",
     deliverables: [
       "Configuration Klaviyo complète",
-      "Flows welcome, abandon, post-achat",
+      "Flows welcome, abandon panier, post-achat",
       "Calendrier éditorial + rédaction",
       "Reporting mensuel"
     ],
@@ -99,7 +99,7 @@ const services = [
 const clients = [
   { label: "TPE & PME", desc: "Entreprises qui lancent ou développent leur présence en ligne" },
   { label: "Petites boutiques", desc: "E-commerces indépendants qui veulent professionnaliser leur boutique" },
-  { label: "Créateurs", desc: "Artisans, créateurs de contenu, marques personnelles" }
+  { label: "Indépendants", desc: "Artisans, créateurs de contenu, marques personnelles" }
 ];
 
 const faqs = [
