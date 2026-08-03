@@ -313,52 +313,6 @@
       "category": "alternance",
       "employmentType": "Alternance",
       "employer": "Animaux Vie et Santé",
-      "slug": "grdn-smart-crosssell",
-      "title": "GRDN Smart CrossSell",
-      "subtitle": "App Shopify de cross-sell pilotée par un moteur de scoring",
-      "tags": ["Shopify", "Remix", "TypeScript"],
-      "metrics": ["Moteur de scoring configurable", "Extension checkout"],
-      "role": "Développeur (solo)",
-      "duration": "2026 - en cours",
-      "image": "/projects/cross-sell2.png",
-      "images": ["/projects/cross-sell1.png"],
-      "tools": ["Remix", "TypeScript", "Polaris", "Prisma", "PostgreSQL", "Shopify CLI", "Sentry"],
-      "summary": "Application Shopify interne pour animauxvieetsante.com : recommandations de vente croisée pilotées par un moteur de scoring dynamique (pas de règles statiques), pour augmenter le panier moyen.",
-      "context": [
-        "Boutique Shopify AVS avec besoin d'augmenter le panier moyen via des recommandations pertinentes",
-        "Pas de solution de cross-sell adaptée au catalogue produits animaliers (espèce, catégorie, objectif)",
-        "Besoin d'un moteur configurable plutôt que des règles statiques figées dans le thème"
-      ],
-      "objective": [
-        "Concevoir un moteur de scoring pour classer dynamiquement les recommandations",
-        "Intégrer les recommandations dans le panier et le checkout",
-        "Garder une configuration flexible et un suivi de performance (revenu attribué, impressions)"
-      ],
-      "actions": [
-        "Architecture Remix + TypeScript + Prisma, app installée sur animauxvieetsante.myshopify.com",
-        "Moteur de scoring pur (ScoringEngine) séparé de l'orchestration DB (RecommendationEngine)",
-        "Critères de scoring pondérés et configurables : animal, catégorie, objectif, collection, type, position",
-        "Theme App Extension (widget panier carrousel) + Checkout UI Extension",
-        "Attribution du chiffre d'affaires via webhooks, tracking impressions/clics, dashboard analytics dans l'admin",
-        "Rate limiting, cache des recommandations et suivi d'erreurs (Sentry)"
-      ],
-      "results": [
-        "Moteur de scoring fonctionnel avec critères pondérés et configurables",
-        "App installée et utilisée en production sur la boutique AVS",
-        "Widget panier et extension checkout intégrés au parcours d'achat",
-        "Dashboard admin avec analytics (panier, checkout, attribution de revenu)"
-      ],
-      "learnings": [
-        "Séparer le calcul pur (scoring) de l'orchestration (I/O) simplifie les tests et l'évolution",
-        "Un moteur configurable évite de re-livrer du code à chaque ajustement métier",
-        "Les extensions Shopify (Theme App Extension, Checkout UI) demandent une bonne compréhension des points d'intégration natifs",
-        "Le suivi de l'attribution de revenu est indispensable pour prouver la valeur d'une fonctionnalité"
-      ]
-    },
-    {
-      "category": "alternance",
-      "employmentType": "Alternance",
-      "employer": "Animaux Vie et Santé",
       "slug": "skeeper-checkout-reviews",
       "title": "GRDN Skeeper Checkout Reviews",
       "subtitle": "Extension checkout Shopify affichant des avis vérifiés Skeepers",

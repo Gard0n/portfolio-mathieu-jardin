@@ -7,6 +7,7 @@ export const siteContent = {
     { label: "Accueil", href: "/" },
     { label: "À propos", href: "/about" },
     { label: "Projets", href: "/projects" },
+    { label: "Produits", href: "/apps" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact" }
   ],
