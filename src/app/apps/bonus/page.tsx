@@ -1,11 +1,18 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Card } from "@/components/Card";
+import { EarlyAccessLink } from "@/components/EarlyAccessLink";
 import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "GRDN Bonus — Cadeau automatique pour Shopify",
-  description: "GRDN Bonus ajoute automatiquement un produit cadeau au panier de vos clients selon des règles configurables, jusqu'à l'historique d'achat."
+  description: "GRDN Bonus ajoute automatiquement un produit cadeau au panier de vos clients selon des règles configurables, jusqu'à l'historique d'achat.",
+  openGraph: {
+    images: [{ url: "/og/bonus.png", width: 1200, height: 630, alt: "GRDN Bonus" }]
+  },
+  twitter: {
+    images: ["/og/bonus.png"]
+  }
 };
 
 const features = [
@@ -58,12 +65,7 @@ export default function GrdnBonusPage() {
           les plus engagés.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="mailto:contact@grdn.fr?subject=GRDN%20Bonus%20-%20Accès%20anticipé"
-            className="inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
-          >
-            Être prévenu au lancement
-          </a>
+          <EarlyAccessLink slug="bonus" appName="GRDN Bonus" />
           <Link
             href="/apps/bonus/cgu"
             className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"

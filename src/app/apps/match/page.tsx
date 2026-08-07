@@ -1,11 +1,18 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Card } from "@/components/Card";
+import { EarlyAccessLink } from "@/components/EarlyAccessLink";
 import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "GRDN Match — Cross-sell par scoring pour Shopify",
-  description: "GRDN Match suggère des produits complémentaires pertinents dans le panier et au checkout, via un moteur de scoring sur les métafields produits."
+  description: "GRDN Match suggère des produits complémentaires pertinents dans le panier et au checkout, via un moteur de scoring sur les métafields produits.",
+  openGraph: {
+    images: [{ url: "/og/match.png", width: 1200, height: 630, alt: "GRDN Match" }]
+  },
+  twitter: {
+    images: ["/og/match.png"]
+  }
 };
 
 const features = [
@@ -57,12 +64,7 @@ export default function GrdnMatchPage() {
           de scoring basé sur les métafields que vous configurez.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="mailto:contact@grdn.fr?subject=GRDN%20Match%20-%20Accès%20anticipé"
-            className="inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
-          >
-            Être prévenu au lancement
-          </a>
+          <EarlyAccessLink slug="match" appName="GRDN Match" />
           <Link
             href="/apps/match/cgu"
             className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"

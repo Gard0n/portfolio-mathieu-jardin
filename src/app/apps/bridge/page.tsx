@@ -1,11 +1,18 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Card } from "@/components/Card";
+import { EarlyAccessLink } from "@/components/EarlyAccessLink";
 import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "GRDN Bridge — Sync prix Shopify vers Recharge",
-  description: "GRDN Bridge répercute automatiquement vos prix catalogue et remises Shopify sur les abonnements Recharge, en lecture seule."
+  description: "GRDN Bridge répercute automatiquement vos prix catalogue et remises Shopify sur les abonnements Recharge, en lecture seule.",
+  openGraph: {
+    images: [{ url: "/og/bridge.png", width: 1200, height: 630, alt: "GRDN Bridge" }]
+  },
+  twitter: {
+    images: ["/og/bridge.png"]
+  }
 };
 
 const features = [
@@ -57,12 +64,7 @@ export default function GrdnBridgePage() {
           prix sur les abonnements Recharge de vos clients, sans intervention manuelle.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="mailto:contact@grdn.fr?subject=GRDN%20Bridge%20-%20Accès%20anticipé"
-            className="inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
-          >
-            Être prévenu au lancement
-          </a>
+          <EarlyAccessLink slug="bridge" appName="GRDN Bridge" />
           <Link
             href="/apps/bridge/cgu"
             className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"

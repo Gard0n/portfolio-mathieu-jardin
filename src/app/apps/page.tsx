@@ -4,7 +4,13 @@ import { Section } from "@/components/Section";
 
 export const metadata = {
   title: "Produits",
-  description: "Applications Shopify éditées sous la marque GRDN : cadeau automatique, synchronisation de prix Recharge et cross-sell par scoring."
+  description: "Applications Shopify éditées sous la marque GRDN : cadeau automatique, synchronisation de prix Recharge et cross-sell par scoring.",
+  openGraph: {
+    images: [{ url: "/og/apps.png", width: 1200, height: 630, alt: "Produits GRDN" }]
+  },
+  twitter: {
+    images: ["/og/apps.png"]
+  }
 };
 
 const apps = [
