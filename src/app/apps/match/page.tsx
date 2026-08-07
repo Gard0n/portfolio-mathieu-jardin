@@ -1,139 +1,124 @@
+import Link from "next/link";
 import type { Metadata } from "next";
-import { AppLegalLayout } from "@/components/AppLegalLayout";
+import { Card } from "@/components/Card";
+import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité & CGU — GRDN Match",
-  description: "Politique de confidentialité et conditions générales d'utilisation de l'application Shopify GRDN Match."
+  title: "GRDN Match — Cross-sell par scoring pour Shopify",
+  description: "GRDN Match suggère des produits complémentaires pertinents dans le panier et au checkout, via un moteur de scoring sur les métafields produits."
 };
 
-export default function GrdnMatchLegalPage() {
+const features = [
+  {
+    icon: "⚖️",
+    title: "Scoring configurable",
+    description: "Poids par catégorie, tags et métafields — le moteur de recommandation se configure depuis l'admin, sans ligne de code."
+  },
+  {
+    icon: "🛒",
+    title: "Panier + Checkout",
+    description: "Extensions Shopify natives, intégrées à l'expérience d'achat, du panier jusqu'au paiement."
+  },
+  {
+    icon: "📈",
+    title: "Statistiques agrégées",
+    description: "Impressions, clics, ajouts au panier, chiffre d'affaires attribué — pour mesurer l'impact réel de chaque recommandation."
+  }
+];
+
+const benefits = [
+  "Augmenter le panier moyen avec des suggestions pertinentes, pas génériques",
+  "Mesurer précisément le ROI de chaque recommandation produit",
+  "Aucune donnée client identifiable conservée"
+];
+
+export default function GrdnMatchPage() {
   return (
-    <AppLegalLayout icon="🧩" name="GRDN Match" lastUpdated="3 août 2026">
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">1. Qui est responsable du traitement des données</h2>
-        <p className="text-sm text-muted">GRDN Match est éditée par :</p>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Nom / Raison sociale : GRDN — Mathieu Jardin, entrepreneur individuel",
-            "SIRET : 93347017100010",
-            "Adresse : 39 rue Delerue, Apt B14, Résidence le Clos des Serres, 59290 Wasquehal, France",
-            "Contact : mathieu.jardin.pro@gmail.com"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">2. Ce que fait GRDN Match</h2>
-        <p className="text-sm text-muted">
-          GRDN Match suggère des produits complémentaires au client dans le panier et au checkout, à partir d&apos;un
-          scoring basé sur les métafields produits (catégorie, tags) configurés par le marchand.
+    <div className="space-y-16">
+      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
+        <Link href="/apps" className="text-xs text-muted hover:text-text">
+          ← Tous les produits GRDN
+        </Link>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <span className="text-4xl">🧩</span>
+          <div>
+            <h1 className="text-3xl font-semibold md:text-4xl">GRDN Match</h1>
+            <span className="mt-1 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+              Bientôt sur le Shopify App Store
+            </span>
+          </div>
+        </div>
+        <p className="mt-5 max-w-2xl text-lg text-text">
+          Les bons produits complémentaires, au bon moment.
         </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">3. Données traitées</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Données boutique : mapping des métafields, poids de scoring, produits mis en avant",
-            "Statistiques d'usage agrégées : impressions, clics, ajouts au panier, chiffre d'affaires attribué — rattachées à une session panier, pas à un client identifié nommément",
-            "Aucune donnée personnelle de client final identifiable n'est conservée"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-3 text-sm text-muted">
-          <strong className="text-text">Scopes Shopify utilisés :</strong>{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_products</code>,{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_orders</code>,{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_inventory</code>,{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_product_listings</code>
+        <p className="mt-3 max-w-2xl text-sm text-muted">
+          GRDN Match suggère des produits complémentaires pertinents dans le panier et au checkout, grâce à un moteur
+          de scoring basé sur les métafields que vous configurez.
         </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">4. Base légale et finalité</h2>
-        <p className="text-sm text-muted">
-          Ces données sont traitées sur la base de l&apos;<strong className="text-text">intérêt légitime du marchand</strong>{" "}
-          à proposer des recommandations produit pertinentes et à mesurer leur impact.
-        </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">5. Durée de conservation</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Conservées tant que l'application reste installée sur la boutique",
-            "Supprimées à la désinstallation (webhook app/uninstalled)",
-            "Supprimées définitivement en cas de demande shop/redact"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">6. Droits des personnes concernées</h2>
-        <p className="text-sm text-muted">
-          Toute personne peut demander l&apos;accès, la rectification ou la suppression de ses données via{" "}
-          <a href="mailto:mathieu.jardin.pro@gmail.com" className="text-accent hover:underline">
-            mathieu.jardin.pro@gmail.com
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="mailto:contact@grdn.fr?subject=GRDN%20Match%20-%20Accès%20anticipé"
+            className="inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
+          >
+            Être prévenu au lancement
           </a>
-          . Les demandes de conformité Shopify (customers/data_request, customers/redact) sont traitées
-          automatiquement (aucune donnée client n&apos;étant stockée, ce sont des no-ops documentés).
-        </p>
-      </div>
+          <Link
+            href="/apps/match/cgu"
+            className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"
+          >
+            Politique de confidentialité & CGU
+          </Link>
+        </div>
+      </section>
 
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">7. Sous-traitants et hébergement</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Hébergement applicatif et base de données : Railway (Postgres)",
-            "Plateforme de commerce : Shopify (application embarquée, extensions panier et checkout)"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
+      <Section title="Le problème" description="Le cross-sell générique convertit mal.">
+        <Card>
+          <p className="text-sm text-muted">
+            Les suggestions &laquo; produits similaires &raquo; par défaut sont rarement pertinentes, et un vrai moteur
+            de recommandation coûte cher à développer sur mesure. GRDN Match apporte un scoring configurable, sans
+            l&apos;investissement d&apos;un développement custom.
+          </p>
+        </Card>
+      </Section>
+
+      <Section title="Ce que fait GRDN Match" description="Trois piliers, pensés pour rester simples à opérer.">
+        <div className="grid gap-6 md:grid-cols-3">
+          {features.map((f) => (
+            <Card key={f.title}>
+              <span className="text-2xl">{f.icon}</span>
+              <h3 className="mt-3 text-base font-semibold">{f.title}</h3>
+              <p className="mt-2 text-sm text-muted">{f.description}</p>
+            </Card>
           ))}
-        </ul>
-      </div>
+        </div>
+      </Section>
 
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">8. Sécurité</h2>
-        <p className="text-sm text-muted">
-          Toutes les données transitent via des connexions chiffrées (HTTPS/TLS).
+      <Section title="Pourquoi GRDN Match">
+        <Card>
+          <ul className="space-y-2 text-sm">
+            {benefits.map((item) => (
+              <li key={item} className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </Section>
+
+      <section className="rounded-[32px] border border-border bg-surface/60 p-8 text-center">
+        <p className="text-xs text-muted">
+          Extensions Shopify natives (panier + checkout) · Statistiques agrégées, non nominatives · Hébergé sur
+          Railway (Postgres)
         </p>
-      </div>
-
-      <div className="space-y-2 border-t border-border pt-8">
-        <h2 className="text-lg font-semibold">9. Conditions générales d&apos;utilisation</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "L'utilisation de GRDN Match est soumise à l'acceptation des présentes conditions par le marchand lors de l'installation",
-            "L'éditeur s'efforce d'assurer la disponibilité et le bon fonctionnement de l'application, sans garantie de résultat commercial",
-            "L'éditeur ne pourra être tenu responsable des pertes de revenus ou de données résultant d'une mauvaise configuration par le marchand",
-            "Les tarifs applicables sont ceux affichés sur la fiche Shopify App Store au moment de l'installation, susceptibles d'évoluer avec préavis",
-            "Les présentes conditions sont soumises au droit français",
-            "Contact : mathieu.jardin.pro@gmail.com"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </AppLegalLayout>
+        <p className="mt-4 text-sm text-muted">
+          Détails sur les données traitées et les scopes utilisés :{" "}
+          <Link href="/apps/match/cgu" className="text-accent hover:underline">
+            Politique de confidentialité & CGU
+          </Link>
+        </p>
+      </section>
+    </div>
   );
 }

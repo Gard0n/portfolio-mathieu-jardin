@@ -1,140 +1,124 @@
+import Link from "next/link";
 import type { Metadata } from "next";
-import { AppLegalLayout } from "@/components/AppLegalLayout";
+import { Card } from "@/components/Card";
+import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité & CGU — GRDN Bridge",
-  description: "Politique de confidentialité et conditions générales d'utilisation de l'application Shopify GRDN Bridge."
+  title: "GRDN Bridge — Sync prix Shopify vers Recharge",
+  description: "GRDN Bridge répercute automatiquement vos prix catalogue et remises Shopify sur les abonnements Recharge, en lecture seule."
 };
 
-export default function GrdnBridgeLegalPage() {
+const features = [
+  {
+    icon: "🔒",
+    title: "Lecture seule côté Shopify",
+    description: "Aucune écriture sur votre catalogue : GRDN Bridge lit vos prix et remises automatiques, point final. Zéro risque sur vos données produits."
+  },
+  {
+    icon: "⚡",
+    title: "Synchronisation automatique",
+    description: "Le prix envoyé à Recharge suit vos remises Shopify en temps réel — pas de mise à jour manuelle à chaque changement de tarif."
+  },
+  {
+    icon: "🧾",
+    title: "Historique des synchronisations",
+    description: "Produit, quantité, prix Shopify, prix envoyé, date : chaque sync est tracée pour pouvoir vérifier ou auditer facilement."
+  }
+];
+
+const benefits = [
+  "Fini les écarts de prix entre la boutique et l'abonnement",
+  "Zéro maintenance manuelle récurrente sur les tarifs Recharge",
+  "Aucune donnée personnelle de client final stockée"
+];
+
+export default function GrdnBridgePage() {
   return (
-    <AppLegalLayout icon="🔗" name="GRDN Bridge" lastUpdated="3 août 2026">
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">1. Qui est responsable du traitement des données</h2>
-        <p className="text-sm text-muted">GRDN Bridge est éditée par :</p>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Nom / Raison sociale : GRDN — Mathieu Jardin, entrepreneur individuel",
-            "SIRET : 93347017100010",
-            "Adresse : 39 rue Delerue, Apt B14, Résidence le Clos des Serres, 59290 Wasquehal, France",
-            "Contact : mathieu.jardin.pro@gmail.com"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">2. Ce que fait GRDN Bridge</h2>
-        <p className="text-sm text-muted">
-          GRDN Bridge lit les prix catalogue et les remises automatiques configurées sur Shopify (lecture seule,
-          aucune écriture côté Shopify), puis répercute le prix correct sur les abonnements Recharge du marchand.
+    <div className="space-y-16">
+      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
+        <Link href="/apps" className="text-xs text-muted hover:text-text">
+          ← Tous les produits GRDN
+        </Link>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <span className="text-4xl">🔗</span>
+          <div>
+            <h1 className="text-3xl font-semibold md:text-4xl">GRDN Bridge</h1>
+            <span className="mt-1 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+              Bientôt sur le Shopify App Store
+            </span>
+          </div>
+        </div>
+        <p className="mt-5 max-w-2xl text-lg text-text">
+          Vos remises Shopify, toujours à jour sur vos abonnements Recharge.
         </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">3. Données traitées</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Données boutique : configuration de la remise abonnement, langue de l'interface",
-            "Identifiants d'API Recharge du marchand (jeton d'accès, secret webhook) — chiffrés en base (AES-256-GCM)",
-            "Historique des synchronisations de prix (produit, quantité, prix Shopify, prix envoyé, date)",
-            "Aucune donnée personnelle de client final n'est collectée ni stockée — l'app ne traite que des données produits et des configurations boutique"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-3 text-sm text-muted">
-          <strong className="text-text">Scopes Shopify utilisés :</strong>{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_products</code>,{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_discounts</code> (lecture seule)
+        <p className="mt-3 max-w-2xl text-sm text-muted">
+          GRDN Bridge lit vos prix catalogue et vos remises automatiques Shopify (lecture seule) et répercute le bon
+          prix sur les abonnements Recharge de vos clients, sans intervention manuelle.
         </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">4. Base légale et finalité</h2>
-        <p className="text-sm text-muted">
-          Ces données sont traitées sur la base de l&apos;<strong className="text-text">intérêt légitime du marchand</strong>{" "}
-          à faire fonctionner correctement ses remises sur les commandes d&apos;abonnement récurrentes.
-        </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">5. Durée de conservation</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Conservées tant que l'application reste installée sur la boutique",
-            "Supprimées à la désinstallation (webhook app/uninstalled)",
-            "Supprimées définitivement en cas de demande shop/redact"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">6. Droits des personnes concernées</h2>
-        <p className="text-sm text-muted">
-          Toute personne peut demander l&apos;accès, la rectification ou la suppression de ses données via{" "}
-          <a href="mailto:mathieu.jardin.pro@gmail.com" className="text-accent hover:underline">
-            mathieu.jardin.pro@gmail.com
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="mailto:contact@grdn.fr?subject=GRDN%20Bridge%20-%20Accès%20anticipé"
+            className="inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
+          >
+            Être prévenu au lancement
           </a>
-          . Les demandes de conformité Shopify (customers/data_request, customers/redact) sont traitées
-          automatiquement (aucune donnée client n&apos;étant stockée, ce sont des no-ops documentés).
-        </p>
-      </div>
+          <Link
+            href="/apps/bridge/cgu"
+            className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"
+          >
+            Politique de confidentialité & CGU
+          </Link>
+        </div>
+      </section>
 
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">7. Sous-traitants et hébergement</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Hébergement applicatif et base de données : Railway (Postgres)",
-            "Plateforme de commerce : Shopify (application embarquée)",
-            "API tierce : Recharge (plateforme d'abonnement du marchand), pour la synchronisation des prix"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
+      <Section title="Le problème" description="Recharge ne suit pas toujours vos remises automatiques Shopify.">
+        <Card>
+          <p className="text-sm text-muted">
+            Une remise automatique Shopify ne se répercute pas nativement sur le prix d&apos;un abonnement Recharge.
+            Résultat : des écarts de prix entre la boutique et l&apos;abonnement, des réclamations clients, et des
+            ajustements manuels récurrents côté marchand. GRDN Bridge automatise cette synchronisation.
+          </p>
+        </Card>
+      </Section>
+
+      <Section title="Ce que fait GRDN Bridge" description="Trois piliers, pensés pour rester simples à opérer.">
+        <div className="grid gap-6 md:grid-cols-3">
+          {features.map((f) => (
+            <Card key={f.title}>
+              <span className="text-2xl">{f.icon}</span>
+              <h3 className="mt-3 text-base font-semibold">{f.title}</h3>
+              <p className="mt-2 text-sm text-muted">{f.description}</p>
+            </Card>
           ))}
-        </ul>
-      </div>
+        </div>
+      </Section>
 
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">8. Sécurité</h2>
-        <p className="text-sm text-muted">
-          Les identifiants d&apos;API Recharge sont chiffrés en base de données (AES-256-GCM). Toutes les données
-          transitent via des connexions chiffrées (HTTPS/TLS).
+      <Section title="Pourquoi GRDN Bridge">
+        <Card>
+          <ul className="space-y-2 text-sm">
+            {benefits.map((item) => (
+              <li key={item} className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </Section>
+
+      <section className="rounded-[32px] border border-border bg-surface/60 p-8 text-center">
+        <p className="text-xs text-muted">
+          Scopes read_products / read_discounts (lecture seule) · Clés API Recharge chiffrées AES-256-GCM · Hébergé
+          sur Railway (Postgres)
         </p>
-      </div>
-
-      <div className="space-y-2 border-t border-border pt-8">
-        <h2 className="text-lg font-semibold">9. Conditions générales d&apos;utilisation</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "L'utilisation de GRDN Bridge est soumise à l'acceptation des présentes conditions par le marchand lors de l'installation",
-            "L'éditeur s'efforce d'assurer la disponibilité et le bon fonctionnement de l'application, sans garantie de résultat commercial",
-            "L'éditeur ne pourra être tenu responsable des pertes de revenus ou de données résultant d'une mauvaise configuration par le marchand",
-            "Les tarifs applicables sont ceux affichés sur la fiche Shopify App Store au moment de l'installation, susceptibles d'évoluer avec préavis",
-            "Les présentes conditions sont soumises au droit français",
-            "Contact : mathieu.jardin.pro@gmail.com"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </AppLegalLayout>
+        <p className="mt-4 text-sm text-muted">
+          Détails sur les données traitées et les scopes utilisés :{" "}
+          <Link href="/apps/bridge/cgu" className="text-accent hover:underline">
+            Politique de confidentialité & CGU
+          </Link>
+        </p>
+      </section>
+    </div>
   );
 }

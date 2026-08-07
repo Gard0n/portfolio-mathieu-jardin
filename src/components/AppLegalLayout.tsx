@@ -3,16 +3,17 @@ import Link from "next/link";
 type AppLegalLayoutProps = {
   icon: string;
   name: string;
+  slug: string;
   lastUpdated: string;
   children: React.ReactNode;
 };
 
-export function AppLegalLayout({ icon, name, lastUpdated, children }: AppLegalLayoutProps) {
+export function AppLegalLayout({ icon, name, slug, lastUpdated, children }: AppLegalLayoutProps) {
   return (
     <div className="space-y-12">
       <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
-        <Link href="/apps" className="text-xs text-muted hover:text-text">
-          ← Retour aux produits
+        <Link href={`/apps/${slug}`} className="text-xs text-muted hover:text-text">
+          ← Retour à {name}
         </Link>
         <div className="mt-4 flex items-center gap-3">
           <span className="text-4xl">{icon}</span>
@@ -32,8 +33,8 @@ export function AppLegalLayout({ icon, name, lastUpdated, children }: AppLegalLa
         <p className="text-sm text-muted">{name} n&apos;est pas encore publiée sur le Shopify App Store.</p>
         <p className="mt-2 text-xs text-muted">
           Une question sur ce document ?{" "}
-          <a href="mailto:mathieu.jardin.pro@gmail.com" className="text-accent hover:underline">
-            mathieu.jardin.pro@gmail.com
+          <a href="mailto:contact@grdn.fr" className="text-accent hover:underline">
+            contact@grdn.fr
           </a>
         </p>
       </section>

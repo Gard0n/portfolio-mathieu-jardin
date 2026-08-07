@@ -1,151 +1,124 @@
+import Link from "next/link";
 import type { Metadata } from "next";
-import { AppLegalLayout } from "@/components/AppLegalLayout";
+import { Card } from "@/components/Card";
+import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité & CGU — GRDN Bonus",
-  description: "Politique de confidentialité et conditions générales d'utilisation de l'application Shopify GRDN Bonus."
+  title: "GRDN Bonus — Cadeau automatique pour Shopify",
+  description: "GRDN Bonus ajoute automatiquement un produit cadeau au panier de vos clients selon des règles configurables, jusqu'à l'historique d'achat."
 };
 
-export default function GrdnBonusLegalPage() {
+const features = [
+  {
+    icon: "🎯",
+    title: "Règles configurables",
+    description: "Montant du panier, produits ou collections déclencheurs, cadeau associé — tout se configure depuis l'admin, sans toucher au code."
+  },
+  {
+    icon: "🕓",
+    title: "Basé sur l'historique d'achat",
+    description: "Offrez un cadeau aux clients selon ce qu'ils ont déjà acheté : upsell catégorie, fidélisation, relance ciblée."
+  },
+  {
+    icon: "📦",
+    title: "Suivi des cadeaux distribués",
+    description: "Historique complet (produit, date, valeur) pour piloter la marge et mesurer l'impact des campagnes."
+  }
+];
+
+const benefits = [
+  "Augmenter le panier moyen sans développer de code custom",
+  "Automatiser une opération aujourd'hui souvent gérée à la main",
+  "Garder la main sur les règles depuis l'admin, en autonomie"
+];
+
+export default function GrdnBonusPage() {
   return (
-    <AppLegalLayout icon="🎁" name="GRDN Bonus" lastUpdated="3 août 2026">
-      <div className="rounded-2xl border border-danger/40 bg-danger/10 p-4 text-sm text-text">
-        GRDN Bonus peut traiter l&apos;historique d&apos;achat des clients d&apos;une boutique, lorsque le marchand active
-        les règles de cadeau basées sur cet historique. Voir la section 3 ci-dessous.
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">1. Qui est responsable du traitement des données</h2>
-        <p className="text-sm text-muted">GRDN Bonus est éditée par :</p>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Nom / Raison sociale : GRDN — Mathieu Jardin, entrepreneur individuel",
-            "SIRET : 93347017100010",
-            "Adresse : 39 rue Delerue, Apt B14, Résidence le Clos des Serres, 59290 Wasquehal, France",
-            "Contact : mathieu.jardin.pro@gmail.com"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">2. Ce que fait GRDN Bonus</h2>
-        <p className="text-sm text-muted">
-          GRDN Bonus ajoute automatiquement un produit cadeau au panier d&apos;un client quand certaines conditions sont
-          remplies — y compris, si le marchand active cette option, des conditions basées sur l&apos;historique d&apos;achat
-          du client (ex. &laquo; a déjà acheté dans telle catégorie &raquo;).
+    <div className="space-y-16">
+      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
+        <Link href="/apps" className="text-xs text-muted hover:text-text">
+          ← Tous les produits GRDN
+        </Link>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <span className="text-4xl">🎁</span>
+          <div>
+            <h1 className="text-3xl font-semibold md:text-4xl">GRDN Bonus</h1>
+            <span className="mt-1 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+              Bientôt sur le Shopify App Store
+            </span>
+          </div>
+        </div>
+        <p className="mt-5 max-w-2xl text-lg text-text">
+          Le bon cadeau, au bon moment, sans y penser.
         </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">3. Données traitées</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Données boutique : règles de cadeau, produits offerts, campagnes",
-            "Historique d'achat du client, uniquement quand la fonctionnalité de règles basées sur l'historique est activée par le marchand : identifiant client Shopify, tags/collections/types de produits déjà achetés, dates d'achat. Cette donnée sert exclusivement à évaluer si un client est éligible à un cadeau.",
-            "Historique des cadeaux distribués (produit, date, valeur)"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-3 text-sm text-muted">
-          <strong className="text-text">Scopes Shopify utilisés :</strong>{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_products</code>,{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_orders</code>,{" "}
-          <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">read_customers</code> (ou équivalent selon
-          configuration), <code className="rounded bg-bg/60 px-1.5 py-0.5 text-xs">write_cart_transforms</code>
+        <p className="mt-3 max-w-2xl text-sm text-muted">
+          GRDN Bonus ajoute automatiquement un produit cadeau au panier de vos clients dès que les conditions que vous
+          définissez sont remplies — jusqu&apos;à des règles basées sur l&apos;historique d&apos;achat, pour récompenser vos clients
+          les plus engagés.
         </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">4. Base légale et finalité</h2>
-        <p className="text-sm text-muted">
-          Les données boutique (règles, campagnes) sont traitées sur la base de l&apos;
-          <strong className="text-text">intérêt légitime du marchand</strong>. L&apos;historique d&apos;achat client, quand
-          utilisé, l&apos;est également sur cette base, dans le seul but de déterminer l&apos;éligibilité à une offre —
-          jamais à des fins de profilage marketing plus large ou de revente à des tiers.
-        </p>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">5. Durée de conservation</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Les données sont conservées tant que l'application reste installée sur la boutique",
-            "Supprimées à la désinstallation (webhook app/uninstalled)",
-            "En cas de demande de suppression via Shopify (customers/redact), l'historique d'achat du client concerné est purgé spécifiquement",
-            "En cas de demande shop/redact, toutes les données de la boutique, y compris l'historique d'achat de tous ses clients, sont supprimées définitivement"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">6. Droits des personnes concernées</h2>
-        <p className="text-sm text-muted">
-          Toute personne peut demander l&apos;accès, la rectification ou la suppression de son historique d&apos;achat
-          conservé par l&apos;application via{" "}
-          <a href="mailto:mathieu.jardin.pro@gmail.com" className="text-accent hover:underline">
-            mathieu.jardin.pro@gmail.com
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="mailto:contact@grdn.fr?subject=GRDN%20Bonus%20-%20Accès%20anticipé"
+            className="inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
+          >
+            Être prévenu au lancement
           </a>
-          , ou via les canaux de conformité Shopify (customers/data_request, customers/redact), traités
-          automatiquement par l&apos;application.
-        </p>
-      </div>
+          <Link
+            href="/apps/bonus/cgu"
+            className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"
+          >
+            Politique de confidentialité & CGU
+          </Link>
+        </div>
+      </section>
 
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">7. Sous-traitants et hébergement</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "Hébergement applicatif et base de données : Railway (Postgres)",
-            "Plateforme de commerce : Shopify (application embarquée, extension panier)"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
+      <Section title="Le problème" description="Configurer des cadeaux promo à la main, c'est vite du temps perdu.">
+        <Card>
+          <p className="text-sm text-muted">
+            Gérer des campagnes de cadeaux &laquo; à la main &raquo; (code Liquid custom, apps génériques mal adaptées)
+            demande du temps de dev à chaque nouvelle règle, et complique le suivi de ce qui a réellement été offert.
+            GRDN Bonus déplace cette logique dans un espace de configuration simple, pensé pour les marchands.
+          </p>
+        </Card>
+      </Section>
+
+      <Section title="Ce que fait GRDN Bonus" description="Trois piliers, pensés pour rester simples à opérer.">
+        <div className="grid gap-6 md:grid-cols-3">
+          {features.map((f) => (
+            <Card key={f.title}>
+              <span className="text-2xl">{f.icon}</span>
+              <h3 className="mt-3 text-base font-semibold">{f.title}</h3>
+              <p className="mt-2 text-sm text-muted">{f.description}</p>
+            </Card>
           ))}
-        </ul>
-      </div>
+        </div>
+      </Section>
 
-      <div className="space-y-2">
-        <h2 className="text-lg font-semibold">8. Sécurité</h2>
-        <p className="text-sm text-muted">
-          Toutes les données transitent via des connexions chiffrées (HTTPS/TLS). L&apos;accès aux données
-          d&apos;historique client est limité aux besoins fonctionnels de l&apos;évaluation des règles de cadeau.
+      <Section title="Pourquoi GRDN Bonus">
+        <Card>
+          <ul className="space-y-2 text-sm">
+            {benefits.map((item) => (
+              <li key={item} className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </Section>
+
+      <section className="rounded-[32px] border border-border bg-surface/60 p-8 text-center">
+        <p className="text-xs text-muted">
+          Cart Transform natif Shopify · Hébergé sur Railway (Postgres) · Connexions chiffrées HTTPS/TLS
         </p>
-      </div>
-
-      <div className="space-y-2 border-t border-border pt-8">
-        <h2 className="text-lg font-semibold">9. Conditions générales d&apos;utilisation</h2>
-        <ul className="mt-3 space-y-2 text-sm">
-          {[
-            "L'utilisation de GRDN Bonus est soumise à l'acceptation des présentes conditions par le marchand lors de l'installation",
-            "Le marchand est responsable d'informer ses propres clients de l'utilisation de leur historique d'achat s'il active cette fonctionnalité, conformément à sa propre politique de confidentialité boutique",
-            "L'éditeur s'efforce d'assurer la disponibilité et le bon fonctionnement de l'application, sans garantie de résultat commercial",
-            "L'éditeur ne pourra être tenu responsable des pertes de revenus ou de données résultant d'une mauvaise configuration par le marchand",
-            "Les tarifs applicables sont ceux affichés sur la fiche Shopify App Store au moment de l'installation, susceptibles d'évoluer avec préavis",
-            "Les présentes conditions sont soumises au droit français",
-            "Contact : mathieu.jardin.pro@gmail.com"
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </AppLegalLayout>
+        <p className="mt-4 text-sm text-muted">
+          Détails sur les données traitées et les scopes utilisés :{" "}
+          <Link href="/apps/bonus/cgu" className="text-accent hover:underline">
+            Politique de confidentialité & CGU
+          </Link>
+        </p>
+      </section>
+    </div>
   );
 }
