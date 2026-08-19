@@ -3,10 +3,15 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center text-center">
-      <p className="text-xs uppercase tracking-[0.3em] text-muted">404</p>
-      <h1 className="mt-4 text-4xl font-semibold">Page introuvable</h1>
+      <span className="text-6xl motion-safe:animate-floaty">🛒</span>
+      <p className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-danger/40 bg-danger/10 px-3 py-1 text-xs font-medium text-danger">
+        <span className="h-1.5 w-1.5 rounded-full bg-danger" />
+        Rupture de stock
+      </p>
+      <h1 className="mt-4 text-4xl font-semibold">Erreur 404</h1>
       <p className="mt-4 max-w-sm text-sm text-muted">
-        Cette page n&apos;existe pas ou a été déplacée.
+        Cette page n&apos;est plus disponible. Contrairement à un vrai produit, je ne peux pas te proposer
+        d&apos;être prévenu·e quand elle revient — parce qu&apos;elle ne reviendra pas.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link
