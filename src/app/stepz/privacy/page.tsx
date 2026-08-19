@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — Stepz",
+  title: "Politique de confidentialité - Stepz",
   description: "Politique de confidentialité de l'application Stepz, disponible sur Google Play Store.",
 };
 
@@ -96,7 +96,7 @@ export default function StepzPrivacyPage() {
         <div className="space-y-2">
           <h2 className="text-lg font-semibold">6. Permissions Android</h2>
           <p className="text-sm text-muted">
-            Stepz peut demander l&apos;accès à <strong className="text-text">Health Connect</strong> pour lire vos données de pas. Cet accès est facultatif — vous pouvez saisir vos pas manuellement. Les permissions peuvent être révoquées à tout moment dans les paramètres de votre téléphone.
+            Stepz peut demander l&apos;accès à <strong className="text-text">Health Connect</strong> pour lire vos données de pas. Cet accès est facultatif - vous pouvez saisir vos pas manuellement. Les permissions peuvent être révoquées à tout moment dans les paramètres de votre téléphone.
           </p>
         </div>
 

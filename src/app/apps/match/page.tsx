@@ -6,7 +6,7 @@ import { Section } from "@/components/Section";
 import { TrackedLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "GRDN Match — Cross-sell par scoring pour Shopify",
+  title: "GRDN Match - Cross-sell par scoring pour Shopify",
   description: "GRDN Match suggère des produits complémentaires pertinents dans le panier et au checkout, via un moteur de scoring sur les métafields produits.",
   openGraph: {
     images: [{ url: "/og/match.png", width: 1200, height: 630, alt: "GRDN Match" }]
@@ -20,7 +20,7 @@ const features = [
   {
     icon: "⚖️",
     title: "Scoring configurable",
-    description: "Poids par catégorie, tags et métafields — le moteur de recommandation se configure depuis l'admin, sans ligne de code."
+    description: "Poids par catégorie, tags et métafields - le moteur de recommandation se configure depuis l'admin, sans ligne de code."
   },
   {
     icon: "🛒",
@@ -30,7 +30,7 @@ const features = [
   {
     icon: "📈",
     title: "Statistiques agrégées",
-    description: "Impressions, clics, ajouts au panier, chiffre d'affaires attribué — pour mesurer l'impact réel de chaque recommandation."
+    description: "Impressions, clics, ajouts au panier, chiffre d'affaires attribué - pour mesurer l'impact réel de chaque recommandation."
   }
 ];
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppLegalLayout } from "@/components/AppLegalLayout";
 
 export const metadata: Metadata = {
-  title: "FAQ — GRDN Bonus",
+  title: "FAQ - GRDN Bonus",
   description: "Questions fréquentes sur GRDN Bonus : règles combinables, priorités, plafonds de cadeaux, historique d'achat."
 };
 
@@ -31,7 +31,7 @@ export default function GrdnBonusFaqPage() {
         <h2 className="text-lg font-semibold">Que signifie concrètement la condition &laquo; historique d&apos;achat &raquo; ?</h2>
         <p className="text-sm text-muted">
           Quand vous activez une règle basée sur l&apos;historique, l&apos;application retient l&apos;identifiant Shopify du
-          client et les attributs des produits qu&apos;il a déjà achetés (tag, collection, type de produit, fournisseur) —
+          client et les attributs des produits qu&apos;il a déjà achetés (tag, collection, type de produit, fournisseur) -
           jamais son nom, son email ou son adresse. Cette donnée sert exclusivement à évaluer l&apos;éligibilité à un
           cadeau. Le détail complet (finalité, durée de conservation, droits) est dans la{" "}
           <a href="/apps/bonus/cgu" className="text-accent hover:underline">

@@ -6,7 +6,7 @@ import { Section } from "@/components/Section";
 import { TrackedLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "GRDN Bonus — Cadeau automatique pour Shopify",
+  title: "GRDN Bonus - Cadeau automatique pour Shopify",
   description: "GRDN Bonus ajoute automatiquement un produit cadeau au panier de vos clients selon des règles configurables, jusqu'à l'historique d'achat.",
   openGraph: {
     images: [{ url: "/og/bonus.png", width: 1200, height: 630, alt: "GRDN Bonus" }]
@@ -20,7 +20,7 @@ const features = [
   {
     icon: "🎯",
     title: "Règles configurables",
-    description: "Montant du panier, produits ou collections déclencheurs, cadeau associé — tout se configure depuis l'admin, sans toucher au code."
+    description: "Montant du panier, produits ou collections déclencheurs, cadeau associé - tout se configure depuis l'admin, sans toucher au code."
   },
   {
     icon: "🕓",
@@ -62,7 +62,7 @@ export default function GrdnBonusPage() {
         </p>
         <p className="mt-3 max-w-2xl text-sm text-muted">
           GRDN Bonus ajoute automatiquement un produit cadeau au panier de vos clients dès que les conditions que vous
-          définissez sont remplies — jusqu&apos;à des règles basées sur l&apos;historique d&apos;achat, pour récompenser vos clients
+          définissez sont remplies - jusqu&apos;à des règles basées sur l&apos;historique d&apos;achat, pour récompenser vos clients
           les plus engagés.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">

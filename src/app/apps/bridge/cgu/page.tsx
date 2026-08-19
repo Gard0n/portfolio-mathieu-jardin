@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppLegalLayout } from "@/components/AppLegalLayout";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité & CGU — GRDN Bridge",
+  title: "Politique de confidentialité & CGU - GRDN Bridge",
   description: "Politique de confidentialité et conditions générales d'utilisation de l'application Shopify GRDN Bridge."
 };
 
@@ -14,7 +14,7 @@ export default function GrdnBridgeLegalPage() {
         <p className="text-sm text-muted">GRDN Bridge est éditée par :</p>
         <ul className="mt-3 space-y-2 text-sm">
           {[
-            "Nom / Raison sociale : GRDN — Mathieu Jardin, entrepreneur individuel",
+            "Nom / Raison sociale : GRDN - Mathieu Jardin, entrepreneur individuel",
             "SIRET : 93347017100010",
             "Adresse : 39 rue Delerue, Apt B14, Résidence le Clos des Serres, 59290 Wasquehal, France",
             "Contact : contact@grdn.fr"
@@ -40,9 +40,9 @@ export default function GrdnBridgeLegalPage() {
         <ul className="mt-3 space-y-2 text-sm">
           {[
             "Données boutique : configuration de la remise abonnement, langue de l'interface",
-            "Identifiants d'API Recharge du marchand (jeton d'accès, secret webhook) — chiffrés en base (AES-256-GCM)",
+            "Identifiants d'API Recharge du marchand (jeton d'accès, secret webhook) - chiffrés en base (AES-256-GCM)",
             "Historique des synchronisations de prix (produit, quantité, prix Shopify, prix envoyé, date)",
-            "Aucune donnée personnelle de client final n'est collectée ni stockée — l'app ne traite que des données produits et des configurations boutique"
+            "Aucune donnée personnelle de client final n'est collectée ni stockée - l'app ne traite que des données produits et des configurations boutique"
           ].map((item) => (
             <li key={item} className="flex gap-2">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />

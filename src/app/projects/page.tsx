@@ -118,7 +118,7 @@ export default function ProjectsPage() {
       <Section title="Freelance GRDN" description="Missions Shopify, email marketing et stratégie e-commerce, en indépendant.">
         <div className="rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-8 shadow-glow">
           <Badge className="bg-accent/10 text-accent border-accent/30">Freelance</Badge>
-          <h3 className="mt-4 text-lg font-semibold">GRDN — Développeur Shopify &amp; stratège e-commerce</h3>
+          <h3 className="mt-4 text-lg font-semibold">GRDN - Développeur Shopify &amp; stratège e-commerce</h3>
           <p className="mt-2 text-sm text-muted">
             En parallèle de mon alternance, j&apos;accompagne des TPE, PME et créateurs sur leurs projets Shopify : création et migration de boutiques,
             email marketing (Klaviyo) et stratégie e-commerce. Les études de cas clients seront publiées ici au fur et à mesure des missions.
@@ -146,19 +146,19 @@ export default function ProjectsPage() {
         <div className="space-y-10">
           <div className="space-y-6">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">
-              Alternance — Animaux Vie et Santé
+              Alternance - Animaux Vie et Santé
             </h3>
             <ProjectGrid projects={alternanceProjects as typeof projects.items} />
           </div>
           <div className="space-y-6">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">
-              Freelance — Gabby
+              Freelance - Gabby
             </h3>
             <ProjectGrid projects={freelanceGabbyProjects as typeof projects.items} />
           </div>
           <div className="space-y-6">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-structure">
-              Stage — Gabby
+              Stage - Gabby
             </h3>
             <ProjectGrid projects={stageProjects as typeof projects.items} />
           </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppLegalLayout } from "@/components/AppLegalLayout";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité & CGU — GRDN Bonus",
+  title: "Politique de confidentialité & CGU - GRDN Bonus",
   description: "Politique de confidentialité et conditions générales d'utilisation de l'application Shopify GRDN Bonus."
 };
 
@@ -19,7 +19,7 @@ export default function GrdnBonusLegalPage() {
         <p className="text-sm text-muted">GRDN Bonus est éditée par :</p>
         <ul className="mt-3 space-y-2 text-sm">
           {[
-            "Nom / Raison sociale : GRDN — Mathieu Jardin, entrepreneur individuel",
+            "Nom / Raison sociale : GRDN - Mathieu Jardin, entrepreneur individuel",
             "SIRET : 93347017100010",
             "Adresse : 39 rue Delerue, Apt B14, Résidence le Clos des Serres, 59290 Wasquehal, France",
             "Contact : contact@grdn.fr"
@@ -36,7 +36,7 @@ export default function GrdnBonusLegalPage() {
         <h2 className="text-lg font-semibold">2. Ce que fait GRDN Bonus</h2>
         <p className="text-sm text-muted">
           GRDN Bonus ajoute automatiquement un produit cadeau au panier d&apos;un client quand certaines conditions sont
-          remplies — y compris, si le marchand active cette option, des conditions basées sur l&apos;historique d&apos;achat
+          remplies - y compris, si le marchand active cette option, des conditions basées sur l&apos;historique d&apos;achat
           du client (ex. &laquo; a déjà acheté dans telle catégorie &raquo;).
         </p>
       </div>
@@ -69,7 +69,7 @@ export default function GrdnBonusLegalPage() {
         <p className="text-sm text-muted">
           Les données boutique (règles, campagnes) sont traitées sur la base de l&apos;
           <strong className="text-text">intérêt légitime du marchand</strong>. L&apos;historique d&apos;achat client, quand
-          utilisé, l&apos;est également sur cette base, dans le seul but de déterminer l&apos;éligibilité à une offre —
+          utilisé, l&apos;est également sur cette base, dans le seul but de déterminer l&apos;éligibilité à une offre -
           jamais à des fins de profilage marketing plus large ou de revente à des tiers.
         </p>
       </div>

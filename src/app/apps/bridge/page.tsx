@@ -6,7 +6,7 @@ import { Section } from "@/components/Section";
 import { TrackedLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "GRDN Bridge — Sync prix Shopify vers Recharge",
+  title: "GRDN Bridge - Sync prix Shopify vers Recharge",
   description: "GRDN Bridge répercute automatiquement vos prix catalogue et remises Shopify sur les abonnements Recharge, en lecture seule.",
   openGraph: {
     images: [{ url: "/og/bridge.png", width: 1200, height: 630, alt: "GRDN Bridge" }]
@@ -25,7 +25,7 @@ const features = [
   {
     icon: "⚡",
     title: "Synchronisation automatique",
-    description: "Le prix envoyé à Recharge suit vos remises Shopify en temps réel — pas de mise à jour manuelle à chaque changement de tarif."
+    description: "Le prix envoyé à Recharge suit vos remises Shopify en temps réel - pas de mise à jour manuelle à chaque changement de tarif."
   },
   {
     icon: "🧾",

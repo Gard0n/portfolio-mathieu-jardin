@@ -77,7 +77,7 @@ const services = [
       "Newsletters et flows au fil de l'eau",
       "Point mensuel de bilan"
     ],
-    delay: "Récurrent — engagement mensuel",
+    delay: "Récurrent - engagement mensuel",
     price: "À partir de 500 €/mois"
   },
   {
@@ -105,7 +105,7 @@ const clients = [
 const faqs = [
   {
     q: "Comment se passe une mission concrètement ?",
-    a: "On commence par un échange pour cadrer ton besoin, puis je t'envoie un devis détaillé. Une fois validé, je travaille par étapes avec des points réguliers. Livraison, retours, ajustements — tout est documenté."
+    a: "On commence par un échange pour cadrer ton besoin, puis je t'envoie un devis détaillé. Une fois validé, je travaille par étapes avec des points réguliers. Livraison, retours, ajustements - tout est documenté."
   },
   {
     q: "Tu travailles en remote ?",
@@ -113,11 +113,11 @@ const faqs = [
   },
   {
     q: "Les tarifs sont fixes ?",
-    a: "Non, ce sont des fourchettes indicatives. Chaque projet est différent — le devis final dépend du périmètre, du niveau de personnalisation et des délais souhaités."
+    a: "Non, ce sont des fourchettes indicatives. Chaque projet est différent - le devis final dépend du périmètre, du niveau de personnalisation et des délais souhaités."
   },
   {
     q: "Tu peux intervenir sur une boutique déjà existante ?",
-    a: "Oui, c'est même la majorité des cas. Migration, refonte partielle, ajout de fonctionnalités, audit — je m'adapte à l'existant."
+    a: "Oui, c'est même la majorité des cas. Migration, refonte partielle, ajout de fonctionnalités, audit - je m'adapte à l'existant."
   },
   {
     q: "Quel est le délai de réponse ?",
@@ -139,7 +139,7 @@ export default function ServicesPage() {
         <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Services</h1>
         <p className="mt-3 text-sm text-muted">
           Missions freelance en Shopify, email marketing et stratégie e-commerce.
-          Tarifs et délais indicatifs — tout dépend de ton projet.
+          Tarifs et délais indicatifs - tout dépend de ton projet.
         </p>
       </section>
 

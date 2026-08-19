@@ -11,7 +11,7 @@
     "heroTitle": "Mathieu Jardin",
     "heroSubtitle": "Freelance GRDN, développeur Shopify & stratège e-commerce.\nJ'aide les marques à lancer, migrer et développer leur boutique en ligne.",
     "heroBullets": [
-      "Disponible pour des missions freelance — Shopify, Email Marketing, Stratégie e-commerce"
+      "Disponible pour des missions freelance - Shopify, Email Marketing, Stratégie e-commerce"
     ]
   },
   "about": {
@@ -69,7 +69,7 @@
       {
         "date": "avr. 2025 - présent",
         "title": "Business Developer",
-        "subtitle": "Animaux Vie et Santé — stage puis alternance (Hybride, Wasquehal)",
+        "subtitle": "Animaux Vie et Santé - stage puis alternance (Hybride, Wasquehal)",
         "details": [
           "Newsletter Chat Klaviyo : 3 emails/semaine, 40 000 abonnés, 50 % d'ouverture",
           "Migration et développement boutique Shopify (100 produits, thème Fullstack)",
@@ -79,7 +79,7 @@
       {
         "date": "sept. 2024 - mai 2025",
         "title": "Développement commercial",
-        "subtitle": "Gabby — Freelance (Hybride, Lille)",
+        "subtitle": "Gabby - Freelance (Hybride, Lille)",
         "details": [
           "Prospection B2C : 50 appels/jour, ~100 RDV/mois équipe",
           "Encadrement d'une équipe de 4 commerciaux",
@@ -89,7 +89,7 @@
       {
         "date": "mai 2024 - juil. 2024",
         "title": "Commercial B2C",
-        "subtitle": "Gabby — Stage (Hybride, Lille)",
+        "subtitle": "Gabby - Stage (Hybride, Lille)",
         "details": [
           "Prise de RDV d'estimations pour agences immobilières partenaires",
           "Gestion des conflits et suivi clients BtoB/BtoC",
@@ -99,17 +99,17 @@
       {
         "date": "déc. 2023 - sept. 2025",
         "title": "Agent d'accueil & responsable parcours",
-        "subtitle": "Koezio — Job étudiant (Lille)",
+        "subtitle": "Koezio - Job étudiant (Lille)",
         "details": [
           "Accueil, briefing client, barman et cuisine",
           "Responsable parcours en hauteur (CQPOPAH niveau 4)",
-          "Formation SST — management en environnement dynamique"
+          "Formation SST - management en environnement dynamique"
         ]
       },
       {
         "date": "janv. 2023 - déc. 2023",
         "title": "Employé polyvalent",
-        "subtitle": "Lidl — Job étudiant (Lille)",
+        "subtitle": "Lidl - Job étudiant (Lille)",
         "details": [
           "Mise en rayon, responsable boulangerie, caissier",
           "Première expérience en grande distribution",
@@ -229,7 +229,7 @@
         "employmentType": "Stage",
         "employer": "Gabby",
         "slug": "commercial-btoc-gabby-stage",
-        "title": "Commercial B2C Gabby — Stage (Immobilier)",
+        "title": "Commercial B2C Gabby - Stage (Immobilier)",
         "subtitle": "Prise de RDV et suivi clients pour agences immobilières partenaires",
         "tags": ["Business Development", "B2C"],
         "role": "Commercial B2C (stage)",
@@ -353,7 +353,7 @@
     {
       "category": "perso",
       "slug": "nexus-journal-culturel",
-      "title": "Nexus — Journal culturel personnel",
+      "title": "Nexus - Journal culturel personnel",
       "subtitle": "App web React pour tracker films, séries, livres, jeux et musique",
       "tags": ["React", "TypeScript", "Dev personnel"],
       "image": "/projects/Nexus.png",
@@ -398,7 +398,7 @@
     {
       "category": "perso",
       "slug": "minus-flechettes",
-      "title": "Minus — App de fléchettes",
+      "title": "Minus - App de fléchettes",
       "subtitle": "PWA de classement et suivi de parties de fléchettes",
       "tags": ["Dev personnel"],
       "liveUrl": "https://gard0n.github.io/Minus/",
@@ -437,8 +437,8 @@
     {
       "category": "perso",
       "slug": "bullet-journal",
-      "title": "Bullet Journal — App quotidien",
-      "subtitle": "Daily log, habitudes, projets et reviews — 100% local",
+      "title": "Bullet Journal - App quotidien",
+      "subtitle": "Daily log, habitudes, projets et reviews - 100% local",
       "tags": ["Dev personnel"],
       "liveUrl": "https://gard0n.github.io/bullet/",
       "image": "/projects/Bullet.png",
@@ -477,8 +477,8 @@
     {
       "category": "perso",
       "slug": "stepz-app",
-      "title": "Stepz — App de classement de pas",
-      "subtitle": "App mobile React Native — iOS & Android",
+      "title": "Stepz - App de classement de pas",
+      "subtitle": "App mobile React Native - iOS & Android",
       "tags": ["React Native", "Dev personnel"],
       "liveUrl": "https://play.google.com/store/apps/details?id=com.gardenny.stepz",
       "role": "Développeur (solo)",

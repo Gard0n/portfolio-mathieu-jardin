@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppLegalLayout } from "@/components/AppLegalLayout";
 
 export const metadata: Metadata = {
-  title: "FAQ — GRDN Bridge",
+  title: "FAQ - GRDN Bridge",
   description: "Questions fréquentes sur GRDN Bridge : types de remise supportés, prérequis Recharge, comportement à la suppression d'une remise."
 };
 
@@ -22,7 +22,7 @@ export default function GrdnBridgeFaqPage() {
       <div className="space-y-2">
         <h2 className="text-lg font-semibold">Faut-il déjà avoir Recharge installé ?</h2>
         <p className="text-sm text-muted">
-          Oui. GRDN Bridge nécessite que Recharge soit déjà installé et configuré sur la boutique — l&apos;application
+          Oui. GRDN Bridge nécessite que Recharge soit déjà installé et configuré sur la boutique - l&apos;application
           synchronise les prix vers des abonnements Recharge existants, elle ne crée pas de système d&apos;abonnement.
         </p>
       </div>

@@ -11,7 +11,7 @@ export default function NotFound() {
       <h1 className="mt-4 text-4xl font-semibold">Erreur 404</h1>
       <p className="mt-4 max-w-sm text-sm text-muted">
         Cette page n&apos;est plus disponible. Contrairement à un vrai produit, je ne peux pas te proposer
-        d&apos;être prévenu·e quand elle revient — parce qu&apos;elle ne reviendra pas.
+        d&apos;être prévenu·e quand elle revient - parce qu&apos;elle ne reviendra pas.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link

@@ -38,7 +38,7 @@ export default function ContactPage() {
             <ul className="space-y-2 text-sm">
               <li className="flex gap-2">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Missions freelance ouvertes — réponse sous 24h</span>
+                <span>Missions freelance ouvertes - réponse sous 24h</span>
               </li>
               <li className="flex gap-2">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />

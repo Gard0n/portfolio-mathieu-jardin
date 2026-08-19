@@ -25,7 +25,7 @@ export const siteContent = {
       "Développeur Shopify et stratège e-commerce en alternance chez Animaux Vie et Santé (Wasquehal).",
       "Freelance en parallèle : Shopify, email marketing Klaviyo, stratégie e-commerce.",
       "Basé à Lille, disponible 100 % en remote sur tout le territoire.",
-      "Autodidacte en développement web — je construis mes propres outils (Nexus, Minus, Bullet Journal).",
+      "Autodidacte en développement web - je construis mes propres outils (Nexus, Minus, Bullet Journal).",
       "Passionné de jeux vidéo, manga et rap français."
     ],
     timeline: contentJson.about.timeline,

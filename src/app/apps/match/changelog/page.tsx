@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppLegalLayout } from "@/components/AppLegalLayout";
 
 export const metadata: Metadata = {
-  title: "Changelog — GRDN Match",
+  title: "Changelog - GRDN Match",
   description: "Historique des mises à jour de GRDN Match."
 };
 
@@ -10,7 +10,7 @@ export default function GrdnMatchChangelogPage() {
   return (
     <AppLegalLayout icon="🧩" name="GRDN Match" slug="match" lastUpdated="19 août 2026" subtitle="Changelog">
       <div className="space-y-2">
-        <h2 className="text-lg font-semibold">v1.0 — Lancement initial</h2>
+        <h2 className="text-lg font-semibold">v1.0 - Lancement initial</h2>
         <p className="text-xs text-muted">En attente de publication sur le Shopify App Store</p>
         <ul className="mt-3 space-y-2 text-sm">
           {[

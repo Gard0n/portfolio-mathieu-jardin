@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Normes de sécurité des enfants — Stepz",
+  title: "Normes de sécurité des enfants - Stepz",
   description: "Normes de sécurité des enfants et politique de prévention des abus de l'application Stepz.",
 };
 
@@ -41,7 +41,7 @@ export default function StepzSafetyPage() {
           </p>
           <ul className="mt-3 space-y-2 text-sm">
             {[
-              "Les groupes sont fermés — les membres ne peuvent rejoindre un groupe que sur invitation explicite",
+              "Les groupes sont fermés - les membres ne peuvent rejoindre un groupe que sur invitation explicite",
               "Aucune messagerie directe entre utilisateurs",
               "Aucune communication vocale ou vidéo",
               "Seuls le pseudonyme et le nombre de pas sont visibles par les membres d'un même groupe",

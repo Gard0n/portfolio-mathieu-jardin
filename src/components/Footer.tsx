@@ -10,7 +10,7 @@ export function Footer() {
           <p className="text-text font-medium">{siteContent.site.name}</p>
           <p>{siteContent.site.role}</p>
           <p className="mt-1 text-xs">
-            Freelance disponible —{" "}
+            Freelance disponible -{" "}
             <a href={`mailto:${siteContent.site.email}`} className="hover:text-text">
               {siteContent.site.email}
             </a>

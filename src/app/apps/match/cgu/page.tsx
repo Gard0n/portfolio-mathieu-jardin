@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppLegalLayout } from "@/components/AppLegalLayout";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité & CGU — GRDN Match",
+  title: "Politique de confidentialité & CGU - GRDN Match",
   description: "Politique de confidentialité et conditions générales d'utilisation de l'application Shopify GRDN Match."
 };
 
@@ -14,7 +14,7 @@ export default function GrdnMatchLegalPage() {
         <p className="text-sm text-muted">GRDN Match est éditée par :</p>
         <ul className="mt-3 space-y-2 text-sm">
           {[
-            "Nom / Raison sociale : GRDN — Mathieu Jardin, entrepreneur individuel",
+            "Nom / Raison sociale : GRDN - Mathieu Jardin, entrepreneur individuel",
             "SIRET : 93347017100010",
             "Adresse : 39 rue Delerue, Apt B14, Résidence le Clos des Serres, 59290 Wasquehal, France",
             "Contact : contact@grdn.fr"
@@ -40,7 +40,7 @@ export default function GrdnMatchLegalPage() {
         <ul className="mt-3 space-y-2 text-sm">
           {[
             "Données boutique : mapping des métafields, poids de scoring, produits mis en avant",
-            "Statistiques d'usage agrégées : impressions, clics, ajouts au panier, chiffre d'affaires attribué — rattachées à une session panier, pas à un client identifié nommément",
+            "Statistiques d'usage agrégées : impressions, clics, ajouts au panier, chiffre d'affaires attribué - rattachées à une session panier, pas à un client identifié nommément",
             "Aucune donnée personnelle de client final identifiable n'est conservée"
           ].map((item) => (
             <li key={item} className="flex gap-2">
