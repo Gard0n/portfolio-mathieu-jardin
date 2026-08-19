@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { Marquee } from "@/components/Marquee";
 import { Section } from "@/components/Section";
 import { Squiggle } from "@/components/Squiggle";
 import { siteContent } from "@/content/siteContent";
@@ -31,15 +30,10 @@ export default function HomePage() {
                   height={56}
                   className="rounded-full object-cover ring-2 ring-border"
                 />
-                <div className="flex flex-wrap items-center gap-2">
-                  <p className="text-xs uppercase tracking-[0.3em] text-muted">
-                    Portfolio
-                  </p>
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                    <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-                    Freelance disponible
-                  </span>
-                </div>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                  Freelance disponible
+                </span>
               </div>
               <h1 className="mt-4 text-6xl font-semibold tracking-tight md:text-8xl">
                 {home.heroTitle}
@@ -88,8 +82,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Marquee />
-
       <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {metrics.map((m) => (
           <div
@@ -115,63 +107,6 @@ export default function HomePage() {
               &ldquo;Professionnel dans son travail. Il va au bout de ses idées et a totalement compris les enjeux du marketing et de la communication. La bonne personne pour un projet sérieux.&rdquo;
             </p>
             <p className="mt-4 text-xs text-muted">Entrepreneur, secteur tech &amp; influence</p>
-          </Card>
-        </div>
-      </Section>
-
-      <Section
-        title="À propos, en bref"
-        description="Repères rapides avant d&apos;entrer dans le détail."
-      >
-        <div className="grid gap-6 md:grid-cols-3">
-          <Card
-            title="Identité"
-            description="Shopify · Email · Stratégie"
-            className="motion-safe:animate-rise"
-          >
-            <p>
-              Développeur Shopify et stratège e-commerce. J&apos;aide les marques à lancer, migrer et faire croître leur boutique en ligne.
-            </p>
-          </Card>
-          <Card
-            title="Méthode"
-            description="Simple, itératif, clair"
-            className="motion-safe:animate-rise"
-          >
-            <ul className="space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Prioriser l&apos;impact</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Tester vite</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Documenter simple</span>
-              </li>
-            </ul>
-          </Card>
-          <Card
-            title="Disponibilité"
-            description="Freelance ouvert"
-            className="motion-safe:animate-rise"
-          >
-            <ul className="space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Missions freelance ouvertes</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Réponse sous 24h</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>Remote &amp; Lille</span>
-              </li>
-            </ul>
           </Card>
         </div>
       </Section>

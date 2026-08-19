@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteContent } from "@/content/siteContent";
 import { pushDataLayerEvent } from "@/lib/analytics";
+import { Squiggle } from "@/components/Squiggle";
 import { cn } from "@/lib/utils";
 
 const basePath = (() => {
@@ -39,11 +40,14 @@ export function Header() {
               href={item.href}
               aria-current={isActive(item.href) ? "page" : undefined}
               className={cn(
-                "text-sm transition",
+                "relative pb-1 text-sm transition",
                 isActive(item.href) ? "text-structure font-medium" : "text-muted hover:text-text"
               )}
             >
               {item.label}
+              {isActive(item.href) ? (
+                <Squiggle className="absolute -bottom-0.5 left-0 h-2 w-full text-accent" />
+              ) : null}
             </Link>
           ))}
         </nav>

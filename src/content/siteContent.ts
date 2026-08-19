@@ -30,6 +30,10 @@ export const siteContent = {
       {
         title: "Disponibilité",
         items: ["Missions freelance ouvertes", "Réponse sous 24h", "Remote & Lille"]
+      },
+      {
+        title: "Méthode",
+        items: ["Prioriser l'impact", "Tester vite", "Documenter simple"]
       }
     ]
   },
