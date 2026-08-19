@@ -40,9 +40,9 @@ export default function HomePage() {
               href="/contact"
               size="lg"
               trackEvent="cta_click"
-              trackParams={{ cta: "travailler_avec_moi", location: "home_hero" }}
+              trackParams={{ cta: "travailler_ensemble", location: "home_hero" }}
             >
-              Travailler avec moi
+              Travailler ensemble
             </Button>
             {home.ctas.map((cta) => (
               <Button
@@ -58,7 +58,7 @@ export default function HomePage() {
           </div>
 
           <p className="mt-6 text-xs text-muted">
-            {home.heroBullets[0]} · Réponse sous 24h · Remote &amp; Lille
+            Disponible pour des missions freelance · Réponse sous 24h, remote &amp; Lille
           </p>
         </div>
       </section>

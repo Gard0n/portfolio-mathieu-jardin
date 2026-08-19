@@ -108,8 +108,7 @@ export default function ProjectsPage() {
   return (
     <div className="space-y-16">
       <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
-        <p className="text-xs uppercase tracking-[0.3em] text-muted">Sélection</p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Projets</h1>
+        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Projets</h1>
         <p className="mt-3 text-sm text-muted">
           Trois volets : mon activité freelance GRDN, mon expérience professionnelle (alternance, freelance et stage), et mes projets personnels.
         </p>

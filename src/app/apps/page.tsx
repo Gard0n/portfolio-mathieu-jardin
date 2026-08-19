@@ -44,8 +44,7 @@ export default function AppsPage() {
   return (
     <div className="space-y-12">
       <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
-        <p className="text-xs uppercase tracking-[0.3em] text-muted">Marque GRDN</p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-6xl">Des apps Shopify qui font gagner du temps</h1>
+        <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">Des apps Shopify qui font gagner du temps</h1>
         <p className="mt-4 max-w-2xl text-sm text-muted">
           En parallèle des missions freelance, je développe des applications Shopify sous la marque GRDN : des
           automatisations simples, pensées pour des besoins concrets de marchands e-commerce.
