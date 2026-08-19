@@ -5,10 +5,18 @@ type AppLegalLayoutProps = {
   name: string;
   slug: string;
   lastUpdated: string;
+  subtitle?: string;
   children: React.ReactNode;
 };
 
-export function AppLegalLayout({ icon, name, slug, lastUpdated, children }: AppLegalLayoutProps) {
+export function AppLegalLayout({
+  icon,
+  name,
+  slug,
+  lastUpdated,
+  subtitle = "Politique de confidentialité & CGU",
+  children
+}: AppLegalLayoutProps) {
   return (
     <div className="space-y-12">
       <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
@@ -19,7 +27,7 @@ export function AppLegalLayout({ icon, name, slug, lastUpdated, children }: AppL
           <span className="text-4xl">{icon}</span>
           <div>
             <h1 className="text-3xl font-semibold">{name}</h1>
-            <p className="text-sm text-muted">Politique de confidentialité & CGU</p>
+            <p className="text-sm text-muted">{subtitle}</p>
           </div>
         </div>
         <p className="mt-4 text-xs text-muted">Dernière mise à jour : {lastUpdated}</p>

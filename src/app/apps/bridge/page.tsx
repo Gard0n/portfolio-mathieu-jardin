@@ -67,6 +67,14 @@ export default function GrdnBridgePage() {
         <div className="mt-6 flex flex-wrap gap-3">
           <EarlyAccessLink slug="bridge" appName="GRDN Bridge" />
           <TrackedLink
+            href="/apps/bridge/faq"
+            event="faq_link_click"
+            eventParams={{ app: "bridge", location: "hero" }}
+            className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"
+          >
+            FAQ
+          </TrackedLink>
+          <TrackedLink
             href="/apps/bridge/cgu"
             event="cgu_link_click"
             eventParams={{ app: "bridge", location: "hero" }}
@@ -118,7 +126,11 @@ export default function GrdnBridgePage() {
           sur Railway (Postgres)
         </p>
         <p className="mt-4 text-sm text-muted">
-          Détails sur les données traitées et les scopes utilisés :{" "}
+          Types de remise supportés et prérequis :{" "}
+          <Link href="/apps/bridge/faq" className="text-accent hover:underline">
+            FAQ
+          </Link>
+          {" · "}Détails sur les données traitées et les scopes utilisés :{" "}
           <Link href="/apps/bridge/cgu" className="text-accent hover:underline">
             Politique de confidentialité & CGU
           </Link>

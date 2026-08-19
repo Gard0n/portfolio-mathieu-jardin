@@ -68,6 +68,14 @@ export default function GrdnBonusPage() {
         <div className="mt-6 flex flex-wrap gap-3">
           <EarlyAccessLink slug="bonus" appName="GRDN Bonus" />
           <TrackedLink
+            href="/apps/bonus/faq"
+            event="faq_link_click"
+            eventParams={{ app: "bonus", location: "hero" }}
+            className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"
+          >
+            FAQ
+          </TrackedLink>
+          <TrackedLink
             href="/apps/bonus/cgu"
             event="cgu_link_click"
             eventParams={{ app: "bonus", location: "hero" }}
@@ -115,10 +123,14 @@ export default function GrdnBonusPage() {
 
       <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/60 p-8 text-center">
         <p className="text-xs text-muted">
-          Cart Transform natif Shopify · Hébergé sur Railway (Postgres) · Connexions chiffrées HTTPS/TLS
+          Widget panier natif Shopify · Hébergé sur Railway (Postgres) · Connexions chiffrées HTTPS/TLS
         </p>
         <p className="mt-4 text-sm text-muted">
-          Détails sur les données traitées et les scopes utilisés :{" "}
+          Comment configurer vos règles :{" "}
+          <Link href="/apps/bonus/faq" className="text-accent hover:underline">
+            FAQ
+          </Link>
+          {" · "}Détails sur les données traitées et les scopes utilisés :{" "}
           <Link href="/apps/bonus/cgu" className="text-accent hover:underline">
             Politique de confidentialité & CGU
           </Link>
