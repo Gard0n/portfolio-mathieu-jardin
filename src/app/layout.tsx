@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeScript } from "@/components/ThemeScript";
 import { siteContent } from "@/content/siteContent";
 
-const GTM_ID = "GTM-PZ8JMMMB";
+const GTM_ID = "GTM-WXPZP388";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
