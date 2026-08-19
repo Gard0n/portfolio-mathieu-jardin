@@ -10,7 +10,7 @@ export default function StepzSafetyPage() {
   return (
     <div className="space-y-12">
       {/* Hero */}
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <Link href="/stepz/privacy" className="text-xs text-muted hover:text-text">
           ← Politique de confidentialité
         </Link>
@@ -24,7 +24,7 @@ export default function StepzSafetyPage() {
       </section>
 
       {/* Safety Standards */}
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow space-y-8">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow space-y-8">
         <p className="text-xs text-muted">Dernière mise à jour : juillet 2026</p>
 
         <div className="space-y-2">

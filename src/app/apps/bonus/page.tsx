@@ -43,14 +43,14 @@ const benefits = [
 export default function GrdnBonusPage() {
   return (
     <div className="space-y-16">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
         <Link href="/apps" className="text-xs text-muted hover:text-text">
           ← Tous les produits GRDN
         </Link>
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <span className="text-4xl">🎁</span>
           <div>
-            <h1 className="text-3xl font-semibold md:text-4xl">GRDN Bonus</h1>
+            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">GRDN Bonus</h1>
             <span className="mt-1 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
               <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
               Bientôt sur le Shopify App Store
@@ -113,7 +113,7 @@ export default function GrdnBonusPage() {
         </Card>
       </Section>
 
-      <section className="rounded-[32px] border border-border bg-surface/60 p-8 text-center">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/60 p-8 text-center">
         <p className="text-xs text-muted">
           Cart Transform natif Shopify · Hébergé sur Railway (Postgres) · Connexions chiffrées HTTPS/TLS
         </p>

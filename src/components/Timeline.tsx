@@ -18,7 +18,7 @@ export function Timeline({ items, className }: TimelineProps) {
       {items.map((item) => (
         <article
           key={`${item.date}-${item.title}`}
-          className="relative rounded-3xl border border-border bg-surface/80 p-6 shadow-glow"
+          className="relative rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-6 shadow-glow"
         >
           <p className="text-xs uppercase tracking-[0.2em] text-muted">
             {item.date}

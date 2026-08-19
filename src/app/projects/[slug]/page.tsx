@@ -32,7 +32,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
   return (
     <div className="space-y-16">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <Link href="/projects" className="text-xs text-muted hover:text-text">
           ← Retour aux projets
         </Link>
@@ -74,7 +74,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {"image" in project && project.image && (
-        <section className="rounded-3xl border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
+        <section className="rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
           <Image
             src={withBasePath(project.image)}
             alt={project.title}
@@ -88,7 +88,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       {"images" in project && Array.isArray(project.images) && project.images.length > 0 ? (
         <section className="grid gap-4 sm:grid-cols-2">
           {(project.images as string[]).map((img) => (
-            <div key={img} className="rounded-3xl border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
+            <div key={img} className="rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-4 shadow-glow overflow-hidden">
               <Image
                 src={withBasePath(img)}
                 alt={project.title}
@@ -181,7 +181,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Card>
       </Section>
 
-      <section className="rounded-[32px] border border-accent/30 bg-accent/5 p-8 text-center">
+      <section className="rounded-[32px_32px_32px_8px] border border-accent/30 bg-accent/5 p-8 text-center">
         <p className="text-sm text-muted">Projet similaire ?</p>
         <h2 className="mt-2 text-xl font-semibold">Travaillons ensemble.</h2>
         <TrackedLink

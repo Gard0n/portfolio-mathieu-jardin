@@ -10,7 +10,7 @@ export default function StepzPrivacyPage() {
   return (
     <div className="space-y-12">
       {/* Hero */}
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <Link href="/projects/stepz-app" className="text-xs text-muted hover:text-text">
           ← Retour à Stepz
         </Link>
@@ -24,7 +24,7 @@ export default function StepzPrivacyPage() {
       </section>
 
       {/* Privacy Policy */}
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow space-y-8">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow space-y-8">
         <p className="text-xs text-muted">Dernière mise à jour : juillet 2026</p>
 
         <div className="space-y-2">
@@ -112,7 +112,7 @@ export default function StepzPrivacyPage() {
       </section>
 
       {/* Back to app */}
-      <section className="rounded-[32px] border border-accent/30 bg-accent/5 p-8 text-center">
+      <section className="rounded-[32px_32px_32px_8px] border border-accent/30 bg-accent/5 p-8 text-center">
         <p className="text-sm text-muted">Vous utilisez Stepz ?</p>
         <h2 className="mt-2 text-xl font-semibold">Téléchargez l&apos;application.</h2>
         <a

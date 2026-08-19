@@ -11,7 +11,7 @@ type AppLegalLayoutProps = {
 export function AppLegalLayout({ icon, name, slug, lastUpdated, children }: AppLegalLayoutProps) {
   return (
     <div className="space-y-12">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <Link href={`/apps/${slug}`} className="text-xs text-muted hover:text-text">
           ← Retour à {name}
         </Link>
@@ -25,11 +25,11 @@ export function AppLegalLayout({ icon, name, slug, lastUpdated, children }: AppL
         <p className="mt-4 text-xs text-muted">Dernière mise à jour : {lastUpdated}</p>
       </section>
 
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow space-y-8">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow space-y-8">
         {children}
       </section>
 
-      <section className="rounded-[32px] border border-border bg-surface/60 p-8 text-center">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/60 p-8 text-center">
         <p className="text-sm text-muted">{name} n&apos;est pas encore publiée sur le Shopify App Store.</p>
         <p className="mt-2 text-xs text-muted">
           Une question sur ce document ?{" "}

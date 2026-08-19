@@ -12,7 +12,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="space-y-16">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <div className="flex flex-wrap items-center gap-3">
           <p className="text-xs uppercase tracking-[0.3em] text-muted">Contact</p>
           <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
@@ -20,7 +20,7 @@ export default function ContactPage() {
             Disponible pour des missions freelance
           </span>
         </div>
-        <h1 className="mt-3 text-3xl font-semibold">Discutons</h1>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Discutons</h1>
         <p className="mt-3 text-sm text-muted">
           Actuellement disponible pour des missions freelance. Réponse sous 24h.
         </p>

@@ -43,9 +43,9 @@ const apps = [
 export default function AppsPage() {
   return (
     <div className="space-y-12">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Marque GRDN</p>
-        <h1 className="mt-3 text-3xl font-semibold md:text-4xl">Des apps Shopify qui font gagner du temps</h1>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-6xl">Des apps Shopify qui font gagner du temps</h1>
         <p className="mt-4 max-w-2xl text-sm text-muted">
           En parallèle des missions freelance, je développe des applications Shopify sous la marque GRDN : des
           automatisations simples, pensées pour des besoins concrets de marchands e-commerce.
@@ -60,7 +60,7 @@ export default function AppsPage() {
               href={`/apps/${app.slug}`}
               event="apps_card_click"
               eventParams={{ app: app.slug }}
-              className="group flex flex-col rounded-3xl border border-border bg-surface/80 p-6 shadow-glow transition motion-safe:hover:-translate-y-1 hover:shadow-soft"
+              className="group flex flex-col rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-6 shadow-glow transition duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:rotate-1 hover:shadow-soft"
             >
               <div className="flex items-center justify-between">
                 <span className="text-3xl">{app.icon}</span>
@@ -84,7 +84,7 @@ export default function AppsPage() {
         </div>
       </Section>
 
-      <section className="rounded-[32px] border border-border bg-surface/60 p-6 text-center">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/60 p-6 text-center">
         <p className="text-xs text-muted">
           Politiques de confidentialité et conditions d&apos;utilisation disponibles sur chaque fiche produit.
         </p>

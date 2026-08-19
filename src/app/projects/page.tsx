@@ -21,7 +21,7 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
         const employer = "employer" in project ? (project.employer as string | undefined) : undefined;
         const employmentType = "employmentType" in project ? (project.employmentType as string | undefined) : undefined;
         return (
-          <div key={project.slug} className="group relative rounded-3xl border border-border bg-surface/80 overflow-hidden shadow-glow transition hover:shadow-soft motion-safe:hover:-translate-y-1">
+          <div key={project.slug} className="group relative rounded-[28px_28px_28px_6px] border border-border bg-surface/80 overflow-hidden shadow-glow transition duration-300 hover:shadow-soft motion-safe:hover:-translate-y-1 motion-safe:hover:rotate-1">
             {imageSrc ? (
               <Link href={`/projects/${project.slug}`} className="block w-full aspect-video overflow-hidden">
                 <Image
@@ -107,16 +107,16 @@ export default function ProjectsPage() {
 
   return (
     <div className="space-y-16">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Sélection</p>
-        <h1 className="mt-3 text-3xl font-semibold">Projets</h1>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Projets</h1>
         <p className="mt-3 text-sm text-muted">
           Trois volets : mon activité freelance GRDN, mon expérience professionnelle (alternance, freelance et stage), et mes projets personnels.
         </p>
       </section>
 
       <Section title="Freelance GRDN" description="Missions Shopify, email marketing et stratégie e-commerce, en indépendant.">
-        <div className="rounded-3xl border border-border bg-surface/80 p-8 shadow-glow">
+        <div className="rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-8 shadow-glow">
           <Badge className="bg-accent/10 text-accent border-accent/30">Freelance</Badge>
           <h3 className="mt-4 text-lg font-semibold">GRDN — Développeur Shopify &amp; stratège e-commerce</h3>
           <p className="mt-2 text-sm text-muted">

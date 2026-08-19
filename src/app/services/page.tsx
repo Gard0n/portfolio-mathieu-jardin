@@ -128,7 +128,7 @@ const faqs = [
 export default function ServicesPage() {
   return (
     <div className="space-y-16">
-      <section className="rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow">
+      <section className="rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow">
         <div className="flex flex-wrap items-center gap-3">
           <p className="text-xs uppercase tracking-[0.3em] text-muted">Freelance</p>
           <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
@@ -136,7 +136,7 @@ export default function ServicesPage() {
             Disponible
           </span>
         </div>
-        <h1 className="mt-3 text-3xl font-semibold">Services</h1>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Services</h1>
         <p className="mt-3 text-sm text-muted">
           Missions freelance en Shopify, email marketing et stratégie e-commerce.
           Tarifs et délais indicatifs — tout dépend de ton projet.
@@ -237,7 +237,7 @@ export default function ServicesPage() {
         </div>
       </Section>
 
-      <section className="rounded-[32px] border border-accent/30 bg-accent/5 p-8 text-center">
+      <section className="rounded-[32px_32px_32px_8px] border border-accent/30 bg-accent/5 p-8 text-center">
         <p className="text-sm text-muted">Projet spécifique ou budget différent ?</p>
         <h2 className="mt-2 text-xl font-semibold">Parlons-en, je m&apos;adapte.</h2>
         <p className="mt-3 text-sm text-muted">

@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
+import { Marquee } from "@/components/Marquee";
 import { Section } from "@/components/Section";
+import { Squiggle } from "@/components/Squiggle";
 import { siteContent } from "@/content/siteContent";
 import { withBasePath } from "@/lib/utils";
 
@@ -17,7 +19,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16">
-      <section className="reveal rounded-[32px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
+      <section className="reveal rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow md:p-12">
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div className="space-y-6">
             <div>
@@ -39,9 +41,10 @@ export default function HomePage() {
                   </span>
                 </div>
               </div>
-              <h1 className="mt-4 text-4xl font-semibold md:text-5xl">
+              <h1 className="mt-4 text-6xl font-semibold tracking-tight md:text-8xl">
                 {home.heroTitle}
               </h1>
+              <Squiggle className="mt-1 h-3 w-40 text-accent md:w-52" />
               <p className="mt-3 text-lg text-text whitespace-pre-line">
                 {home.heroSubtitle}
               </p>
@@ -84,6 +87,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Marquee />
 
       <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {metrics.map((m) => (

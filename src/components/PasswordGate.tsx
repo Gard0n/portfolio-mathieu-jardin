@@ -36,7 +36,7 @@ export function PasswordGate({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center">
-      <div className="w-full max-w-sm rounded-3xl border border-border bg-surface/80 p-8 shadow-glow">
+      <div className="w-full max-w-sm rounded-[28px_28px_28px_6px] border border-border bg-surface/80 p-8 shadow-glow">
         <p className="text-xs uppercase tracking-[0.3em] text-muted">Accès restreint</p>
         <h1 className="mt-3 text-2xl font-semibold">Portfolio SCM</h1>
         <p className="mt-2 text-sm text-muted">
