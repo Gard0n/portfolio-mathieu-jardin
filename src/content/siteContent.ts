@@ -14,28 +14,10 @@ export const siteContent = {
   home: {
     ...contentJson.home,
     ctas: [
-      { label: "Me recruter", href: "/contact" },
-      { label: "Mes services", href: "/services" },
-      { label: "Voir les projets", href: "/projects" }
+      { label: "Voir les projets", href: "/projects" },
+      { label: "Mes services", href: "/services" }
     ],
-    highlights: [
-      {
-        title: "Alternance",
-        items: ["Animaux Vie et Santé", "Développement commercial", "E-commerce"]
-      },
-      {
-        title: "Spécialités",
-        items: ["Shopify (Liquid)", "Email Marketing", "Stratégie e-commerce"]
-      },
-      {
-        title: "Disponibilité",
-        items: ["Missions freelance ouvertes", "Réponse sous 24h", "Remote & Lille"]
-      },
-      {
-        title: "Méthode",
-        items: ["Prioriser l'impact", "Tester vite", "Documenter simple"]
-      }
-    ]
+    specialties: ["Shopify (Liquid)", "Email Marketing", "Stratégie e-commerce"]
   },
   about: {
     identity: [
