@@ -134,6 +134,10 @@ export default function GrdnBridgePage() {
           <Link href="/apps/bridge/cgu" className="text-accent hover:underline">
             Politique de confidentialité & CGU
           </Link>
+          {" · "}
+          <Link href="/apps/bridge/changelog" className="text-accent hover:underline">
+            Changelog
+          </Link>
         </p>
       </section>
     </div>

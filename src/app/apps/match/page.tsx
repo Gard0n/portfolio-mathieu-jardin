@@ -134,6 +134,10 @@ export default function GrdnMatchPage() {
           <Link href="/apps/match/cgu" className="text-accent hover:underline">
             Politique de confidentialité & CGU
           </Link>
+          {" · "}
+          <Link href="/apps/match/changelog" className="text-accent hover:underline">
+            Changelog
+          </Link>
         </p>
       </section>
     </div>

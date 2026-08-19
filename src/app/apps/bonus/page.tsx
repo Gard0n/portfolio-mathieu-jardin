@@ -134,6 +134,10 @@ export default function GrdnBonusPage() {
           <Link href="/apps/bonus/cgu" className="text-accent hover:underline">
             Politique de confidentialité & CGU
           </Link>
+          {" · "}
+          <Link href="/apps/bonus/changelog" className="text-accent hover:underline">
+            Changelog
+          </Link>
         </p>
       </section>
     </div>
