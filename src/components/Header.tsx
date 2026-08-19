@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteContent } from "@/content/siteContent";
+import { pushDataLayerEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 const basePath = (() => {
@@ -49,6 +50,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
+            onClick={() => pushDataLayerEvent("cta_click", { cta: "travailler_ensemble", location: "header" })}
             className="hidden rounded-full border border-accent/50 bg-accent/10 px-4 py-2 text-xs font-medium text-accent transition hover:bg-accent/20 md:inline-flex"
           >
             Travailler ensemble

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
+import { TrackedLink } from "@/components/TrackedLink";
 
 export const metadata = {
   title: "Services",
@@ -176,12 +176,14 @@ export default function ServicesPage() {
               <p className="text-sm font-medium text-accent">{featured.price}</p>
               <p className="text-xs text-muted">{featured.delay}</p>
             </div>
-            <Link
+            <TrackedLink
               href="/contact"
+              event="cta_click"
+              eventParams={{ cta: "travailler_ensemble", location: "services_featured" }}
               className="rounded-full bg-accent px-5 py-2 text-xs font-medium text-bg transition hover:bg-accent-hover"
             >
               Travailler ensemble →
-            </Link>
+            </TrackedLink>
           </div>
         </Card>
       </Section>
@@ -210,12 +212,14 @@ export default function ServicesPage() {
                   <p className="text-sm font-medium text-accent">{service.price}</p>
                   <p className="text-xs text-muted">{service.delay}</p>
                 </div>
-                <Link
+                <TrackedLink
                   href="/contact"
+                  event="cta_click"
+                  eventParams={{ cta: "travailler_ensemble", location: "services_offer", service: service.title }}
                   className="rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-medium text-text transition hover:border-accent/50 hover:text-accent"
                 >
                   Travailler ensemble →
-                </Link>
+                </TrackedLink>
               </div>
             </Card>
           ))}
@@ -239,12 +243,14 @@ export default function ServicesPage() {
         <p className="mt-3 text-sm text-muted">
           Actuellement disponible pour des missions freelance. Réponse sous 24h.
         </p>
-        <Link
+        <TrackedLink
           href="/contact"
+          event="cta_click"
+          eventParams={{ cta: "travailler_ensemble", location: "services_bottom" }}
           className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
         >
           Travailler ensemble
-        </Link>
+        </TrackedLink>
       </section>
     </div>
   );

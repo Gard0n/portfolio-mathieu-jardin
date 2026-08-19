@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Card } from "@/components/Card";
 import { EarlyAccessLink } from "@/components/EarlyAccessLink";
 import { Section } from "@/components/Section";
+import { TrackedLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
   title: "GRDN Bridge — Sync prix Shopify vers Recharge",
@@ -65,12 +66,14 @@ export default function GrdnBridgePage() {
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <EarlyAccessLink slug="bridge" appName="GRDN Bridge" />
-          <Link
+          <TrackedLink
             href="/apps/bridge/cgu"
+            event="cgu_link_click"
+            eventParams={{ app: "bridge", location: "hero" }}
             className="inline-flex rounded-full border border-border bg-surface/80 px-5 py-2.5 text-sm font-medium text-text transition hover:border-accent/50 hover:text-accent"
           >
             Politique de confidentialité & CGU
-          </Link>
+          </TrackedLink>
         </div>
       </section>
 

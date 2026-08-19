@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { pushDataLayerEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 type ButtonBase = {
@@ -8,6 +9,8 @@ type ButtonBase = {
   size?: "sm" | "md" | "lg";
   className?: string;
   children: React.ReactNode;
+  trackEvent?: string;
+  trackParams?: Record<string, unknown>;
 };
 
 type ButtonLinkProps = ButtonBase & {
@@ -37,7 +40,7 @@ const sizes = {
 };
 
 export function Button(props: ButtonProps) {
-  const { variant = "primary", size = "md", className, children } = props;
+  const { variant = "primary", size = "md", className, children, trackEvent, trackParams } = props;
   const classes = cn(
     "inline-flex items-center justify-center gap-2 rounded-full font-medium transition focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60",
     variants[variant],
@@ -45,18 +48,30 @@ export function Button(props: ButtonProps) {
     className
   );
 
+  const track = () => {
+    if (trackEvent) pushDataLayerEvent(trackEvent, trackParams);
+  };
+
   if ("href" in props) {
     const { href, target, rel } = props as ButtonLinkProps;
     return (
-      <Link href={href} className={classes} target={target} rel={rel}>
+      <Link href={href} className={classes} target={target} rel={rel} onClick={track}>
         {children}
       </Link>
     );
   }
 
-  const { type, href: _href, ...buttonProps } = props;
+  const { type, href: _href, trackEvent: _trackEvent, trackParams: _trackParams, onClick, ...buttonProps } = props;
   return (
-    <button type={type ?? "button"} className={classes} {...buttonProps}>
+    <button
+      type={type ?? "button"}
+      className={classes}
+      onClick={(e) => {
+        track();
+        onClick?.(e);
+      }}
+      {...buttonProps}
+    >
       {children}
     </button>
   );

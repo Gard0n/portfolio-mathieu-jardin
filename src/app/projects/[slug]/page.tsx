@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Badge } from "@/components/Badge";
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
+import { TrackedLink } from "@/components/TrackedLink";
 import { siteContent } from "@/content/siteContent";
 import { withBasePath } from "@/lib/utils";
 
@@ -59,14 +60,16 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </div>
         ) : null}
         {"liveUrl" in project && project.liveUrl ? (
-          <a
+          <TrackedLink
             href={project.liveUrl as string}
             target="_blank"
             rel="noreferrer"
+            event="outbound_link_click"
+            eventParams={{ label: "project_live_url", slug: project.slug }}
             className="mt-4 inline-flex rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-medium text-accent transition hover:bg-accent/20"
           >
             Voir le projet en ligne ↗
-          </a>
+          </TrackedLink>
         ) : null}
       </section>
 
@@ -181,12 +184,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       <section className="rounded-[32px] border border-accent/30 bg-accent/5 p-8 text-center">
         <p className="text-sm text-muted">Projet similaire ?</p>
         <h2 className="mt-2 text-xl font-semibold">Travaillons ensemble.</h2>
-        <Link
+        <TrackedLink
           href="/contact"
+          event="cta_click"
+          eventParams={{ cta: "travailler_ensemble", location: "project_detail_bottom" }}
           className="mt-6 inline-flex rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:bg-accent-hover"
         >
           Travailler ensemble →
-        </Link>
+        </TrackedLink>
       </section>
     </div>
   );

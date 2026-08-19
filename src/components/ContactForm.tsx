@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
+import { pushDataLayerEvent } from "@/lib/analytics";
 
 const FORMSPREE_ENDPOINT = `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`;
 
@@ -48,11 +49,14 @@ export function ContactForm() {
       if (res.ok) {
         setStatus("success");
         setValues(initialState);
+        pushDataLayerEvent("contact_form_submit", { status: "success" });
       } else {
         setStatus("error");
+        pushDataLayerEvent("contact_form_submit", { status: "error" });
       }
     } catch {
       setStatus("error");
+      pushDataLayerEvent("contact_form_submit", { status: "error" });
     }
   }
 
@@ -60,6 +64,7 @@ export function ContactForm() {
     try {
       await navigator.clipboard.writeText(siteContent.site.email);
       setCopied(true);
+      pushDataLayerEvent("copy_email_click", { source: "contact_form" });
       setTimeout(() => setCopied(false), 2000);
     } catch {
       setCopied(false);

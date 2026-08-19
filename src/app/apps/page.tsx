@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Badge } from "@/components/Badge";
 import { Section } from "@/components/Section";
+import { TrackedLink } from "@/components/TrackedLink";
 
 export const metadata = {
   title: "Produits",
@@ -55,9 +55,11 @@ export default function AppsPage() {
       <Section title="Applications GRDN" description="Chaque app fait une seule chose, mais la fait bien.">
         <div className="grid gap-6 md:grid-cols-3">
           {apps.map((app) => (
-            <Link
+            <TrackedLink
               key={app.slug}
               href={`/apps/${app.slug}`}
+              event="apps_card_click"
+              eventParams={{ app: app.slug }}
               className="group flex flex-col rounded-3xl border border-border bg-surface/80 p-6 shadow-glow transition motion-safe:hover:-translate-y-1 hover:shadow-soft"
             >
               <div className="flex items-center justify-between">
@@ -77,7 +79,7 @@ export default function AppsPage() {
               <span className="mt-6 text-xs font-medium text-text group-hover:text-accent">
                 Découvrir {app.name} →
               </span>
-            </Link>
+            </TrackedLink>
           ))}
         </div>
       </Section>

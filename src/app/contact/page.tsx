@@ -1,6 +1,7 @@
 import { Card } from "@/components/Card";
 import { ContactForm } from "@/components/ContactForm";
 import { Section } from "@/components/Section";
+import { TrackedLink } from "@/components/TrackedLink";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata = {
@@ -84,15 +85,17 @@ export default function ContactPage() {
         <div className="flex flex-wrap gap-3">
           {siteContent.contact.links.map((link) => {
             return (
-              <a
+              <TrackedLink
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
+                event="outbound_link_click"
+                eventParams={{ label: link.label, location: "contact_page" }}
                 className="rounded-full border border-border bg-surface/80 px-4 py-2 text-sm text-muted transition hover:border-accent/60 hover:text-text"
               >
                 {link.label}
-              </a>
+              </TrackedLink>
             );
           })}
         </div>

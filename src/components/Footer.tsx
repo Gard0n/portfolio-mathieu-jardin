@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/TrackedLink";
 import { siteContent } from "@/content/siteContent";
 
 export function Footer() {
@@ -26,15 +27,17 @@ export function Footer() {
           {siteContent.contact.links
             .filter((link) => link.label === "GitHub" || link.label === "LinkedIn")
             .map((link) => (
-              <a
+              <TrackedLink
                 key={link.label}
                 href={link.href}
                 className="rounded-full border border-border px-3 py-1 hover:border-accent/60"
                 target="_blank"
                 rel="noreferrer"
+                event="outbound_link_click"
+                eventParams={{ label: link.label, location: "footer" }}
               >
                 {link.label}
-              </a>
+              </TrackedLink>
             ))}
         </div>
       </div>

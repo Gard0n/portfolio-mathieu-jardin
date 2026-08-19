@@ -60,6 +60,8 @@ export default function HomePage() {
                   key={cta.href}
                   href={cta.href}
                   variant={index === 0 ? "primary" : index === 1 ? "secondary" : "ghost"}
+                  trackEvent="cta_click"
+                  trackParams={{ cta: cta.label, location: "home_hero" }}
                 >
                   {cta.label}
                 </Button>

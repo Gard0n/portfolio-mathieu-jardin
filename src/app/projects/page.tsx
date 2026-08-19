@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/Badge";
 import { Section } from "@/components/Section";
+import { TrackedLink } from "@/components/TrackedLink";
 import { siteContent } from "@/content/siteContent";
 import { withBasePath } from "@/lib/utils";
 
@@ -60,18 +61,25 @@ function ProjectGrid({ projects }: { projects: typeof siteContent.projects.items
                 <p className="mt-2 text-xs text-muted">{project.duration as string}</p>
               ) : null}
               <div className="mt-4 flex items-center gap-3">
-                <Link href={`/projects/${project.slug}`} className="text-xs font-medium text-accent">
+                <TrackedLink
+                  href={`/projects/${project.slug}`}
+                  event="project_detail_click"
+                  eventParams={{ slug: project.slug, location: "projects_grid" }}
+                  className="text-xs font-medium text-accent"
+                >
                   Voir le détail →
-                </Link>
+                </TrackedLink>
                 {"liveUrl" in project && project.liveUrl ? (
-                  <a
+                  <TrackedLink
                     href={project.liveUrl as string}
                     target="_blank"
                     rel="noreferrer"
+                    event="outbound_link_click"
+                    eventParams={{ label: "project_live_url", slug: project.slug }}
                     className="rounded-full border border-border px-3 py-1 text-xs text-muted transition hover:border-accent/50 hover:text-text"
                   >
                     Voir le projet ↗
-                  </a>
+                  </TrackedLink>
                 ) : null}
               </div>
             </div>
@@ -120,12 +128,14 @@ export default function ProjectsPage() {
             <Badge>Email Marketing</Badge>
             <Badge>Stratégie e-commerce</Badge>
           </div>
-          <Link
+          <TrackedLink
             href="/services"
+            event="cta_click"
+            eventParams={{ cta: "voir_services", location: "projects_freelance_grdn" }}
             className="mt-6 inline-flex rounded-full bg-accent px-5 py-2 text-xs font-medium text-bg transition hover:bg-accent-hover"
           >
             Voir les services GRDN →
-          </Link>
+          </TrackedLink>
         </div>
       </Section>
 
