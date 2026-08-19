@@ -11,55 +11,71 @@ const metrics = [
   { value: "1 boutique", label: "Shopify pilotée" }
 ];
 
+const availability = [
+  "Missions freelance ouvertes",
+  "Réponse sous 24h",
+  "Remote & Lille"
+];
+
 export default function HomePage() {
   const { home } = siteContent;
 
   return (
     <div className="space-y-16">
       <section className="reveal rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow md:p-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-6xl font-semibold tracking-tight md:text-8xl">
-            {home.heroTitle}
-          </h1>
-          <Squiggle className="mx-auto mt-1 h-3 w-40 text-accent md:w-52" />
-          <p className="mt-5 whitespace-pre-line text-lg text-text">{home.heroSubtitle}</p>
+        <div className="grid gap-10 md:grid-cols-[1.3fr_0.7fr] md:items-center">
+          <div>
+            <h1 className="text-6xl font-semibold tracking-tight md:text-7xl">
+              {home.heroTitle}
+            </h1>
+            <Squiggle className="mt-1 h-3 w-40 text-accent md:w-52" />
+            <p className="mt-5 whitespace-pre-line text-lg text-text">{home.heroSubtitle}</p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
-            {home.specialties.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-border bg-bg/60 px-3 py-1 text-xs font-medium text-muted"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {home.specialties.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-border bg-bg/60 px-3 py-1 text-xs font-medium text-muted"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button
-              href="/contact"
-              size="lg"
-              trackEvent="cta_click"
-              trackParams={{ cta: "travailler_ensemble", location: "home_hero" }}
-            >
-              Travailler ensemble
-            </Button>
-            {home.ctas.map((cta) => (
+            <div className="mt-8 flex flex-wrap gap-4">
               <Button
-                key={cta.href}
-                href={cta.href}
-                variant="secondary"
+                href="/contact"
+                size="lg"
                 trackEvent="cta_click"
-                trackParams={{ cta: cta.label, location: "home_hero" }}
+                trackParams={{ cta: "travailler_ensemble", location: "home_hero" }}
               >
-                {cta.label}
+                Travailler ensemble
               </Button>
-            ))}
+              {home.ctas.map((cta) => (
+                <Button
+                  key={cta.href}
+                  href={cta.href}
+                  variant="secondary"
+                  trackEvent="cta_click"
+                  trackParams={{ cta: cta.label, location: "home_hero" }}
+                >
+                  {cta.label}
+                </Button>
+              ))}
+            </div>
           </div>
 
-          <p className="mt-6 text-xs text-muted">
-            Disponible pour des missions freelance · Réponse sous 24h, remote &amp; Lille
-          </p>
+          <div className="rounded-[24px_24px_24px_6px] border border-accent/30 bg-accent/5 p-6">
+            <p className="text-sm font-semibold text-text">Disponibilité</p>
+            <ul className="mt-4 space-y-3 text-sm">
+              {availability.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
