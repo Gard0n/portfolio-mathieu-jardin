@@ -1,10 +1,8 @@
-import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { Squiggle } from "@/components/Squiggle";
 import { siteContent } from "@/content/siteContent";
-import { withBasePath } from "@/lib/utils";
 
 const metrics = [
   { value: "40 000", label: "abonnés newsletter" },
@@ -20,24 +18,11 @@ export default function HomePage() {
     <div className="space-y-16">
       <section className="reveal rounded-[32px_32px_32px_8px] border border-border bg-surface/80 p-8 shadow-glow md:p-16">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <Image
-              src={withBasePath("/projects/photoMJ.png")}
-              alt="Mathieu Jardin"
-              width={56}
-              height={56}
-              className="rounded-full object-cover ring-2 ring-border"
-            />
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-              Freelance disponible
-            </span>
-          </div>
-          <h1 className="mt-6 text-6xl font-semibold tracking-tight md:text-8xl">
+          <h1 className="text-6xl font-semibold tracking-tight md:text-8xl">
             {home.heroTitle}
           </h1>
           <Squiggle className="mx-auto mt-1 h-3 w-40 text-accent md:w-52" />
-          <p className="mt-5 text-lg text-text">{home.heroSubtitle}</p>
+          <p className="mt-5 whitespace-pre-line text-lg text-text">{home.heroSubtitle}</p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {home.specialties.map((item) => (
@@ -63,7 +48,7 @@ export default function HomePage() {
               <Button
                 key={cta.href}
                 href={cta.href}
-                variant="ghost"
+                variant="secondary"
                 trackEvent="cta_click"
                 trackParams={{ cta: cta.label, location: "home_hero" }}
               >
